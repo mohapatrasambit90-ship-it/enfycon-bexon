@@ -34,8 +34,8 @@ const headingFont = Mona_Sans({
 });
 
 export const metadata = {
-	title: "Bexon - Corporate Business React NextJs Template",
-	description: "Bexon - Corporate Business React NextJs Template",
+	title: "enfycon - empowering business with technology",
+	description: "enfycon - empowering business with technology",
 };
 
 export default function RootLayout({ children }) {
