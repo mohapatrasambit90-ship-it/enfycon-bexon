@@ -417,6 +417,7 @@ START: About CSS
 	z-index: 1;
 }
 
+
 .progress-box {
 	background-color: var(--tj-color-common-white);
 	border-radius: 10px;
@@ -456,3 +457,9 @@ START: About CSS
 }
 
 /* !END: About CSS */
+
+// User defined styles
+.tj-about-section-2{
+	background-color: var(--tj-color-grey-1);
+	
+}

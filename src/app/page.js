@@ -18,16 +18,15 @@ export default function Home() {
 	return (
 		<div>
 			<BackToTop />
-			<Header headerType={2} />
-			<Header headerType={2} isStickyHeader={true} />
+			<Header />
+			<Header isStickyHeader={true} />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-						<div className="top-space-15"></div>
 						<Hero2 />
 						<Brands2 />
+						<Services6 />
 						<About2 />
-						<Services6/>
 						<Services2 />
 						<Portfolios2 />
 						<Process />

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 const About2 = () => {
 	return (
-		<section className="tj-about-section section-gap">
+		<section className="tj-about-section-2 section-gap">
 			<div className="container">
 				<div className="row row-gap-4">
 					<div className="col-lg-4 col-md-6 order-lg-1 order-3">

@@ -2,10 +2,10 @@ import BrandSlider1 from "@/components/shared/brands/BrandSlider1";
 
 const Brands2 = () => {
 	return (
-		<section className="tj-client-section section-top-gap">
+		<section className="tj-client-section section-top-gap section-bottom-gap">
 			<div className="container-fluid client-container">
 				<div className="row">
-					<div className="col-12">
+					<div className="col-12 ">
 
 						<div className="client-content-wrapper text-center mb-5">
 							<div className="row justify-content-center">
