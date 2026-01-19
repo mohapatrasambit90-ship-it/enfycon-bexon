@@ -30,13 +30,13 @@ export default function Home() {
 						<About2 />
 						<Services9 />
 						<Services2 />
-						
 						<Portfolios2 />
 						<Process />
-						<Testimonials2 />
-						<Team1 />
-						<PricingPlan />
+						
+						{/* <Team1 /> */}
+						{/* <PricingPlan /> */}
 						<Blogs2 />
+						<Testimonials2 />
 					</main>
 					<Footer2 />
 				</div>

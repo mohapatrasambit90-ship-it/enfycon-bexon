@@ -332,25 +332,25 @@ img {
 	overflow: hidden;
 }
 .section-gap {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@media #{$lg} {
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 50px	;
+		padding-bottom: 50px;
 	}
 	@media #{$md, $sm, $xs} {
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 40px	;
+		padding-bottom: 40px;
 	}
 }
 .section-gap-2 {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@media #{$lg} {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	@media #{$md, $sm, $xs} {
 		padding-top: 60px;
@@ -359,24 +359,24 @@ img {
 }
 .gap-top,
 .section-top-gap {
-	padding-top: 120px;
+	padding-top: 50px;
 
 	@media #{$lg} {
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 	@media #{$md, $sm, $xs} {
-		padding-top: 70px;
+		padding-top: 40px;
 	}
 }
 .gap-bottom,
 .section-bottom-gap {
-	padding-bottom: 120px;
+	padding-bottom: 50px;
 
 	@media #{$lg} {
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 	}
 	@media #{$md, $sm, $xs} {
-		padding-bottom: 70px;
+		padding-bottom: 40px;
 	}
 }
 .section-gap-x {
