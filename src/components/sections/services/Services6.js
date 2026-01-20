@@ -48,26 +48,21 @@ const Services6 = () => {
 					id: 1,
 					title: "AI & Agentic Solutions Service",
 					desc3: "Leverage autonomous AI agents and intelligent systems to automate complex workflows and enhance operational efficiency.",
-					img4: "/images/service/ai-agentic-solutions.png",
+					img4: "/images/service/ai-agentic-solutions.jpg",
 				},
 				{
 					id: 2,
 					title: "AI-First Platforms Engineering",
 					desc3: "Design and build AI-native platforms that integrate machine learning capabilities at their core for scalable intelligent solutions.",
-					img4: "/images/service/ai-first-platforms.png",
+					img4: "/images/service/ai-first-platforms.jpg",
 				},
 				{
 					id: 3,
 					title: "Personalized Customer Engagement",
 					desc3: "Create personalized customer experiences using AI-driven insights and intelligent engagement strategies.",
-					img4: "/images/service/personalized-customer-engagement.png",
+					img4: "/images/service/personalized-customer-engagement.jpg",
 				},
-				{
-					id: 4,
-					title: "Data, Cloud & Enterprise Modernization",
-					desc3: "Modernize your enterprise infrastructure with cloud-native solutions and advanced data management strategies.",
-					img4: "/images/service/enterprise-modernization.png",
-				},
+
 			],
 		},
 
@@ -76,7 +71,26 @@ const Services6 = () => {
 			name: "Data & Analytics",
 			title: "Data & Analytics",
 			desc: "Unlock the power of your data with advanced analytics solutions. We transform raw data into actionable insights through data engineering, predictive modeling, and visualizations that drive better business decisions.",
-			services: getALlServices()?.slice(2, 5),
+			services: [
+				{
+					id: 1,
+					title: "Data, Cloud & Enterprise Modernization",
+					desc3: "Modernize your enterprise infrastructure with cloud-native solutions and advanced data management strategies.",
+					img4: "/images/service/enterprise-modernization..jpg",
+				},
+				{
+					id: 2,
+					title: "Advanced Analytics & Business Intelligence",
+					desc3: "Transform data into actionable insights with powerful business intelligence dashboards, predictive analytics, and advanced visualization solutions.",
+					img4: "/images/service/advanced-analytics.jpg",
+				},
+				{
+					id: 3,
+					title: "Data Engineering & Pipeline Automation",
+					desc3: "Build robust data pipelines and automated workflows to streamline data processing and ensure data quality.",
+					img4: "/images/service/data-engineering.jpg",
+				},
+			]
 		},
 
 		{
@@ -89,25 +103,25 @@ const Services6 = () => {
 					id: 1,
 					title: "Comprehensive Security Assessment",
 					desc3: "Conduct thorough security audits and vulnerability assessments to identify and mitigate potential threats across your infrastructure.",
-					img4: "/images/service/security-assessment.png",
+					img4: "/images/service/security-assessment.jpg",
 				},
 				{
 					id: 2,
 					title: "Operational Security Guidelines",
 					desc3: "Implement robust operational security protocols and best practices to protect daily business operations from cyber threats.",
-					img4: "/images/service/operational-security.png",
+					img4: "/images/service/operational-security.jpg",
 				},
 				{
 					id: 3,
 					title: "Regulatory Compliance",
 					desc3: "Ensure adherence to industry regulations and compliance standards to protect sensitive data and maintain trust.",
-					img4: "/images/service/regulatory-compliance.png",
+					img4: "/images/service/regulatory-compliance.jpg",
 				},
 				{
 					id: 4,
 					title: "GRC Consulting",
 					desc3: "Expert Governance, Risk, and Compliance consulting to align security practices with business objectives and regulatory requirements.",
-					img4: "/images/service/grc-consulting.png",
+					img4: "/images/service/grc-consulting.jpg",
 				},
 			],
 		},
