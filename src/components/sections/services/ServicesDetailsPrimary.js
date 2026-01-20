@@ -24,7 +24,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 						<div className="post-details-wrapper">
 							<div className="blog-images wow fadeInUp" data-wow-delay=".1s">
 								<Image
-									src={img || "/images/service/service-details.webp"}
+									src={currentItem?.img4 || "/images/service/service-details.webp"}
 									alt={title || "Service Image"}
 									width={870}
 									height={450}
@@ -35,32 +35,104 @@ const ServicesDetailsPrimary = ({ option }) => {
 								{title}
 							</h2>
 							<div className="blog-text">
-								<p className="wow fadeInUp" data-wow-delay=".3s">
-									{currentItem?.desc}
-								</p>
-
-								{/* Dynamic Features List */}
-								{currentItem?.features?.length > 0 && (
-									<ul className="wow fadeInUp" data-wow-delay=".3s">
-										{currentItem.features.map((feature, idx) => (
-											<li key={idx}>
-												<span>
-													<i className="tji-check"></i>
-												</span>
-												<span>
-													<strong>{feature.title}:</strong> {feature.desc}
-												</span>
-											</li>
-										))}
-									</ul>
+								{/* Service Overview */}
+								{currentItem?.overview && (
+									<div className="wow fadeInUp" data-wow-delay=".3s">
+										<p>{currentItem.overview}</p>
+									</div>
 								)}
 
-								{/* Additional Description */}
-								{currentItem?.desc3 && (
-									<p className="wow fadeInUp" data-wow-delay=".3s">
-										{currentItem.desc3}
-									</p>
+								{/* Challenges Section */}
+								{currentItem?.challenges?.length > 0 && (
+									<div className="service-section mt-5 wow fadeInUp" data-wow-delay=".3s">
+										<h3 className="h4 mb-4">Common Challenges</h3>
+										<div className="row">
+											{currentItem.challenges.map((item, idx) => (
+												<div className="col-md-6 mb-3" key={idx}>
+													<div className="challenge-item p-3 py-4 border rounded h-100 bg-light">
+														<h5 className="h6 text-primary">{item.title}</h5>
+														<p className="small mb-0 text-muted">{item.desc}</p>
+													</div>
+												</div>
+											))}
+										</div>
+									</div>
 								)}
+
+								{/* Key Benefits Section */}
+								{currentItem?.keyBenefits?.length > 0 && (
+									<div className="service-section mt-5 wow fadeInUp" data-wow-delay=".3s">
+										<h3 className="h4 mb-4">Key Benefits</h3>
+										<ul className="list-unstyled">
+											{currentItem.keyBenefits.map((item, idx) => (
+												<li key={idx} className="mb-3 d-flex align-items-start">
+													<span className="me-3 text-primary mt-1">
+														<i className="tji-check-circle"></i>
+													</span>
+													<div>
+														<strong>{item.title}:</strong> {item.desc}
+													</div>
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+
+								{/* Why Enfycon Section */}
+								{currentItem?.whyEnfycon?.length > 0 && (
+									<div className="service-section mt-5 wow fadeInUp" data-wow-delay=".3s">
+										<h3 className="h4 mb-4">Why Choose Enfycon?</h3>
+										<div className="bg-light p-4 rounded border-start border-primary border-4">
+											<ul className="list-unstyled mb-0">
+												{currentItem.whyEnfycon.map((item, idx) => (
+													<li key={idx} className="smb-2">
+														<i className="tji-star me-2 text-warning"></i> {item}
+													</li>
+												))}
+											</ul>
+										</div>
+									</div>
+								)}
+
+								{/* Dynamic FAQs Section */}
+								{currentItem?.faqs?.length > 0 && (
+									<div className="service-section mt-5 wow fadeInUp" data-wow-delay=".3s">
+										<h3 className="h4 mb-4">Frequently Asked Questions</h3>
+										<BootstrapWrapper>
+											<div className="accordion tj-faq style-2" id="serviceFaq">
+												{currentItem.faqs.map((faq, idx) => (
+													<div className="accordion-item" key={idx}>
+														<button
+															className={`faq-title ${idx !== 0 ? "collapsed" : ""}`}
+															type="button"
+															data-bs-toggle="collapse"
+															data-bs-target={`#faq-${idx}`}
+															aria-expanded={idx === 0 ? "true" : "false"}
+														>
+															{faq.question}
+														</button>
+														<div
+															id={`faq-${idx}`}
+															className={`collapse ${idx === 0 ? "show" : ""}`}
+															data-bs-parent="#serviceFaq"
+														>
+															<div className="accordion-body faq-text">
+																<p>{faq.answer}</p>
+															</div>
+														</div>
+													</div>
+												))}
+											</div>
+										</BootstrapWrapper>
+									</div>
+								)}
+
+								{/* CTA Button */}
+								<div className="mt-5 wow fadeInUp" data-wow-delay=".3s">
+									<Link href="/contact" className="tj-btn-primary">
+										Get Started Now <i className="tji-arrow-right"></i>
+									</Link>
+								</div>
 							</div>
 
 							<div

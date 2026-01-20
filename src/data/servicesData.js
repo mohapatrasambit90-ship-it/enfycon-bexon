@@ -41,44 +41,88 @@ export const serviceCategories = [
             {
                 id: "us-it-staffing",
                 title: "US IT Staffing",
-                desc: "In the fast-paced US technology landscape, finding the right talent is critical to staying ahead. Our US IT Staffing solutions are designed to bridge the gap between your ambitious projects and the specialized skills required to execute them. We navigate the competitive market to secure top-tier professionals who align with your technical requirements and organizational culture.",
-                desc3: "We specialize in deploying highly skilled IT consultants and full-time employees across a wide spectrum of technologies, including Cloud Computing, AI/ML, Cybersecurity, and Full Stack Development. Whether you need immediate staff augmentation for a critical milestone or long-term strategic hires, our rigorous vetting process ensures compliance, technical excellence, and immediate productivity from day one.",
-                img4: "/images/service/us-it-staffing.png",
-                iconName: "tji-service-1",
-                features: [
+                desc: "In the fast-paced US technology landscape, finding the right talent is critical to staying ahead. Our US IT Staffing solutions are designed to bridge the gap between your ambitious projects and the specialized skills required to execute them.",
+                overview: "Our US IT Staffing service is dedicated to providing high-caliber technology professionals to organizations across the United States. We understand that every project has unique requirements, which is why we offer a tailored approach to staffing. Whether you are a startup looking for your first engineering hire or an enterprise scaling up for a major digital transformation, we have the network and expertise to deliver the right talent at the right time. Our rigorous screening process ensures that every candidate we present is not only technically proficient but also a cultural fit for your organization.",
+                challenges: [
+                    { title: "Talent Shortage", desc: "Difficulty in finding qualified candidates for niche technologies." },
+                    { title: "High Turnover", desc: "Retaining top talent in a competitive market." },
+                    { title: "Time-to-Hire", desc: "Long recruitment cycles delaying project timelines." },
+                    { title: "Compliance Risks", desc: "Navigating complex US labor laws and employment regulations." }
+                ],
+                keyBenefits: [
                     { title: "Rapid Deployment", desc: "Access pre-vetted candidates ready to join your team within 48-72 hours." },
                     { title: "Niche Expertise", desc: "Specialized talent in emerging tech like AI, Blockchain, and IoT." },
-                    { title: "Compliance Assured", desc: "Full adherence to US labor laws and employment regulations." },
-                    { title: "Flexible Models", desc: "Contract, contract-to-hire, and direct placement options to suit your needs." }
-                ]
+                    { title: "Cost Efficiency", desc: "Reduce overheads associated with recruitment and onboarding." },
+                    { title: "Flexible Models", desc: "Contract, contract-to-hire, and direct placement options." }
+                ],
+                whyEnfycon: [
+                    "Extensive network of 50,000+ pre-screened US IT professionals.",
+                    "Dedicated account managers for personalized service.",
+                    "98% placement success rate with a focus on retention.",
+                    "Compliance-first approach ensuring risk-free hiring."
+                ],
+                faqs: [
+                    { question: "How quickly can you provide candidates?", answer: "We typically present qualified candidates within 24-48 hours of receiving your requirements." },
+                    { question: "What technologies do you cover?", answer: "We cover the entire IT spectrum, including Software Development, Cloud/DevOps, Data Science, Cybersecurity, and ERP/CRM systems." },
+                    { question: "Do you offer contract-to-hire options?", answer: "Yes, we offer flexible engagement models including contract, contract-to-hire, and direct hire placement." },
+                    { question: "How do you vet your candidates?", answer: "Our process includes technical assessments, behavioral interviews, and thorough background checks to ensure top quality." }
+                ],
+                img4: "/images/service/us-it-staffing.png",
+                iconName: "tji-service-1",
             },
             {
                 id: "domestic-it-staffing",
                 title: "Domestic IT Staffing",
-                desc: "Empower your local operations with our robust Domestic IT Staffing services. We understand the nuances of the local market and provide tailored recruitment strategies to find the best talent within your region. Our focus is on delivering professionals who not only possess the right technical acumen but also fit seamlessly into your local business environment.",
-                desc3: "From contract staffing to permanent placement, we support your growth with agile workforce solutions. Our deep database of local candidates allows us to respond quickly to your needs, reducing time-to-hire and ensuring you have the workforce ready to drive your domestic initiatives forward. We handle the complexities of sourcing and screening, letting you focus on your core business.",
+                desc: "Empower your local operations with our robust Domestic IT Staffing services. We understand the nuances of the local market and provide tailored recruitment strategies to find the best talent within your region.",
+                overview: "Our Domestic IT Staffing solutions focus on connecting you with the best local talent available. We believe in the power of proximity and cultural alignment. By leveraging our deep understanding of the domestic market, we help you build teams that are cohesive, communicative, and committed to your long-term success.",
+                challenges: [
+                    { title: "Local Competition", desc: "Competing for the same talent pool as major local players." },
+                    { title: "Skill Gaps", desc: "Finding specific skills within a limited geographical area." },
+                    { title: "Wage Inflation", desc: "Managing rising salary expectations in local markets." }
+                ],
+                keyBenefits: [
+                    { title: "Local Market Insight", desc: "Deep understanding of regional talent pools and benchmarks." },
+                    { title: "Cultural Fit", desc: "Candidates screened for alignment with local work culture." },
+                    { title: "On-site Availability", desc: "Easier coordination for on-site or hybrid work models." }
+                ],
+                whyEnfycon: [
+                    "Strong regional presence and community engagement.",
+                    "Tailored recruitment strategies for local markets.",
+                    "Fast turnaround times for local placements."
+                ],
+                faqs: [
+                    { question: "Do you recruit for remote roles?", answer: "Yes, we support remote, hybrid, and on-site placements depending on your needs." },
+                    { question: "What is your fee structure?", answer: "We offer competitive pricing models tailored to the scope and volume of your hiring needs." }
+                ],
                 img4: "/images/service/domestic-it-staffing.png",
                 iconName: "tji-service-2",
-                features: [
-                    { title: "Local Market Insight", desc: "Deep understanding of regional talent pools and salary benchmarks." },
-                    { title: "Cultural Fit", desc: "Candidates screened for alignment with your company values and local work culture." },
-                    { title: "Scalable Solutions", desc: "Easily scale your workforce up or down based on project demands." },
-                    { title: "End-to-End Support", desc: "Comprehensive support from recruitment to onboarding and payroll management." }
-                ]
             },
             {
                 id: "offshore-dedicated-teams",
                 title: "Offshore Dedicated Teams",
-                desc: "Accelerate your product development and optimize costs with Enfycon's Offshore Dedicated Teams. We build and manage remote teams that function as a seamless extension of your in-house engineering department. Gain access to a global talent pool and 24/7 productivity cycles without the administrative burden.",
-                desc3: "Our dedicated teams are handpicked to match your project's specific technology stack and workflow. You retain full control over the development process while we handle the infrastructure, HR, and administrative operations. This model offers the perfect balance of flexibility, scalability, and cost-efficiency, allowing you to innovate faster and bring products to market sooner.",
+                desc: "Accelerate your product development and optimize costs with Enfycon's Offshore Dedicated Teams. We build and manage remote teams that function as a seamless extension of your in-house engineering department.",
+                overview: "Enfycon’s Offshore Dedicated Teams service allows you to scale your engineering capabilities rapidly and cost-effectively. We set up exclusive teams in our global delivery centers that work solely for you. You retain full control over product direction and culture, while we handle the heavy lifting of recruitment, infrastructure, and HR administration.",
+                challenges: [
+                    { title: "Communication Barriers", desc: "Managing teams across different time zones and languages." },
+                    { title: "Quality Control", desc: "Ensuring code quality and adherence to standards remotely." },
+                    { title: "Data Security", desc: "Protecting IP and sensitive data in offshore environments." }
+                ],
+                keyBenefits: [
+                    { title: "Cost Efficiency", desc: "Reduce operational costs by up to 60%." },
+                    { title: "Global Talent Pool", desc: "Access to world-class engineers from top tech hubs." },
+                    { title: "24/7 Productivity", desc: "Leverage time zone differences for continuous development cycles." }
+                ],
+                whyEnfycon: [
+                    "State-of-the-art offshore development centers.",
+                    "Overlap hours to ensure real-time collaboration.",
+                    "Strict IP protection and security protocols."
+                ],
+                faqs: [
+                    { question: "How do you handle time zone differences?", answer: "We structure overlap hours for meetings and provide clear communication protocols to ensure smooth collaboration." },
+                    { question: "Who manages the team?", answer: "You have direct control over the team's tasks, but we provide a dedicated project coordinator to handle administrative management." }
+                ],
                 img4: "/images/service/offshore-dedicated-teams.png",
                 iconName: "tji-service-3",
-                features: [
-                    { title: "Cost Efficiency", desc: "Reduce operational costs by up to 60% without compromising on quality." },
-                    { title: "Global Talent Pool", desc: "Access to world-class engineers and developers from top tech hubs." },
-                    { title: "Seamless Integration", desc: "Teams aligned with your timezone, tools, and development methodologies." },
-                    { title: "Full Admin Management", desc: "We handle HR, payroll, workspace, and equipment so you don't have to." }
-                ]
             },
         ],
     },

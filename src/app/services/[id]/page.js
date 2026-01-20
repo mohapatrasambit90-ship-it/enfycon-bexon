@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import ServiceDetailsMain from "@/components/layout/main/ServiceDetailsMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -21,7 +22,7 @@ export default async function ServiceDetails({ params }) {
 		<div>
 			<BackToTop />
 			<Header />
-			<Header isStickyHeader={true} />
+			
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
@@ -29,7 +30,7 @@ export default async function ServiceDetails({ params }) {
 						<ServiceDetailsMain currentItemId={id} />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 
