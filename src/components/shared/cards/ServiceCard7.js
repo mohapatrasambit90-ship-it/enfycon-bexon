@@ -22,10 +22,10 @@ const ServiceCard7 = ({ service, idx, lastItemIdx }) => {
 						src={img4}
 						alt={title || "Service image"}
 						width={300}
-						height={200}
+						height={240}
 						quality={85}
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-						style={{ width: "100%", height: "auto" }}
+						className="h6-service-image"
 						priority={idx === 0}
 					/>
 				</Link>
