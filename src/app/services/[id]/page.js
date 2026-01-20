@@ -12,7 +12,8 @@ const items = getALlServices();
 export default async function ServiceDetails({ params }) {
 	const { id } = await params;
 
-	const isExistItem = items?.find(({ id: id1 }) => id1 === parseInt(id));
+	// Check using string comparison (slugs)
+	const isExistItem = items?.find(({ id: id1 }) => id1 === id);
 	if (!isExistItem) {
 		notFound();
 	}
@@ -25,7 +26,7 @@ export default async function ServiceDetails({ params }) {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<ServiceDetailsMain currentItemId={parseInt(id)} />
+						<ServiceDetailsMain currentItemId={id} />
 						<Cta />
 					</main>
 					<Footer />

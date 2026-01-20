@@ -1,5 +1,5 @@
 export const serviceCategories = [
-   
+
     {
         id: "ai-allied-services",
         name: "Custom Professional AI Services",
@@ -32,7 +32,7 @@ export const serviceCategories = [
             },
         ],
     },
-     {
+    {
         id: "it-professional-staffing",
         name: "IT Professional Staffing",
         title: "IT Professional Staffing",
@@ -41,26 +41,44 @@ export const serviceCategories = [
             {
                 id: "us-it-staffing",
                 title: "US IT Staffing",
-                desc: "Access elite US-based IT professionals to strengthen your team with top-tier talent for mission-critical projects.",
-                desc3: "Access elite US-based IT professionals to strengthen your team with top-tier talent for mission-critical projects.",
+                desc: "In the fast-paced US technology landscape, finding the right talent is critical to staying ahead. Our US IT Staffing solutions are designed to bridge the gap between your ambitious projects and the specialized skills required to execute them. We navigate the competitive market to secure top-tier professionals who align with your technical requirements and organizational culture.",
+                desc3: "We specialize in deploying highly skilled IT consultants and full-time employees across a wide spectrum of technologies, including Cloud Computing, AI/ML, Cybersecurity, and Full Stack Development. Whether you need immediate staff augmentation for a critical milestone or long-term strategic hires, our rigorous vetting process ensures compliance, technical excellence, and immediate productivity from day one.",
                 img4: "/images/service/us-it-staffing.png",
                 iconName: "tji-service-1",
+                features: [
+                    { title: "Rapid Deployment", desc: "Access pre-vetted candidates ready to join your team within 48-72 hours." },
+                    { title: "Niche Expertise", desc: "Specialized talent in emerging tech like AI, Blockchain, and IoT." },
+                    { title: "Compliance Assured", desc: "Full adherence to US labor laws and employment regulations." },
+                    { title: "Flexible Models", desc: "Contract, contract-to-hire, and direct placement options to suit your needs." }
+                ]
             },
             {
                 id: "domestic-it-staffing",
                 title: "Domestic IT Staffing",
-                desc: "Connect with skilled domestic IT talent across various technologies to meet your local business requirements.",
-                desc3: "Connect with skilled domestic IT talent across various technologies to meet your local business requirements.",
+                desc: "Empower your local operations with our robust Domestic IT Staffing services. We understand the nuances of the local market and provide tailored recruitment strategies to find the best talent within your region. Our focus is on delivering professionals who not only possess the right technical acumen but also fit seamlessly into your local business environment.",
+                desc3: "From contract staffing to permanent placement, we support your growth with agile workforce solutions. Our deep database of local candidates allows us to respond quickly to your needs, reducing time-to-hire and ensuring you have the workforce ready to drive your domestic initiatives forward. We handle the complexities of sourcing and screening, letting you focus on your core business.",
                 img4: "/images/service/domestic-it-staffing.png",
                 iconName: "tji-service-2",
+                features: [
+                    { title: "Local Market Insight", desc: "Deep understanding of regional talent pools and salary benchmarks." },
+                    { title: "Cultural Fit", desc: "Candidates screened for alignment with your company values and local work culture." },
+                    { title: "Scalable Solutions", desc: "Easily scale your workforce up or down based on project demands." },
+                    { title: "End-to-End Support", desc: "Comprehensive support from recruitment to onboarding and payroll management." }
+                ]
             },
             {
                 id: "offshore-dedicated-teams",
                 title: "Offshore Dedicated Teams",
-                desc: "Build dedicated offshore development teams that work as an extension of your organization, delivering quality at scale.",
-                desc3: "Build dedicated offshore development teams that work as an extension of your organization, delivering quality at scale.",
+                desc: "Accelerate your product development and optimize costs with Enfycon's Offshore Dedicated Teams. We build and manage remote teams that function as a seamless extension of your in-house engineering department. Gain access to a global talent pool and 24/7 productivity cycles without the administrative burden.",
+                desc3: "Our dedicated teams are handpicked to match your project's specific technology stack and workflow. You retain full control over the development process while we handle the infrastructure, HR, and administrative operations. This model offers the perfect balance of flexibility, scalability, and cost-efficiency, allowing you to innovate faster and bring products to market sooner.",
                 img4: "/images/service/offshore-dedicated-teams.png",
                 iconName: "tji-service-3",
+                features: [
+                    { title: "Cost Efficiency", desc: "Reduce operational costs by up to 60% without compromising on quality." },
+                    { title: "Global Talent Pool", desc: "Access to world-class engineers and developers from top tech hubs." },
+                    { title: "Seamless Integration", desc: "Teams aligned with your timezone, tools, and development methodologies." },
+                    { title: "Full Admin Management", desc: "We handle HR, payroll, workspace, and equipment so you don't have to." }
+                ]
             },
         ],
     },
