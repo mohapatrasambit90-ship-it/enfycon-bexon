@@ -39,8 +39,8 @@ START: Theme Slider CSS
 	}
 
 	@media #{$sm, $xs} {
-		border-radius: 14px;
-		margin: 0 12px 0;
+		border-radius: 0;
+		margin: 0;
 	}
 }
 
