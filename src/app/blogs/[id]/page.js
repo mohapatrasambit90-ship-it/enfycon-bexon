@@ -24,7 +24,6 @@ export default async function BlogDetails({ params }) {
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-						<HeaderSpace />
 						<BlogDetailsMain post={post} />
 						<Cta />
 					</main>

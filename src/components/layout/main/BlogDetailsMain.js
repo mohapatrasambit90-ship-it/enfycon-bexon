@@ -10,7 +10,7 @@ const BlogDetailsMain = async ({ post }) => {
 	return (
 		<div>
 			<HeroInner
-				title={"Blog Details"}
+				title={post.title ? post.title : "Blog Details"}
 				text={post.title ? post.title : "Blog Details"}
 				breadcrums={[{ name: "Blogs", path: "/blogs" }]}
 			/>
