@@ -1,40 +1,41 @@
 "use client";
 import BlogsPrimary from "@/components/sections/blogs/BlogsPrimary";
 import HeroInner from "@/components/sections/hero/HeroInner";
-import filterItems from "@/libs/filterItems";
-import getBlogs from "@/libs/getBlogs";
 import makeText from "@/libs/makeText";
+import { getAllBlogs } from "@/libs/wpBlogs";
 import { useSearchParams } from "next/navigation";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 const BlogMain = () => {
-	const allItems = useMemo(() => getBlogs());
+	const [allItems, setAllItems] = useState([]);
+	const [loading, setLoading] = useState(true);
 	const category = useSearchParams()?.get("category");
 	const tag = useSearchParams()?.get("tag");
 	const author_role = useSearchParams()?.get("author_role");
 	const search = useSearchParams()?.get("search");
-	// Filter Items
-	const filteredItems = filterItems(
-		allItems,
-		category
-			? "category"
-			: tag
-			? "tags"
-			: author_role
-			? "role"
-			: search
-			? "search"
-			: "",
-		category
-			? category
-			: tag
-			? tag
-			: author_role
-			? author_role
-			: search
-			? search
-			: ""
-	);
+
+	useEffect(() => {
+		const fetchBlogs = async () => {
+			try {
+				const blogs = await getAllBlogs();
+				setAllItems(blogs);
+			} catch (error) {
+				console.error("Error fetching blogs:", error);
+			} finally {
+				setLoading(false);
+			}
+		};
+		fetchBlogs();
+	}, []);
+
+	// Mapping and Filtering (Simplified for now, as we fetch all for static grid)
+	// If filtering is needed, it should ideally be done in the WP GraphQL query or filtered here.
+	const filteredItems = allItems.filter((item) => {
+		if (category && item.category.toLowerCase() !== category.toLowerCase())
+			return false;
+		// Add more filters if needed
+		return true;
+	});
 
 	return (
 		<div>
@@ -43,23 +44,23 @@ const BlogMain = () => {
 					category
 						? `Category: ${makeText(category, true)}`
 						: tag
-						? `Tag: ${makeText(tag, true)}`
-						: author_role
-						? author_role
-						: search
-						? makeText(search, true)
-						: "Read Blog"
+							? `Tag: ${makeText(tag, true)}`
+							: author_role
+								? author_role
+								: search
+									? makeText(search, true)
+									: "Read Blog"
 				}
 				text={
 					category
 						? `${makeText(category, true)}`
 						: tag
-						? ` ${makeText(tag, true)}`
-						: author_role
-						? `${author_role}`
-						: search
-						? `${makeText(search, true)}`
-						: "Blogs"
+							? ` ${makeText(tag, true)}`
+							: author_role
+								? `${author_role}`
+								: search
+									? `${makeText(search, true)}`
+									: "Blogs"
 				}
 				breadcrums={
 					category || tag || author_role || search
@@ -67,9 +68,16 @@ const BlogMain = () => {
 						: []
 				}
 			/>
-			<BlogsPrimary filteredItems={filteredItems} />
+			{loading ? (
+				<div className="container section-gap text-center">
+					<h3>Loading Blogs...</h3>
+				</div>
+			) : (
+				<BlogsPrimary filteredItems={filteredItems} />
+			)}
 		</div>
 	);
 };
 
 export default BlogMain;
+

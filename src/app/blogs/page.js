@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import BlogMain from "@/components/layout/main/BlogMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -11,15 +12,14 @@ export default function Blogs() {
 		<div>
 			<BackToTop />
 			<Header />
-			<Header isStickyHeader={true} />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-						<HeaderSpace />
+						
 						<BlogMain />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 			<ClientWrapper />

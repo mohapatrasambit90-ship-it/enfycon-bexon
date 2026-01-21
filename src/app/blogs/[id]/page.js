@@ -5,16 +5,17 @@ import Cta from "@/components/sections/cta/Cta";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-import getBlogs from "@/libs/getBlogs";
+import { getAllBlogs, getBlogBySlug } from "@/libs/wpBlogs";
 import { notFound } from "next/navigation";
-const items = getBlogs();
 
 export default async function BlogDetails({ params }) {
 	const { id } = await params;
-	const isExistItem = items?.find(({ id: id1 }) => id1 === parseInt(id));
-	if (!isExistItem) {
+	const post = await getBlogBySlug(id);
+
+	if (!post) {
 		notFound();
 	}
+
 	return (
 		<div>
 			<BackToTop />
@@ -24,7 +25,7 @@ export default async function BlogDetails({ params }) {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<BlogDetailsMain currentItemId={parseInt(id)} />
+						<BlogDetailsMain post={post} />
 						<Cta />
 					</main>
 					<Footer />
@@ -36,5 +37,7 @@ export default async function BlogDetails({ params }) {
 }
 
 export async function generateStaticParams() {
+	const items = await getAllBlogs();
 	return items?.map(({ id }) => ({ id: id.toString() }));
 }
+

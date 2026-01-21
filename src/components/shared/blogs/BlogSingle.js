@@ -9,19 +9,13 @@ import ButtonPrimary from "../buttons/ButtonPrimary";
 const BlogSingle = ({ blog, idx }) => {
 	const {
 		id,
-		detailsImg,
-		img = "/images/blog/blog-1.webp",
+		featuredImage,
 		title,
 		desc,
-		blogTopList,
 		category,
-		slider,
 		author,
-		popupVideo,
 		day,
 		month,
-		date,
-		comments,
 	} = blog ? blog : {};
 
 	return (
@@ -31,8 +25,14 @@ const BlogSingle = ({ blog, idx }) => {
 		>
 			<div className="blog-thumb">
 				<Link href={`/blogs/${id}`}>
-					<Image src={img} alt="" width={870} height={450} />
+					<Image
+						src={featuredImage || "/images/blog/blogs-backdrop.jpg"}
+						alt={title || "Blog Image"}
+						width={870}
+						height={450}
+					/>
 				</Link>
+
 				<div className="blog-date">
 					<span className="date">{modifyNumber(day)}</span>
 					<span className="month">{month}</span>
@@ -46,19 +46,16 @@ const BlogSingle = ({ blog, idx }) => {
 						</Link>
 					</span>
 					<span>
-						By <Link href={`/blogs/${id}`}>Ellinien Loma</Link>
+						By <Link href={`/blogs/${id}`}>{author || "enfycon"}</Link>
 					</span>
 				</div>
 				<h3 className="title">
 					<Link href={`/blogs/${id}`}>{title}</Link>
 				</h3>
-				<p className="desc">
-					In today’s fast-paced business environment, the key to staying ahead
-					of the competition lies in embracing innovation. At [Company Name], we
-					specialize in unlocking your business’s full potential by providing
-					tailored, forward-thinking solutions that drive growth, efficiency,
-					and lasting success.
-				</p>
+				<div
+					className="desc"
+					dangerouslySetInnerHTML={{ __html: desc }}
+				/>
 				<ButtonPrimary
 					text={"Read More"}
 					url={`/blogs/${id}`}
@@ -68,5 +65,6 @@ const BlogSingle = ({ blog, idx }) => {
 		</article>
 	);
 };
+
 
 export default BlogSingle;
