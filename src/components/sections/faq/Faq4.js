@@ -1,6 +1,7 @@
 import FaqItem2 from "@/components/shared/faq/FaqItem2";
 import BootstrapWrapper from "@/components/shared/wrappers/BootstrapWrapper";
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 
 const Faq4 = () => {
 	const items = [
@@ -42,12 +43,12 @@ const Faq4 = () => {
 							<h2 className="sec-title text-anim">
 								Find answers to the common questions
 							</h2>
-							<Link className="number" href="tel:18884521505">
+							<Link className="number" href={`tel:${siteConfig.phone.link}`}>
 								{" "}
 								<span className="call-icon">
 									<i className="tji-phone"></i>
 								</span>
-								<span>1-888-452-1505</span>
+								<span>{siteConfig.phone.display}</span>
 							</Link>
 						</div>
 					</div>
@@ -59,8 +60,8 @@ const Faq4 = () => {
 							>
 								{items?.length
 									? items?.map((item, idx) => (
-											<FaqItem2 key={idx} item={item} idx={idx} />
-									  ))
+										<FaqItem2 key={idx} item={item} idx={idx} />
+									))
 									: ""}
 							</div>
 						</BootstrapWrapper>

@@ -3,6 +3,7 @@ import FaqItem from "@/components/shared/faq/FaqItem";
 import BootstrapWrapper from "@/components/shared/wrappers/BootstrapWrapper";
 import Image from "next/image";
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 
 const Faq2 = ({ type = 1 }) => {
 	const items = [
@@ -82,8 +83,8 @@ const Faq2 = ({ type = 1 }) => {
 										<span className="call-icon">
 											<i className="tji-phone"></i>
 										</span>
-										<Link className="number" href="tel:18884521505">
-											<span>1-888-452-1505</span>
+										<Link className="number" href={`tel:${siteConfig.phone.link}`}>
+											<span>{siteConfig.phone.display}</span>
 										</Link>
 									</div>
 								</div>

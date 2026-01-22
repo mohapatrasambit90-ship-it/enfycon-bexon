@@ -2,6 +2,7 @@ import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import PopupVideo from "@/components/shared/popup-video/PopupVideo";
 import Image from "next/image";
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 
 const Hero3 = () => {
 	return (
@@ -35,9 +36,9 @@ const Hero3 = () => {
 							</h1>
 							<div className="btn-area wow fadeInUp" data-wow-delay=".8s">
 								<ButtonPrimary text={"Learn More"} url={"/contact"} />
-								<Link className="number" href="tel:18884521505">
+								<Link className="number" href={`tel:${siteConfig.phone.link}`}>
 									<i className="tji-phone"></i>
-									<span>1-888-452-1505</span>
+									<span>{siteConfig.phone.display}</span>
 								</Link>
 							</div>
 						</div>

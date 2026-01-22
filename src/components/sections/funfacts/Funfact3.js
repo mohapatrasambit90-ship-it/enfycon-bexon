@@ -1,5 +1,6 @@
 import FunfactSingle from "@/components/shared/funfact/FunfactSingle";
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 const Funfact3 = () => {
 	return (
 		<section className=" h8-funfact section-gap">
@@ -31,8 +32,8 @@ const Funfact3 = () => {
 									<span className="call-icon">
 										<i className="tji-phone"></i>
 									</span>
-									<Link className="number" href="tel:18884521505">
-										<span>1-888-452-1505</span>
+									<Link className="number" href={`tel:${siteConfig.phone.link}`}>
+										<span>{siteConfig.phone.display}</span>
 									</Link>
 								</div>
 							</div>
