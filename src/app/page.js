@@ -27,9 +27,6 @@ export default function Home() {
 						<Services6 />
 						<Industries1 />
 						<About2 />
-						<Services9 />
-
-						<Services2 />
 						<Portfolios2 />
 						<Process />
 
