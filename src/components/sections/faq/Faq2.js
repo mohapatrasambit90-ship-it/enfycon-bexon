@@ -67,7 +67,7 @@ const Faq2 = ({ type = 1 }) => {
 							>
 								<div className="faq-img overflow-hidden">
 									<Image
-										src="/images/faq/faq.webp"
+										src="/images/faq/faq.jpg"
 										alt=""
 										width={585}
 										height={629}
