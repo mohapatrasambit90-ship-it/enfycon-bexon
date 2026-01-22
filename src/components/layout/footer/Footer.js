@@ -1,4 +1,5 @@
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 
 const Footer = () => {
 	return (
@@ -125,19 +126,19 @@ const Footer = () => {
 								<div className="footer-contact">
 									<ul>
 										<li>
-											<Link href="tel:10095447818">
+											<Link href={`tel:${siteConfig.phone.link}`}>
 												<span className="icon">
 													<i className="tji-phone-2"></i>
 												</span>
-												<span className="text">+1 (009) 544-7818</span>
+												<span className="text">{siteConfig.phone.display}</span>
 											</Link>
 										</li>
 										<li>
-											<Link href="mailto:info@bexon.com">
+											<Link href={`mailto:${siteConfig.email}`}>
 												<span className="icon">
 													<i className="tji-envelop-2"></i>
 												</span>
-												<span className="text">info@bexon.com</span>
+												<span className="text">{siteConfig.email}</span>
 											</Link>
 										</li>
 									</ul>
@@ -168,12 +169,12 @@ const Footer = () => {
 								</div>
 								<div className="copyright-text">
 									<p>
-										&copy; 2025 
+										&copy; {new Date().getFullYear()}
 										<Link
-											href="https://themeforest.net/user/theme-junction/portfolio"
+											href="https://enfycon.com"
 											target="_blank"
 										>
-											Bexon
+											enfycon
 										</Link>{" "}
 										All right reserved
 									</p>

@@ -1,4 +1,5 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+import siteConfig from "@/config/siteConfig";
 import Link from "next/link";
 
 const Footer5 = () => {
@@ -150,7 +151,7 @@ const Footer5 = () => {
 										<span>993 Renner Burg, West Rond, MT 94251-030, USA.</span>
 									</div>
 									<div className="contact-item">
-										<Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
+										<Link href="tel:${siteConfig.phone.link}">P: {siteConfig.phone.display}</Link>
 										<Link href="mailto:support@bexon.com">
 											M: support@bexon.com
 										</Link>

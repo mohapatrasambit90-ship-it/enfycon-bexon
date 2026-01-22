@@ -1,6 +1,7 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import MarqueeSlider1 from "@/components/shared/marquee/MarqueeSlider1";
 import Link from "next/link";
+import siteConfig from "@/config/siteConfig";
 
 const Footer2 = () => {
 	return (
@@ -129,9 +130,9 @@ const Footer2 = () => {
 										<span>993 Renner Burg, West Rond, MT 94251-030, USA.</span>
 									</div>
 									<div className="contact-item">
-										<Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
-										<Link href="mailto:support@enfycon.com">
-											M: support@enfycon.com
+										<Link href={`tel:${siteConfig.phone.link}`}>P: {siteConfig.phone.display}</Link>
+										<Link href={`mailto:${siteConfig.email}`}>
+											M: {siteConfig.email}
 										</Link>
 									</div>
 									<div className="contact-item">
