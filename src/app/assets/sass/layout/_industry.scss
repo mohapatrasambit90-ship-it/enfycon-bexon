@@ -123,14 +123,14 @@ START: Industry Section CSS
 
     .content {
         .title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: var(--tj-fw-sbold);
             margin-bottom: 10px;
             color: var(--tj-color-heading-primary);
         }
 
         p {
-            font-size: 15px;
+            font-size: 17px;
             line-height: 1.6;
             margin-bottom: 0;
             color: var(--tj-color-text-body);
@@ -148,7 +148,7 @@ START: Industry Section CSS
         align-items: flex-start;
         gap: 12px;
         margin-bottom: 12px;
-        font-size: 16px;
+        font-size: 18px;
         color: var(--tj-color-text-body);
         font-weight: var(--tj-fw-regular);
         line-height: 1.6;
@@ -211,7 +211,7 @@ START: Industry Section CSS
             flex: 1;
 
             .title {
-                font-size: 30px;
+                font-size: 32px;
                 margin-bottom: 20px;
                 color: var(--tj-color-heading-primary);
 
@@ -221,7 +221,7 @@ START: Industry Section CSS
             }
 
             .desc {
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 1.6;
                 color: var(--tj-color-text-body);
                 margin-bottom: 0;
@@ -426,14 +426,14 @@ START: Industry Details New Sections CSS
             flex-direction: column;
 
             .title {
-                font-size: 20px;
+                font-size: 24px;
                 font-weight: 600;
                 margin-bottom: 15px;
                 color: var(--tj-color-heading-primary);
             }
 
             .desc {
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 1.6;
                 color: var(--tj-color-text-body);
                 margin: 0;

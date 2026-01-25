@@ -13,12 +13,12 @@ const CheckListSection = ({
     return (
         <div className={`${sectionClass} wow fadeInUp`} data-wow-delay=".3s">
             <div className="container">
-                {title && <h3 className="section-title text-primary mb-4 text-3xl">{title}</h3>}
+                {title && <h3 className="section-title text-primary mb-4">{title}</h3>}
                 <ul className={listClass}>
                     {items.map((item, idx) => (
-                        <li key={idx} className="text-xl">
+                        <li key={idx}>
                             <i className="tji-check"></i>
-                            <span className="ms-2">{item}</span>
+                            <span>{item}</span>
                         </li>
                     ))}
                 </ul>
