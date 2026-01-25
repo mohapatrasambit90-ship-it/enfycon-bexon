@@ -261,30 +261,42 @@ START: Industry Section CSS
 START: Industry Details New Sections CSS
 ----------------------------------------*/
 
+.bg-gray-1 {
+    background-color: var(--tj-color-grey-1);
+}
+
+.bg-white {
+    background-color: var(--tj-color-common-white);
+}
+
 /* Split Section (Operations & Risk Mitigation) */
 .industry-split-section {
-    margin-bottom: 60px;
+    // margin-bottom: 60px; // Removed
 
     .split-wrapper {
         display: flex;
         flex-wrap: wrap;
-        border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        align-items: stretch; // Force equal height
+        justify-content: space-between;
 
         .image-box {
             flex: 0 0 50%;
             position: relative;
+            min-height: 400px; // Fixed height
+            background-color: #f8f9fa; // Fallback background for contained images
 
             @media #{$md, $sm, $xs} {
                 flex: 0 0 100%;
                 height: 300px;
+                min-height: 300px;
             }
 
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain; // As requested
             }
         }
 
@@ -298,18 +310,17 @@ START: Industry Details New Sections CSS
             }
 
             .title-block {
-                background-color: var(--tj-color-theme-secondary); // Use secondary or primary
-                // fallback if var not available, use explicit color from image is #00aaff blue-ish
-                background-color: #0099ff; // Or use variable
+                background-color: #0099ff; // Match the blue from reference
                 padding: 40px;
-                flex: 1;
+                flex: 0 0 auto; // Don't stretch indefinitely
                 display: flex;
                 align-items: center;
+                justify-content: flex-start;
 
                 h3 {
                     color: var(--tj-color-common-white);
                     font-size: 32px;
-                    line-height: 1.2;
+                    line-height: 1.3;
                     margin: 0;
 
                     @media #{$sm, $xs} {
@@ -321,13 +332,15 @@ START: Industry Details New Sections CSS
             .desc-block {
                 background-color: var(--tj-color-common-white);
                 padding: 40px;
-                flex: 1;
+                flex: 1 1 auto; // Fill remaining space
+                display: flex;
+                align-items: center;
 
                 p {
                     color: var(--tj-color-text-body);
                     margin: 0;
                     font-size: 16px;
-                    line-height: 1.6;
+                    line-height: 1.7;
                 }
             }
         }
@@ -336,15 +349,22 @@ START: Industry Details New Sections CSS
 
 /* Image Feature Grid (How We Help) */
 .image-feature-section {
-    margin-bottom: 60px;
+    // margin-bottom: 60px; // Removed
+    padding: 60px 40px;
+    border-radius: 8px;
+
+    &.bg-gray-1 {
+        background-color: var(--tj-color-grey-1);
+    }
 
     .section-title {
-        font-size: 36px;
+        font-size: 30px; // Match standard H3 size usually
         margin-bottom: 40px;
         color: var(--tj-color-heading-primary);
+        text-align: left; // Left align as requested
 
         @media #{$sm, $xs} {
-            font-size: 28px;
+            font-size: 24px;
         }
     }
 }
@@ -379,13 +399,13 @@ START: Industry Details New Sections CSS
 
         .image-wrapper {
             width: 100%;
-            height: 200px;
+            height: 250px; // Fixed height for grid images too
             overflow: hidden;
 
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: cover; // Grid images usually cover
                 transition: transform 0.5s ease;
             }
         }
@@ -421,6 +441,7 @@ START: Industry Details New Sections CSS
         }
     }
 }
+
 
 /**----------------------------------------
 END: Industry Section CSS

@@ -12,20 +12,22 @@ const IconFeatureGrid = ({
     if (!items || items.length === 0) return null;
 
     return (
-        <div className={`${sectionClass} mt-5 wow fadeInUp`} data-wow-delay=".3s">
-            {title && <h3 className="section-title text-primary mb-4">{title}</h3>}
-            <div className={gridClass}>
-                {items.map((item, idx) => (
-                    <div className={cardClass} key={idx}>
-                        <div className="icon">
-                            <i className={item.icon}></i>
+        <div className={`${sectionClass} wow fadeInUp`} data-wow-delay=".3s">
+            <div className="container">
+                {title && <h3 className="section-title text-primary mb-4">{title}</h3>}
+                <div className={gridClass}>
+                    {items.map((item, idx) => (
+                        <div className={cardClass} key={idx}>
+                            <div className="icon">
+                                <i className={item.icon}></i>
+                            </div>
+                            <div className="content">
+                                <h5 className="title">{item.title}</h5>
+                                <p>{item.desc}</p>
+                            </div>
                         </div>
-                        <div className="content">
-                            <h5 className="title">{item.title}</h5>
-                            <p>{item.desc}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
