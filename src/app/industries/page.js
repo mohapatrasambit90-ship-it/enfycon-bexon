@@ -9,10 +9,12 @@ import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 
-export const metadata = {
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
     title: "Industries - enfycon",
     description: "Explore the diverse industries Enfycon serves, from banking and finance to healthcare and human resources, delivering tailored technological solutions.",
-};
+});
 
 export default function Industries() {
     return (

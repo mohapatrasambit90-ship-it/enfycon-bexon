@@ -12,6 +12,13 @@ import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
+	title: "About Us - enfycon",
+	description: "Learn about Enfycon, our mission, vision, and the team driving technological excellence.",
+});
+
 export default function About() {
 	return (
 		<div>

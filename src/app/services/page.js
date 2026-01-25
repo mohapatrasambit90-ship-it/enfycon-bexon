@@ -7,6 +7,13 @@ import HeroInner from "@/components/sections/hero/HeroInner";
 import ServicesCategorized from "@/components/sections/services/ServicesCategorized";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
+	title: "Services - enfycon",
+	description: "Discover the range of services Enfycon offers to empower your business with cutting-edge technology.",
+});
+
 export default function Services() {
 	return (
 		<div>

@@ -8,6 +8,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import CartContextProvider from "@/context_api/CartContext";
 import WishlistContextProvider from "@/context_api/WshlistContext";
 
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
+	title: "Shop - enfycon",
+	description: "Browse our collection of technological products and solutions.",
+});
+
 export default function Shop() {
 	return (
 		<div className="ecommerce">

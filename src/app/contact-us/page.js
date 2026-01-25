@@ -7,10 +7,12 @@ import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-export const metadata = {
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
     title: "Contact Us - enfycon",
     description: "Get in touch with enfycon. Our global presence ensures local excellence in delivering top-notch solutions.",
-};
+});
 
 export default function ContactUs() {
     return (

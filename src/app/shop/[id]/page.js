@@ -10,6 +10,16 @@ import WishlistContextProvider from "@/context_api/WshlistContext";
 import getProducts from "@/libs/getProducts";
 import { notFound } from "next/navigation";
 const items = getProducts();
+import { constructMetadata, generateDynamicMetadata } from "@/libs/seo";
+
+export async function generateMetadata({ params }) {
+	return generateDynamicMetadata({
+		params,
+		items,
+		resourceName: "Product",
+		idParser: (id) => parseInt(id)
+	});
+}
 export default async function ProductDetails({ params }) {
 	const { id } = await params;
 	const isExistItem = items?.find(({ id: id1 }) => id1 === parseInt(id));

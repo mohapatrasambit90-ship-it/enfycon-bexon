@@ -33,10 +33,12 @@ const headingFont = Mona_Sans({
 	display: "swap",
 });
 
-export const metadata = {
+import { constructMetadata } from "@/libs/seo";
+
+export const metadata = constructMetadata({
 	title: "enfycon - empowering business with technology",
 	description: "enfycon - empowering business with technology",
-};
+});
 
 import { LoadingProvider } from "@/components/shared/others/LoadingProvider";
 import CookieConsent from "@/components/shared/CookieConsent";

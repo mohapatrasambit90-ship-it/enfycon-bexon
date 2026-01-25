@@ -9,6 +9,15 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getALlServices from "@/libs/getALlServices";
 import { notFound } from "next/navigation";
 const items = getALlServices();
+import { constructMetadata, generateDynamicMetadata } from "@/libs/seo";
+
+export async function generateMetadata({ params }) {
+	return generateDynamicMetadata({
+		params,
+		items,
+		resourceName: "Service"
+	});
+}
 
 export default async function ServiceDetails({ params }) {
 	const { id } = await params;
@@ -22,14 +31,14 @@ export default async function ServiceDetails({ params }) {
 		<div>
 			<BackToTop />
 			<Header />
-			
+
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
 						<ServiceDetailsMain currentItemId={id} />
 						<Cta />
 					</main>
-					<Footer2/>
+					<Footer2 />
 				</div>
 			</div>
 
