@@ -9,6 +9,7 @@ import Features from "@/components/sections/features/Features";
 import Features3 from "@/components/sections/features/Features3";
 import Funfact3 from "@/components/sections/funfacts/Funfact3";
 import FullScreenHero from "@/components/sections/hero/FullScreenHero";
+import History1 from "@/components/sections/history/History1";
 import Team1 from "@/components/sections/teams/Team1";
 import Testimonials2 from "@/components/sections/testimonials/Testimonials2";
 import BackToTop from "@/components/shared/others/BackToTop";
@@ -45,12 +46,13 @@ export default function About() {
 						/>
 						<FounderStory id="founders-story" />
 						<Features3 id="feature3" />
+						<History1/>
 
 						<Brands1 type={2} id="partners" />
-						<Testimonials2 type={2} />
+						{/* <Testimonials2 type={2} /> */}
 						<Team1 type={3} id="leadership" />
 						<LocationSection id="locations" />
-						<Faq2 type={3} />
+						{/* <Faq2 type={3} /> */}
 						<Cta />
 					</main>
 					<Footer />
