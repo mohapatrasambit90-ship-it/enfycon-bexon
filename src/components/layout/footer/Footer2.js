@@ -15,7 +15,7 @@ const Footer2 = () => {
 			<div className="container">
 				{/* Main Footer Area */}
 				<div className="footer-main-area">
-					<div className="row">
+					<div className="row justify-content-between">
 						{/* Col 1: Contact & Info (Left Side) */}
 						<div className="col-xl-3 col-lg-4 col-md-6">
 							<div className="footer-widget footer-col-1">
@@ -52,7 +52,7 @@ const Footer2 = () => {
 						</div>
 
 						{/* Col 2: Industries */}
-						<div className="col-xl-2 col-lg-2 col-md-6">
+						<div className="col-xl-auto col-lg-auto col-md-6">
 							<div className="footer-widget widget-nav-menu">
 								<h5 className="title">Industries</h5>
 								<ul>
@@ -71,7 +71,7 @@ const Footer2 = () => {
 						</div>
 
 						{/* Col 3: Services */}
-						<div className="col-xl-2 col-lg-2 col-md-6">
+						<div className="col-xl-auto col-lg-auto col-md-6">
 							<div className="footer-widget widget-nav-menu">
 								<h5 className="title">Services</h5>
 								<ul>
@@ -90,7 +90,7 @@ const Footer2 = () => {
 						</div>
 
 						{/* Col 4: Products */}
-						<div className="col-xl-2 col-lg-2 col-md-6">
+						<div className="col-xl-auto col-lg-auto col-md-6">
 							<div className="footer-widget widget-nav-menu">
 								<h5 className="title">Products</h5>
 								<ul>
@@ -109,42 +109,21 @@ const Footer2 = () => {
 						</div>
 
 						{/* Col 5: About & Other (Combined to save space if needed, or kept separate) */}
-						<div className="col-xl-3 col-lg-2 col-md-6">
-							<div className="row">
-								<div className="col-12">
-									<div className="footer-widget widget-nav-menu mb-4">
-										<h5 className="title">About Us</h5>
-										<ul>
-											{footerData.about.map((item, index) => (
-												<li key={index}>
-													<Link
-														href={item.link}
-														className={isActive(item.link) ? "active" : ""}
-													>
-														{item.label}
-													</Link>
-												</li>
-											))}
-										</ul>
-									</div>
-								</div>
-								{/* <div className="col-12">
-                                    <div className="footer-widget widget-nav-menu">
-                                        <h5 className="title">Other Links</h5>
-                                        <ul>
-                                            {footerData.otherLinks.map((item, index) => (
-                                                <li key={index}>
-                                                    <Link 
-                                                        href={item.link} 
-                                                        className={isActive(item.link) ? "active" : ""}
-                                                    >
-                                                        {item.label}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div> */}
+						<div className="col-xl-auto col-lg-auto col-md-6">
+							<div className="footer-widget widget-nav-menu mb-4">
+								<h5 className="title">About Us</h5>
+								<ul>
+									{footerData.about.map((item, index) => (
+										<li key={index}>
+											<Link
+												href={item.link}
+												className={isActive(item.link) ? "active" : ""}
+											>
+												{item.label}
+											</Link>
+										</li>
+									))}
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -162,8 +141,8 @@ const Footer2 = () => {
 								</div>
 								<div className="social-icons">
 									{footerData.socialLinks.map((social, index) => (
-										<Link key={index} href={social.link} target="_blank" className="mx-2">
-											<i className={social.icon} style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px' }}></i>
+										<Link key={index} href={social.link} target="_blank" className="mx-2 social-icon-link">
+											<i className={social.icon}></i>
 										</Link>
 									))}
 								</div>
