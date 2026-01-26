@@ -13,7 +13,7 @@ const CsrProjects = ({ data }) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                         <div className="sec-heading text-center">
-                          
+
                             <h3 className="sec-title wow fadeInUp" data-wow-delay=".4s">
                                 {data.title}
                             </h3>
@@ -43,6 +43,9 @@ const CsrProjects = ({ data }) => {
                             },
                             992: {
                                 slidesPerView: 3,
+                            },
+                            1200: {
+                                slidesPerView: 4,
                             },
                         }}
                         modules={[Pagination, Autoplay]}
