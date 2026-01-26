@@ -300,8 +300,9 @@ START: Theme Header CSS
 
 	.logo {
 		display: inline-block;
-		max-width: 136px;
-		width: 100%;
+		// max-width: 136px;
+		width: auto;
+
 	}
 }
 

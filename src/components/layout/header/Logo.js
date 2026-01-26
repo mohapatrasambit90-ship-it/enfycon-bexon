@@ -18,9 +18,10 @@ const Logo = ({ headerType, isStickyHeader }) => {
 							: "/images/logos/logo-2.webp"
 					}
 					alt=""
-					width={544}
-					height={152}
-					style={{ height: "auto" }}
+					width={167}
+  height={48}
+					style={{ height: "48px", width: "auto" }}
+					priority={true}
 				/>
 			</Link>
 		</div>
