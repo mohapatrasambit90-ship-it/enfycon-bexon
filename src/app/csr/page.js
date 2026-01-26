@@ -90,20 +90,7 @@ export default function CsrPage() {
                         <CsrProjects data={csrData.projects} />
 
                         {/* Impact - Gray BG */}
-                        <div className="bg-gray-1">
-                            <IndustrySplitSection
-                                item={{
-                                    title: csrData.impact.title,
-                                    desc: csrData.impact.desc,
-                                    image: csrData.impact.image
-                                }}
-                                sectionClass="csr-impact-section"
-                            />
-                        </div>
-
-                        {/* Featured - White BG */}
-                        <CsrFeatured data={csrData.featured} />
-
+                       
 
 
                     </main>

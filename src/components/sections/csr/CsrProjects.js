@@ -13,7 +13,7 @@ const CsrProjects = ({ data }) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                         <div className="sec-heading text-center">
-                            <h2 className="sec-title">{data.title}</h2>
+                            <h2 className="sec-title uppercase">{data.title}</h2>
                             <p className="desc">{data.subtitle}</p>
                         </div>
                     </div>

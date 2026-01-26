@@ -10,9 +10,9 @@ export const csrData = {
         subtitle: "Making a difference through simple efforts that bring small but meaningful change.",
         items: [
             {
-                title: "Food Distribution at Adruta Children Home",
-                desc: "Organized a food distribution program to support children at Adruta Children Home, ensuring nutritious meals and spreading joy.",
-                image: "/images/csr/food-distribution-banner.jpg",
+                title: "Food Distribution at SOS Children's Village",
+                desc: "Organized a food distribution program to support children at SOS Children's Village.",
+                image: "/images/csr/food-dist.jpeg",
                 link: "#"
             },
             {
@@ -21,24 +21,20 @@ export const csrData = {
                 image: "/images/csr/clothes-distribution-1.jpg",
                 link: "#"
             },
-            {
-                title: "Healthcare Support",
-                desc: "Providing medical assistance and health checkups to underserved communities to ensure better well-being.",
-                image: "/images/blog/blog-1.webp", // Placeholder
-                link: "#"
-            },
+
             {
                 title: "Scholarship Program",
                 desc: "Empowering bright minds with financial aid to pursue their education and achieve their dreams.",
-                image: "/images/blog/blog-2.webp", // Placeholder
+                image: "/images/csr/scholarship.jpg",
                 link: "#"
             },
             {
-                title: "Education for All",
-                desc: "Supporting schools and educational centers to provide quality learning opportunities for every child.",
-                image: "/images/blog/blog-3.webp", // Placeholder
+                title: "Community Volunteering",
+                desc: "Our team actively participates in community service activities, contributing time and effort to make a positive impact.",
+                image: "/images/csr/vol.jpg",
                 link: "#"
             }
+
         ]
     },
     impactStats: {
