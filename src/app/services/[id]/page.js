@@ -43,7 +43,7 @@ export default async function ServiceDetails({ params }) {
 				<div id="smooth-content">
 					<main>
 						<ServiceDetailsMain currentItemId={id} />
-						<Cta />
+						
 					</main>
 					<Footer2 />
 				</div>

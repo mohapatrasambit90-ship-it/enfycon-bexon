@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import About12 from "@/components/sections/about/About12";
 import Cta from "@/components/sections/cta/Cta";
@@ -21,9 +22,9 @@ export default function Histor() {
 						<HeroInner title={"Company History"} text={"Company History"} />
 						<About12 />
 						<History1 />
-						<Cta />
+						
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 

@@ -56,7 +56,7 @@ export default function About() {
 						<Team1 type={3} id="leadership" />
 						<LocationSection id="locations" />
 						{/* <Faq2 type={3} /> */}
-						<Cta />
+						
 					</main>
 					<Footer2/>
 				</div>

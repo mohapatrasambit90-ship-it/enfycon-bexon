@@ -16,7 +16,7 @@ export default function BlogGrid() {
 					<main>
 						<HeroInner title={"Blogs"} text={"Blogs"} />
 						<BlogsGridPrimary />
-						<Cta />
+						
 					</main>
 					<Footer2 />
 				</div>

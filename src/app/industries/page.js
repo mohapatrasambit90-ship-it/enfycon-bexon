@@ -29,7 +29,7 @@ export default function Industries() {
                         <IndustriesPage />
                         <Contact2 />
                         <Brands2 />
-                        <Cta />
+                     
                     </main>
                     <Footer2 />
                 </div>

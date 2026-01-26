@@ -45,7 +45,7 @@ export default async function IndustryDetails({ params }) {
                 <div id="smooth-content">
                     <main>
                         <IndustryDetailsMain currentItemId={id} />
-                        <Cta />
+                     
                     </main>
                     <Footer2 />
                 </div>

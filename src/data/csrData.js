@@ -2,29 +2,41 @@ export const csrData = {
     hero: {
         title: "Sustainable Impact, Transforming Lives",
         text: "Who believe a story has the power to mould opinions, create impressions and change perceptions.",
-        image: "/images/bg/service-banner.jpg", // Using existing image as placeholder
+        image: "/images/csr/food-distribution-banner.jpg", // Using new banner image
         breadcrums: [{ name: "CSR", path: "/csr" }]
     },
     projects: {
-        title: "We Build Projects",
-        subtitle: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: "Our CSR Initiatives",
+        subtitle: "Committed to making a difference through sustainable social impact initiatives.",
         items: [
             {
-                title: "Education Initiative",
-                desc: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-                image: "/images/blog/blog-1.jpg", // Placeholder
+                title: "Food Distribution at Adruta Children Home",
+                desc: "Organized a food distribution program to support children at Adruta Children Home, ensuring nutritious meals and spreading joy.",
+                image: "/images/csr/food-distribution-banner.jpg",
                 link: "#"
             },
             {
-                title: "Healthcare Access",
-                desc: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-                image: "/images/blog/blog-2.jpg", // Placeholder
+                title: "Clothes & Essentials Distribution",
+                desc: "Provided clothes and essential items to those in need, reinforcing our commitment to community welfare.",
+                image: "/images/csr/clothes-distribution-1.jpg",
                 link: "#"
             },
             {
-                title: "Rural Development",
-                desc: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-                image: "/images/blog/blog-3.jpg", // Placeholder
+                title: "Healthcare Support",
+                desc: "Providing medical assistance and health checkups to underserved communities to ensure better well-being.",
+                image: "/images/blog/blog-1.webp", // Placeholder
+                link: "#"
+            },
+            {
+                title: "Scholarship Program",
+                desc: "Empowering bright minds with financial aid to pursue their education and achieve their dreams.",
+                image: "/images/blog/blog-2.webp", // Placeholder
+                link: "#"
+            },
+            {
+                title: "Education for All",
+                desc: "Supporting schools and educational centers to provide quality learning opportunities for every child.",
+                image: "/images/blog/blog-3.webp", // Placeholder
                 link: "#"
             }
         ]
@@ -32,7 +44,7 @@ export const csrData = {
     impact: {
         title: "Putting People First",
         desc: "The Enfycon Group is one of India's oldest conglomerates with diversified business interests. By adopting and adapting new business solutions, the Group has stayed relevant and an industry leader. The Group has also proactively worked on being responsible corporate citizens.",
-        image: "/images/about/about-6.jpg" // Placeholder
+        image: "/images/csr/clothes-distribution-2.jpg" // Using clothes distribution image
     },
     featured: {
         title: "FEATURED PROJECTS",

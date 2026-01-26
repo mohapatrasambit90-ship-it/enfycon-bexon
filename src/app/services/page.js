@@ -28,7 +28,7 @@ export default function Services() {
 						<ServicesCategorized />
 						<Contact2 />
 						<Brands2 />
-						<Cta />
+					
 					</main>
 					<Footer2 />
 				</div>

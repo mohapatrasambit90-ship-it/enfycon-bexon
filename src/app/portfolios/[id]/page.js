@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import PortfolioDetailsMain from "@/components/layout/main/PortfolioDetailsMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -26,9 +27,9 @@ export default async function PortfolioDetails({ params }) {
 					<main>
 						<HeaderSpace />
 						<PortfolioDetailsMain currentItemId={parseInt(id)} />
-						<Cta />
+					
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 

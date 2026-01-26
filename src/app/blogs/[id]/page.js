@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import BlogDetailsMain from "@/components/layout/main/BlogDetailsMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -24,9 +25,9 @@ export default async function BlogDetails({ params }) {
 				<div id="smooth-content">
 					<main>
 						<BlogDetailsMain post={post} />
-						<Cta />
+						
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 			<ClientWrapper />

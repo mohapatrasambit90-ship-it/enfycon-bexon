@@ -11,6 +11,7 @@ import getProducts from "@/libs/getProducts";
 import { notFound } from "next/navigation";
 const items = getProducts();
 import { constructMetadata, generateDynamicMetadata } from "@/libs/seo";
+import Footer2 from "@/components/layout/footer/Footer2";
 
 export async function generateMetadata({ params }) {
 	return generateDynamicMetadata({
@@ -44,9 +45,9 @@ export default async function ProductDetails({ params }) {
 								<ProductDetailsMain currentItemId={parseInt(id)} />
 							</WishlistContextProvider>
 						</CartContextProvider>
-						<Cta />
+						
 					</main>
-					<Footer />
+					<Footer2/>
 				</div>
 			</div>
 

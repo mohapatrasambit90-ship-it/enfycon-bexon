@@ -5,8 +5,7 @@ import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-import Image from "next/image";
-import Link from "next/link";
+
 import { csrData } from "@/data/csrData";
 
 export const metadata = {
@@ -14,58 +13,7 @@ export const metadata = {
     description: "Sustainable Impact, Transforming Lives through our CSR initiatives.",
 };
 
-const CsrProjects = ({ data }) => {
-    return (
-        <section className="csr-projects-section section-gap">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-8">
-                        <div className="sec-heading text-center">
-                            <h2 className="sec-title">{data.title}</h2>
-                            <p className="desc">{data.subtitle}</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="row mt-4">
-                    {data.items.map((item, idx) => (
-                        <div className="col-lg-4 col-md-6 mb-4" key={idx}>
-                            <div className="csr-project-card" style={{
-                                background: 'white',
-                                borderRadius: '8px',
-                                overflow: 'hidden',
-                                boxShadow: '0 5px 20px rgba(0,0,0,0.05)',
-                                height: '100%'
-                            }}>
-                                <div className="image-wrapper" style={{ height: '250px', position: 'relative' }}>
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        fill
-                                        style={{ objectFit: 'cover' }}
-                                    />
-                                    <div className="overlay d-flex align-items-end justify-content-end p-3" style={{
-                                        background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)',
-                                        position: 'absolute',
-                                        inset: 0
-                                    }}>
-                                        {/* Optional Icon/Indicator */}
-                                    </div>
-                                </div>
-                                <div className="content p-4 text-center">
-                                    <h4 className="title mb-3" style={{ fontSize: '20px', fontWeight: '600' }}>{item.title}</h4>
-                                    <p className="desc mb-4" style={{ fontSize: '15px', color: '#666' }}>{item.desc}</p>
-                                    <Link href={item.link} className="btn-text">
-                                        Read More <i className="fa-regular fa-arrow-right ms-1"></i>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-};
+import CsrProjects from "@/components/sections/csr/CsrProjects";
 
 const CsrFeatured = ({ data }) => {
     return (
