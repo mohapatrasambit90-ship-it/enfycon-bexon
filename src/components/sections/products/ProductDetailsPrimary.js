@@ -59,6 +59,7 @@ const ProductDetailsPrimary = ({ option }) => {
                     title="Key Benefits"
                     items={currentItem.benefits}
                     sectionClass="product-benefits-section bg-gray-1 py-5"
+                    cardClass="gradient-border-card"
                 />
             )}
 

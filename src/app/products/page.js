@@ -9,8 +9,8 @@ import Brands2 from "@/components/sections/brands/Brands2";
 import { constructMetadata } from "@/libs/seo";
 
 export const metadata = constructMetadata({
-    title: "Our Products - AI-Powered Solutions | Enfycon",
-    description: "Explore Enfycon's suite of AI-powered products including iCognito.ai, iDental.ai, lexGenie.ai, quantfin.ai, PerformanceEdge.ai, and iWac.ai.",
+    title: "Our Products - AI-Powered Solutions | enfycon",
+    description: "Explore enfycon's suite of AI-powered products including iCognito.ai, iDental.ai, lexGenie.ai, quantfin.ai, PerformanceEdge.ai, and iWac.ai.",
     image: "/images/product/icognito.jpg",
 });
 

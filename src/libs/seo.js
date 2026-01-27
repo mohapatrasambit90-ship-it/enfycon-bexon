@@ -65,7 +65,7 @@ function extractKeywords(text) {
     const lowerBaseKeywords = BASE_KEYWORDS.map(k => k.toLowerCase());
     const uniqueKeywords = Array.from(new Set([...words, ...lowerBaseKeywords]));
     const finalKeywords = uniqueKeywords.slice(0, 20);
-    console.log(`[SEO] Generated Keywords for "${text?.substring(0, 30)}...":`, finalKeywords);
+    // console.log(`[SEO] Generated Keywords for "${text?.substring(0, 30)}...":`, finalKeywords);
     return finalKeywords;
 }
 
