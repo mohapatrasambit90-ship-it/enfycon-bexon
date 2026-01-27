@@ -21,15 +21,10 @@ export default async function BlogDetails({ params }) {
 		<div>
 			<BackToTop />
 			<Header />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<main>
-						<BlogDetailsMain post={post} />
-						
-					</main>
-					<Footer2/>
-				</div>
-			</div>
+			<main>
+				<BlogDetailsMain post={post} />
+			</main>
+			<Footer2 />
 			<ClientWrapper />
 		</div>
 	);
