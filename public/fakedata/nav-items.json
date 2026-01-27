@@ -72,207 +72,84 @@
 	},
 	{
 		"id": 2,
-		"name": "Pages",
+		"name": "About us",
 		"path": "/about",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Main Pages",
-				"path": "#",
+				"name": "Our Story",
 				"items": [
 					{
 						"id": 1,
-						"name": "About us",
-						"path": "/about",
-						"badge": null
+						"name": "Building Success Together",
+						"icon": "fa-light fa-handshake",
+						"path": "/about#building-success-together"
 					},
 					{
 						"id": 2,
-						"name": "Our history",
-						"path": "/history",
-						"badge": "HOT"
+						"name": "Founder's Story",
+						"icon": "fa-light fa-user-tie",
+						"path": "/about#founders-story"
 					},
 					{
 						"id": 3,
-						"name": "Team",
-						"path": "/team",
-						"badge": null
+						"name": "Our Journey",
+						"icon": "fa-light fa-history",
+						"path": "/about#history"
 					},
 					{
 						"id": 4,
-						"name": "Team details",
-						"path": "/team/1",
-						"badge": null
-					},
-					{
-						"id": 5,
-						"name": "Careers",
-						"path": "/careers",
-						"badge": "New"
-					},
-					{
-						"id": 6,
-						"name": "Careers details",
-						"path": "/careers/1",
-						"badge": null
-					},
-					{
-						"id": 7,
-						"name": "Pricing Plan",
-						"path": "/pricing-plan",
-						"badge": null
-					},
-					{
-						"id": 8,
-						"name": "Feedbacks",
-						"path": "#",
-						"badge": null
-					},
-					{
-						"id": 9,
-						"name": "Faq",
-						"path": "/faq",
-						"badge": null
-					},
-					{
-						"id": 10,
-						"name": "Conatct",
-						"path": "/contact",
-						"badge": null
+						"name": "Why enfycon",
+						"icon": "fa-light fa-lightbulb",
+						"path": "/about#feature3"
 					}
 				]
 			},
 			{
 				"id": 2,
-				"name": "Other pages",
-				"path": "#",
+				"name": "Partners",
 				"items": [
 					{
 						"id": 1,
-						"name": "Services",
-						"path": "/services",
-						"badge": null
+						"name": "Partner Values",
+						"icon": "fa-light fa-hand-holding-heart",
+						"path": "/about#partners"
 					},
 					{
 						"id": 2,
-						"name": "Service details",
-						"path": "/services/1",
-						"badge": null
-					},
-					{
-						"id": 3,
-						"name": "Portfolios",
-						"path": "/portfolios",
-						"badge": null
-					},
-					{
-						"id": 4,
-						"name": "Portfolio details",
-						"path": "/portfolios/1",
-						"badge": null
-					},
-					{
-						"id": 5,
-						"name": "Error 404",
-						"path": "/error",
-						"badge": null
-					},
-					{
-						"id": 6,
-						"name": "Blogs",
-						"path": "/blog-grid",
-						"badge": "NEW"
-					},
-					{
-						"id": 7,
-						"name": "Blogs-Standard",
-						"path": "/blogs",
-						"badge": null
-					},
-					{
-						"id": 8,
-						"name": "Blog sidebar",
-						"path": "/blog-sidebar",
-						"badge": null
-					},
-					{
-						"id": 9,
-						"name": "Blog details",
-						"path": "/blogs/1",
-						"badge": null
-					},
-					{
-						"id": 10,
-						"name": "Term & conditions",
-						"path": "/terms-and-conditions",
-						"badge": null
+						"name": "Portfolio",
+						"icon": "fa-light fa-briefcase",
+						"path": "/about#partners"
 					}
 				]
 			},
 			{
 				"id": 3,
-				"name": "Shop pages",
-				"path": "/shop",
+				"name": "Our Leaders",
 				"items": [
 					{
 						"id": 1,
-						"name": "Shop",
-						"path": "/shop",
-						"badge": "HOT"
+						"name": "Global Leaders",
+						"icon": "fa-light fa-users",
+						"path": "/about#leadership"
+					}
+				]
+			},
+			{
+				"id": 4,
+				"name": "Locations",
+				"items": [
+					{
+						"id": 1,
+						"name": "USA",
+						"icon": "fa-light fa-flag-usa",
+						"path": "/about#locations"
 					},
 					{
 						"id": 2,
-						"name": "Shop details",
-						"path": "/shop/1",
-						"badge": null
-					},
-					{
-						"id": 3,
-						"name": "Cart",
-						"path": "/cart",
-						"badge": null
-					},
-					{
-						"id": 4,
-						"name": "Checkout",
-						"path": "/checkout",
-						"badge": null
-					},
-					{
-						"id": 5,
-						"name": "My account",
-						"path": "#",
-						"badge": null
-					},
-					{
-						"id": 6,
-						"name": "Wishlist",
-						"path": "/wishlist",
-						"badge": "NEW"
-					},
-					{
-						"id": 7,
-						"name": "Login",
-						"path": "/login",
-						"badge": null
-					},
-					{
-						"id": 8,
-						"name": "Registration",
-						"path": "/password",
-						"badge": null
-					},
-					{
-						"id": 9,
-						"name": "Order confirm",
-						"path": "#",
-						"badge": null
-					},
-					{
-						"id": 10,
-						"name": "Coming soon",
-						"path": "#",
-						"badge": null
+						"name": "India",
+						"icon": "fa-light fa-globe-asia",
+						"path": "/about#locations"
 					}
 				]
 			}
@@ -444,6 +321,59 @@
 	},
 	{
 		"id": 5,
+		"name": "Products",
+		"path": "/products",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "iCognito.ai",
+				"icon": "fa-regular fa-comments",
+				"path": "/products/icognito-ai"
+			},
+			{
+				"id": 2,
+				"name": "iDental.ai",
+				"icon": "fa-regular fa-tooth",
+				"path": "/products/idental-ai"
+			},
+			{
+				"id": 3,
+				"name": "lexGenie.ai",
+				"icon": "fa-regular fa-gavel",
+				"path": "/products/lexgenie-ai"
+			},
+			{
+				"id": 4,
+				"name": "quantfin.ai",
+				"icon": "fa-regular fa-chart-mixed",
+				"path": "/products/quantfin-ai"
+			},
+			{
+				"id": 5,
+				"name": "PerformanceEdge.ai",
+				"icon": "fa-regular fa-gauge-high",
+				"path": "/products/performanceedge-ai"
+			},
+			{
+				"id": 6,
+				"name": "iWac.ai",
+				"icon": "fa-regular fa-chart-mixed",
+				"path": "/products/iwac-ai"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "CSR Program",
+		"path": "/csr"
+	},
+	{
+		"id": 7,
+		"name": "Contact Us",
+		"path": "/contact-us"
+	},
+	{
+		"id": 8,
 		"name": "Blogs",
 		"path": "/blogs",
 		"submenu": [
@@ -472,95 +402,5 @@
 				"badge": null
 			}
 		]
-	},
-	{
-		"id": 6,
-		"name": "About us",
-		"path": "/about",
-		"submenu": [
-			{
-				"id": 1,
-				"name": "Our Story",
-				"items": [
-					{
-						"id": 1,
-						"name": "Building Success Together",
-						"icon": "fa-light fa-handshake",
-						"path": "/about#building-success-together"
-					},
-					{
-						"id": 2,
-						"name": "Founder's Story",
-						"icon": "fa-light fa-user-tie",
-						"path": "/about#founders-story"
-					},
-						{
-						"id": 3,
-						"name": "Our Journey",
-						"icon": "fa-light fa-history",
-						"path": "/about#history"
-					},
-					{
-						"id": 4,
-						"name": "Why enfycon",
-						"icon": "fa-light fa-lightbulb",
-						"path": "/about#feature3"
-					}
-				]
-			},
-			{
-				"id": 2,
-				"name": "Partners",
-				"items": [
-					{
-						"id": 1,
-						"name": "Partner Values",
-						"icon": "fa-light fa-hand-holding-heart",
-						"path": "/about#partners"
-					},
-					{
-						"id": 2,
-						"name": "Portfolio",
-						"icon": "fa-light fa-briefcase",
-						"path": "/about#partners"
-					}
-				]
-			},
-			{
-				"id": 3,
-				"name": "Our Leaders",
-				"items": [
-					{
-						"id": 1,
-						"name": "Global Leaders",
-						"icon": "fa-light fa-users",
-						"path": "/about#leadership"
-					}
-				]
-			},
-			{
-				"id": 4,
-				"name": "Locations",
-				"items": [
-					{
-						"id": 1,
-						"name": "USA",
-						"icon": "fa-light fa-flag-usa",
-						"path": "/about#locations"
-					},
-					{
-						"id": 2,
-						"name": "India",
-						"icon": "fa-light fa-globe-asia",
-						"path": "/about#locations"
-					}
-				]
-			}
-		]
-	},
-	{
-		"id": 7,
-		"name": "Contact Us",
-		"path": "/contact-us"
 	}
 ]

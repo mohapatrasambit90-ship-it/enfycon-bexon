@@ -453,6 +453,16 @@
 			}
 		}
 
+		/* Hover animation for Industries and Products dropdown items */
+		li:hover {
+			.mega-menu-service-icon {
+				background-color: var(--tj-color-theme-primary);
+				color: var(--tj-color-common-white);
+			}
+			.mega-menu-service-nav {
+				opacity: 1;
+			}
+		}
 	}
 
 	.mega-menu-service-single {
