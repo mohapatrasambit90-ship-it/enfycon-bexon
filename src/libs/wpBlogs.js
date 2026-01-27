@@ -104,6 +104,12 @@ export async function getBlogBySlug(slug) {
             slug
           }
         }
+        tags {
+          nodes {
+            name
+            slug
+          }
+        }
       }
     }
   `,
@@ -127,6 +133,7 @@ export async function getBlogBySlug(slug) {
     month: date.toLocaleString("en-US", { month: "short" }),
     year: date.getFullYear(),
     category: post.categories?.nodes[0]?.name || "Technology",
+    tags: post.tags?.nodes?.map(tag => tag.name) || [],
     commentCount: post.commentCount || 0,
     avatar: post.author?.node?.avatar?.url || null,
   };
