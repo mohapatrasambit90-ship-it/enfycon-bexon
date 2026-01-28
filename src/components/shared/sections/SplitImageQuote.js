@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-const CsrImpact = ({ data }) => {
+const SplitImageQuote = ({ data }) => {
     return (
-        <section className="csr-impact-section">
+        <section className="split-image-quote-section">
             <div className="container-fluid p-0">
                 <div className="row g-0">
                     <div className="col-lg-8">
@@ -74,4 +74,4 @@ const CsrImpact = ({ data }) => {
     );
 };
 
-export default CsrImpact;
+export default SplitImageQuote;

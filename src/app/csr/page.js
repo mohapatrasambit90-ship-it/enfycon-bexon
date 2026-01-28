@@ -6,7 +6,7 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 
 import CsrProjects from "@/components/sections/csr/CsrProjects";
-import CsrImpact from "@/components/sections/csr/CsrImpact";
+import SplitImageQuote from "@/components/shared/sections/SplitImageQuote";
 import CsrApproach from "@/components/sections/csr/CsrApproach";
 
 import { csrData } from "@/data/csrData";
@@ -38,7 +38,7 @@ export default function CsrPage() {
                         <CsrApproach data={csrData.approach} />
 
                         {/* Impact Stats - Blue BG */}
-                        <CsrImpact data={csrData.impactStats} />
+                        <SplitImageQuote data={csrData.impactStats} />
 
                         {/* Projects - White BG */}
                         <CsrProjects data={csrData.projects} />
