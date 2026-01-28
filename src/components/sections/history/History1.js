@@ -23,7 +23,7 @@ const History1 = () => {
 		},
 		{
 			title: "Global Expansion",
-			desc: "Enfycon expanded operations across the USA, India, and the UAE, supporting enterprises with IT staffing, AI-driven solutions, and digital transformation services, while emphasizing accountability and transparency.",
+			desc: "Enfycon expanded operations across the USA, India, and the UAE, supporting enterprises with Technology Hiring Solutions, AI-driven solutions, and digital transformation services, while emphasizing accountability and transparency.",
 			images: [
 				"/images/history/history-5.webp",
 				"/images/history/history-6.webp",

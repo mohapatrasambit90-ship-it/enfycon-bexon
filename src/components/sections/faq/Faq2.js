@@ -9,7 +9,7 @@ const Faq2 = ({ type = 1 }) => {
 	const items = [
 		{
 			title: "What services does enfycon Inc offer?",
-			desc: "\tenfycon Inc is a global technology and talent partner specializing in AI-driven digital transformation. We craft intelligent ecosystems that help enterprises operate, scale, and innovate through advanced AI, Web 3.0, and software engineering solutions. Our comprehensive services include IT staffing, AI-driven solutions, and end-to-end digital transformation across the USA, India, and UAE.",
+			desc: "\tenfycon Inc is a global technology and talent partner specializing in AI-driven digital transformation. We craft intelligent ecosystems that help enterprises operate, scale, and innovate through advanced AI, Web 3.0, and software engineering solutions. Our comprehensive services include Technology Hiring Solutions, AI-driven solutions, and end-to-end digital transformation across the USA, India, and UAE.",
 			initActive: true,
 		},
 		{

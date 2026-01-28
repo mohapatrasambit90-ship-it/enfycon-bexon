@@ -27,10 +27,10 @@ export const heroSlides = [
         subtitle: "Talent Acquisition",
         title: (
             <>
-                IT Staffing
+                Technology Hiring Solutions
             </>
         ),
-        desc: "Providing exceptional IT staffing solutions for both US and domestic markets to meet your workforce needs.",
+        desc: "Providing exceptional technology hiring solutions for both US and domestic markets to meet your workforce needs.",
         img: "/images/hero/it-stuffing.jpg",
         thumbImg: "/images/hero/it-staffing_80x80.jpg",
         slug: "us-it-staffing"
