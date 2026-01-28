@@ -16,7 +16,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 	const serviceNav = makeActiveLink(navItems[2]);
 	const industriesNav = makeActiveLink(navItems[3]);
 	const productsNav = makeActiveLink(navItems[4]);
-	const csrNav = makeActiveLink(navItems[5]);
+	const companyNav = makeActiveLink(navItems[5]);
 	const contactNav = makeActiveLink(navItems[6]);
 	const blogsNav = makeActiveLink(navItems[7]);
 
@@ -239,11 +239,50 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 						</ul>
 					</li>
 
-					{/* CSR Program */}
-					<li className={csrNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={csrNav?.path ? csrNav?.path : "#"}>
-							{csrNav?.name ? csrNav?.name : "CSR Program"}
+					{/* Company */}
+					<li
+						className={`has-dropdown ${companyNav?.isActive ? "current-menu-ancestor" : ""
+							}`}
+						style={{ position: "relative" }}
+					>
+						<Link href={companyNav?.path ? companyNav?.path : "#"}>
+							{companyNav?.name ? companyNav?.name : "Company"}
 						</Link>
+						<ul className="sub-menu mega-menu mega-menu-pages" style={{ width: "auto", left: "50%", transform: "translateX(-50%)" }}>
+							<li>
+								<div className="mega-menu-wrapper">
+									<div className="mega-menu-pages-single mega-menu-service-col" style={{ borderInlineStart: "none" }}>
+										<div className="mega-menu-pages-single-inner">
+											<div className="mega-menu-list">
+												{companyNav?.submenu?.length
+													? companyNav?.submenu?.map((item, idx) => (
+														<Link
+															key={idx}
+															href={item?.path ? item?.path : "/"}
+															className="mega-menu-service-single"
+															style={{ borderBottom: idx < companyNav?.submenu?.length - 1 ? "1px solid var(--tj-color-border-1)" : "none" }}
+														>
+															<span className="mega-menu-service-icon">
+																<i
+																	className={item?.icon ? item?.icon : "tji-service-1"}
+																></i>
+															</span>
+															<span className="mega-menu-service-title">
+																{item?.name}
+															</span>
+															<span className="mega-menu-service-nav">
+																<i className="tji-arrow-right-long"></i>
+																<i className="tji-arrow-right-long"></i>
+															</span>
+														</Link>
+													))
+													: ""}
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</li>
 
 					{/* Blogs */}

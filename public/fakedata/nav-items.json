@@ -370,8 +370,28 @@
 	},
 	{
 		"id": 6,
-		"name": "CSR Program",
-		"path": "/csr"
+		"name": "Company",
+		"path": "#",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "About Us",
+				"icon": "fa-light fa-address-card",
+				"path": "/about"
+			},
+			{
+				"id": 2,
+				"name": "Our Culture",
+				"icon": "fa-light fa-users",
+				"path": "/our-culture"
+			},
+			{
+				"id": 3,
+				"name": "CSR Initiative",
+				"icon": "fa-light fa-hand-holding-heart",
+				"path": "/csr"
+			}
+		]
 	},
 	{
 		"id": 7,
