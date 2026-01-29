@@ -163,6 +163,7 @@
 			{
 				"id": 1,
 				"name": "IT Professional Staffing",
+				"path": "/services/category/it-professional-staffing",
 				"items": [
 					{
 						"id": 1,
@@ -187,6 +188,7 @@
 			{
 				"id": 2,
 				"name": "Custom Professional AI Services",
+				"path": "/services/category/ai-allied-services",
 				"items": [
 					{
 						"id": 4,
@@ -211,6 +213,7 @@
 			{
 				"id": 3,
 				"name": "Data & Analytics",
+				"path": "/services/category/data-analytics",
 				"items": [
 					{
 						"id": 7,
@@ -235,6 +238,7 @@
 			{
 				"id": 4,
 				"name": "Cybersecurity Services",
+				"path": "/services/category/cybersecurity-services",
 				"items": [
 					{
 						"id": 10,
