@@ -906,6 +906,7 @@ START: Theme Footer CSS
 	width: 100%;
 	@media #{$md, $sm, $xs} {
 		.social-icons{
+			display: block;
 			margin-left: -5px;
 		}
 	}
