@@ -14,6 +14,18 @@ async function fetchAPI(query, { variables } = {}) {
     }),
   });
 
+  if (!res.ok) {
+    console.error(`API Error: ${res.status} ${res.statusText}`);
+    throw new Error(`Failed to fetch API: ${res.status}`);
+  }
+
+  const contentType = res.headers.get("content-type");
+  if (!contentType || !contentType.includes("application/json")) {
+    const text = await res.text();
+    console.error("API Error: Received non-JSON response", text.slice(0, 100));
+    throw new Error("API returned non-JSON response");
+  }
+
   const json = await res.json();
   if (json.errors) {
     console.error(json.errors);
