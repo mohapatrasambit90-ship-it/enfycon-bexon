@@ -2,8 +2,8 @@
 
 import React from "react";
 
-const WhyUsSection = () => {
-    const items = [
+const WhyUsSection = ({ items: propItems }) => {
+    const defaultItems = [
         {
             title: "Experienced Team",
             desc: "Our team brings unparalleled global experience in aiding governments and businesses to defend against cybercrime and mitigate risks.",
@@ -35,6 +35,8 @@ const WhyUsSection = () => {
             icon: "fa-light fa-hand-holding-heart" // check if valid, or fa-hands-heart
         }
     ];
+
+    const items = propItems || defaultItems;
 
     const renderTitle = (title) => {
         const words = title.split(" ");

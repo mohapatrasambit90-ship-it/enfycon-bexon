@@ -41,7 +41,7 @@ const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="overview-content">
-                                <h3 className="section-title text-primary mb-4">Overview</h3>
+                                <h3 className="section-title text-primary mb-4">{currentItem?.catchyTitle || 'Overview'}</h3>
                                 <div className="overview-text">
                                     {currentItem?.overview && currentItem.overview.split('\n').map((paragraph, index) => (
                                         paragraph.trim() && <p key={index} className="mb-4 text-lg">{paragraph}</p>
@@ -67,7 +67,7 @@ const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
             )}
 
             {/* Why Us Section */}
-            <WhyUsSection />
+            <WhyUsSection items={currentItem?.whyUsItems} />
 
             {/* Related Blogs Section */}
             <Blogs2

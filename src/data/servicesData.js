@@ -307,6 +307,7 @@ export const serviceCategories = [
                 id: "security-assessment",
                 title: "Comprehensive Security Assessment",
                 desc: "Conduct thorough security audits and vulnerability assessments to identify and mitigate potential threats across your infrastructure.",
+                catchyTitle: "Mastering Your Digital Defense",
                 overview: "In a world of evolving cyber threats, 'good enough' security is equivalent to no security. enfycon’s Comprehensive Security Assessment is a proactive, deep-dive examination of your entire digital ecosystem. We don't just run automated scripts; our elite security researchers perform manual penetration testing, configuration audits, and architectural reviews to find the vulnerabilities that automated tools miss. From web applications and APIs to network edge and cloud configurations, we identify the specific path an attacker would take to compromise your assets.\n\nOur assessment methodology is aligned with global standards like OWASP, NIST, and PTES. We provide you with a prioritized roadmap of remediation actions, categorized by risk level and business impact. We help you understand the 'why' behind every vulnerability, empowering your engineering teams to build more secure systems from the ground up. Whether it's a one-time audit for a new product launch or a recurring quarterly assessment, we provide the critical external perspective needed to maintain a robust security posture. Our goal is to transform your security from a reactive burden into a strategic advantage.",
                 challenges: [
                     { title: "Rapidly Evolving Attack Surface", desc: "As organizations adopt cloud, mobile, and IoT, the perimeter becomes blurred and increasingly difficult to defend. Keeping track of all digital assets and their potential vulnerabilities is a monumental task." },
@@ -339,24 +340,6 @@ export const serviceCategories = [
                             "Test WAF, Firewall, & EDR efficacy.",
                             "Validate defense-in-depth strategies.",
                             "Ensure ROI on security tools."
-                        ]
-                    },
-                    {
-                        title: "Customized Security Frameworks",
-                        icon: "fa-light fa-puzzle-piece",
-                        items: [
-                            "Tailor architecture to business needs.",
-                            "Align protection with risk appetite.",
-                            "Maintain operational agility."
-                        ]
-                    },
-                    {
-                        title: "Continuous Monitoring & Response",
-                        icon: "fa-light fa-radar",
-                        items: [
-                            "24/7 surveillance of assets.",
-                            "Real-time anomaly detection.",
-                            "Immediate threat containment."
                         ]
                     },
                     {
@@ -459,6 +442,38 @@ export const serviceCategories = [
                         }
                     ]
                 },
+                whyUsItems: [
+                    {
+                        title: "Elite Ethical Hackers",
+                        desc: "Our testers hold industry-leading certifications like OSCP and CISSP, bringing specialized knowledge to every engagement.",
+                        icon: "fa-light fa-user-secret"
+                    },
+                    {
+                        title: "Manual Penetration Depth",
+                        desc: "We go beyond automated tools, performing manual logic audits to uncover complex vulnerabilities that scanners miss.",
+                        icon: "fa-light fa-magnifying-glass-chart"
+                    },
+                    {
+                        title: "Global Standards Aligned",
+                        desc: "Our methodologies strictly follow OWASP, NIST, and PTES frameworks to ensure comprehensive and standardized testing.",
+                        icon: "fa-light fa-file-certificate"
+                    },
+                    {
+                        title: "Business-Centric Risks",
+                        desc: "We don't just find bugs; we prioritize them based on real-world impact to your critical business operations and data.",
+                        icon: "fa-light fa-list-check"
+                    },
+                    {
+                        title: "Modern API Expertise",
+                        desc: "Specialized focus on securing RESTful APIs, GraphQL, and microservices architectures in complex cloud environments.",
+                        icon: "fa-light fa-brackets-curly"
+                    },
+                    {
+                        title: "Full-Cycle Support",
+                        desc: "From initial scan to verified remediation, we partner with your engineering teams to close every critical security gap.",
+                        icon: "fa-light fa-shield-check"
+                    }
+                ],
                 img4: "/images/service/security-assessment.jpg",
                 iconName: "tji-security",
             },
@@ -466,6 +481,7 @@ export const serviceCategories = [
                 id: "operational-security",
                 title: "Operational Security Guidelines",
                 desc: "Implement robust operational security protocols and best practices to protect daily business operations from cyber threats.",
+                catchyTitle: "Fortifying Daily Resilience",
                 overview: "Security is not a product; it’s a process. enfycon’s Operational Security (OpSec) Guidelines service focuses on the most vulnerable part of any organization: day-to-day operations and human behavior. We help you build a 'Security-First' culture by developing and implementing comprehensive protocols that govern how data is handled, how systems are accessed, and how incidents are reported. From password policies and multi-factor authentication (MFA) to remote work security and social engineering awareness, we provide the tactical blueprints needed to defend against both external attacks and internal negligence.\n\nOur guidelines are not just documents on a shelf; we help you integrate security into your existing workflows. We provide training for your staff, implement automated policy enforcement tools, and establish clear incident response procedures. By focusing on 'leaky' processes—such as how customer data is shared via email or how developers handle API keys—we close the small gaps that lead to large breaches. Our goal is to make security a seamless, invisible part of your operational excellence, reducing the likelihood of successful attacks by making them too difficult and expensive for adversaries to execute.",
                 challenges: [
                     { title: "The 'Human Element'", desc: "People are the weakest link. Phishing, social engineering, and simple errors account for over 80% of successful breaches. Training employees and changing behavioral habits is a continuous struggle." },
@@ -473,21 +489,113 @@ export const serviceCategories = [
                     { title: "Shadow IT & Proliferation", desc: "The unauthorized use of SaaS tools and personal devices (Shadow IT) creates unmanaged entry points. Bringing these activities under security governance without stifling innovation is a major hurdle." }
                 ],
                 keyBenefits: [
-                    { title: "Reduced Human-Centric Risk", desc: "Significantly lower the probability of a breach by empowering your employees with the knowledge and tools to identify and report threats like phishing and social engineering." },
-                    { title: "Consistent, Standardized Defense", desc: "Eliminate ad-hoc security practices. Our guidelines ensure that every department and individual follows the same high-security standards, creating a uniform defensive front." },
-                    { title: "Rapid Incident Response", desc: "When every second counts, having pre-defined operational protocols ensures that your team knows exactly how to contain a threat, minimize damage, and maintain business continuity." }
+                    {
+                        title: "Cultural Security Maturity",
+                        icon: "fa-light fa-users-gear",
+                        items: [
+                            "Foster a security-first mindset.",
+                            "Reduce behavioral vulnerabilities.",
+                            "Empower staff as first-line defenders."
+                        ]
+                    },
+                    {
+                        title: "Adaptive Policy Enforcement",
+                        icon: "fa-light fa-shield-slash",
+                        items: [
+                            "Implement dynamic access controls.",
+                            "Automate policy compliance checks.",
+                            "Minimize manual oversight burden."
+                        ]
+                    },
+                    {
+                        title: "Shadow IT Governance",
+                        icon: "fa-light fa-eye-slash",
+                        items: [
+                            "Discover unauthorized SaaS usage.",
+                            "Implement 'Safe-Use' protocols.",
+                            "Bring unmanaged assets under control."
+                        ]
+                    },
+                    {
+                        title: "Zero-Trust Remote Access",
+                        icon: "fa-light fa-network-wired",
+                        items: [
+                            "Secure distributed workforces.",
+                            "Eliminate traditional VPN risks.",
+                            "Verify every identity and device."
+                        ]
+                    }
                 ],
-                whyenfycon: [
-                    "Pragmatic approach that balances high security with business operational needs.",
-                    "Extensive experience in developing OpSec frameworks for distributed and remote teams.",
-                    "Proven methodology for cultural transformation and security awareness training."
-                ],
-                faqs: [
-                    { question: "How do you handle 'Shadow IT'?", answer: "We implement discovery tools and develop 'Safe-Use' guidelines that allow employees to use necessary tools while ensuring data security and compliance." },
-                    { question: "Can you train our staff on social engineering?", answer: "Yes, we provide interactive, real-world social engineering simulations (like controlled phishing) to help employees learn how to spot and report actual attacks." },
-                    { question: "What are the most common OpSec failures you see?", answer: "The most common failures include improper handling of API keys, weak multi-factor authentication coverage, and lack of clear incident response protocols for remote workers." },
-                    { question: "Do your guidelines cover remote and hybrid work models?", answer: "Yes, our guidelines are specifically designed for the modern, distributed workforce, focusing on secure VPN/Zero-Trust access and endpoint protection." },
-                    { question: "How do you measure the effectiveness of operational security?", answer: "We use a combination of simulated attacks, security awareness quiz scores, and continuous monitoring of security event logs to measure its real-world impact." }
+                methodology: {
+                    title: "Methodology of Operational Security",
+                    desc: "enfycon's OpSec methodology focuses on hardening the human and procedural elements of your business. We follow a systematic process to identify operational gaps and implement sustainable security habits:",
+                    items: [
+                        "Asset & Data Flow Discovery",
+                        "Behavioral Risk Profiling",
+                        "Workflow Vulnerability Analysis",
+                        "Policy Architecture & Design",
+                        "Identity & Access Management (IAM) Review",
+                        "Security Awareness & Culture Training",
+                        "Controlled Social Engineering Simulations",
+                        "Incident Reporting Workflow Design",
+                        "Continuous Policy Monitoring",
+                        "Shadow IT Remediation",
+                        "Endpoint Protection Hardening",
+                        "Remote Work Security Baseline"
+                    ]
+                },
+                approach: {
+                    title: "The enfycon Approach",
+                    desc: "Our operational security framework ensures your team works safely without losing speed:",
+                    items: [
+                        {
+                            title: "Assess",
+                            desc: "We analyze your daily workflows, interview key stakeholders, and use discovery tools to find where data 'leaks' occur during normal operations.",
+                            icon: "fa-light fa-file-magnifying-glass"
+                        },
+                        {
+                            title: "Design",
+                            desc: "We develop pragmatic guidelines and select automation tools that enforce security policies without creating friction for your employees.",
+                            icon: "fa-light fa-pencil-ruler"
+                        },
+                        {
+                            title: "Manage",
+                            desc: "We provide ongoing training and continuous monitoring to ensure that new threats are countered by evolving operational habits.",
+                            icon: "fa-light fa-sliders"
+                        }
+                    ]
+                },
+                whyUsItems: [
+                    {
+                        title: "Behavioral Risk Experts",
+                        desc: "We specialize in the human element, turning your employees from your weakest link into your strongest defense.",
+                        icon: "fa-light fa-users-viewfinder"
+                    },
+                    {
+                        title: "MFA & Identity Focus",
+                        desc: "Our deep knowledge in robust IAM ensures that identity is the perimeter in your modern digital environment.",
+                        icon: "fa-light fa-id-card-clip"
+                    },
+                    {
+                        title: "Safe-Use Productivity",
+                        desc: "We build guidelines that protect data without hindering work, ensuring security is an enabler, not a blocker.",
+                        icon: "fa-light fa-hands-holding-diamond"
+                    },
+                    {
+                        title: "Remote Work Hardening",
+                        desc: "Expertise in securing distributed teams through Zero-Trust principles and sophisticated endpoint protection.",
+                        icon: "fa-light fa-house-laptop"
+                    },
+                    {
+                        title: "Shadow IT Transparency",
+                        desc: "We bring hidden SaaS usage into the light, implementing governance that reduces risk while supporting innovation.",
+                        icon: "fa-light fa-eye"
+                    },
+                    {
+                        title: "Continuous Awareness",
+                        desc: "Dynamic, real-world simulations that keep security top-of-mind for every member of your organization.",
+                        icon: "fa-light fa-brain-circuit"
+                    }
                 ],
                 img4: "/images/service/operational-security.jpg",
                 iconName: "tji-shield",
@@ -496,6 +604,7 @@ export const serviceCategories = [
                 id: "regulatory-compliance",
                 title: "Regulatory Compliance",
                 desc: "Ensure adherence to industry regulations and compliance standards to protect sensitive data and maintain trust.",
+                catchyTitle: "Navigating the Trust Landscape",
                 overview: "In today’s regulated world, compliance is not optional—it’s a prerequisite for doing business. enfycon’s Regulatory Compliance service helps you navigate the complex and ever-changing landscape of global data protection laws and industry-specific standards. Whether you need to meet the stringent requirements of HIPAA for healthcare, SOC2 for service organizations, PCI-DSS for payments, or GDPR/CCPA for general data privacy, we provide the technical and legal expertise to ensure you are fully compliant and audit-ready.\n\nWe don't just provide checklists; we build compliance into your architecture. We help you implement the necessary technical controls—like data encryption, access logging, and residency management—that satisfy regulatory requirements without hindering performance. We assist in the preparation of all required documentation, conduct pre-audit assessments, and act as your bridge to external auditors. By achieving and maintaining compliance, we help you build trust with your customers, partners, and investors, while avoiding the catastrophic fines and legal penalties associated with non-compliance. We provide a 'Continuous Compliance' model that keeps you protected as regulations evolve.",
                 challenges: [
                     { title: "Fragmented Global Regulations", desc: "Different regions and industries have overlapping and sometimes conflicting requirements. Managing compliance across multiple jurisdictions (e.g., GDPR in EU vs. CCPA in California) is a major administrative burden." },
@@ -503,21 +612,113 @@ export const serviceCategories = [
                     { title: "Evidence Collection at Scale", desc: "Providing proof of compliance during an audit is often a manual, chaotic process. Gathering logs, policies, and configuration evidence from across a modern infrastructure is incredibly time-consuming." }
                 ],
                 keyBenefits: [
-                    { title: "Mitigation of Legal & Financial Risk", desc: "Protect your business from massive fines and legal liabilities. Our compliance frameworks ensure you meet the letter of the law, reducing your exposure to regulatory enforcement." },
-                    { title: "Accelerated Sales Cycles", desc: "Compliance is a trust signal. Having SOC2 or HIPAA compliance allows you to pass enterprise security reviews faster, helping you win larger contracts and close deals more quickly." },
-                    { title: "Enhanced Data Protection", desc: "While compliance is about the law, it's underpinned by good security. Meeting these standards naturally strengthens your overall data protection and privacy posture." }
+                    {
+                        title: "Mitigation of Legal & Financial Risk",
+                        icon: "fa-light fa-gavel",
+                        items: [
+                            "Protect against massive fines.",
+                            "Ensure adherence to laws.",
+                            "Reduce regulatory exposure."
+                        ]
+                    },
+                    {
+                        title: "Accelerated Sales Cycles",
+                        icon: "fa-light fa-file-invoice-dollar",
+                        items: [
+                            "Pass security reviews faster.",
+                            "Signal trust to enterprises.",
+                            "Win larger contracts quicker."
+                        ]
+                    },
+                    {
+                        title: "Enhanced Data Protection",
+                        icon: "fa-light fa-lock-alt",
+                        items: [
+                            "Strengthen privacy posture.",
+                            "Implement best-in-class encryption.",
+                            "Ensure secure data residency."
+                        ]
+                    },
+                    {
+                        title: "Continuous Compliance Model",
+                        icon: "fa-light fa-arrows-rotate",
+                        items: [
+                            "Stay protected as rates evolve.",
+                            "Automate evidence collection.",
+                            "Eliminate 'audit season' panic."
+                        ]
+                    }
                 ],
-                whyenfycon: [
-                    "Deep expertise in SOC2, HIPAA, PCI-DSS, GDPR, CCPA, and ISO 27001.",
-                    "Focus on 'Compliance-as-Code' to automate evidence collection and continuous monitoring.",
-                    "Strong track record of helping startups and enterprises pass rigorous third-party audits."
-                ],
-                faqs: [
-                    { question: "Can you help us get SOC2 certified?", answer: "Yes, we guide you through the entire process, from readiness assessment and remediation of gaps to the final audit by a certified CPA firm." },
-                    { question: "How long does it typically take to become compliant?", answer: "The timeline varies based on the standard and your current state, but typically ranges from 3 to 9 months for a full certification cycle." },
-                    { question: "What is 'Compliance-as-Code'?", answer: "It is the practice of automating the enforcement and monitoring of compliance controls using software, ensuring you stay compliant continuously rather than just during audit season." },
-                    { question: "Do you support healthcare-specific regulations like HIPAA?", answer: "Yes, we have deep expertise in HIPAA and HITECH compliance, helping healthcare organizations and their vendors protect sensitive Patient Health Information (PHI)." },
-                    { question: "How do you help with international data privacy laws like GDPR?", answer: "We help you map your data flows, implement required technical controls, and establish the legal frameworks (like DPA and SCCs) needed to comply with global privacy standards." }
+                methodology: {
+                    title: "Methodology of Regulatory Compliance",
+                    desc: "enfycon's Compliance methodology ensures you are not just compliant on paper, but robustly protected in practice. Our process-driven approach prepares you for the most rigorous audits:",
+                    items: [
+                        "Regulatory Scope Identification",
+                        "Requirement Gap Analysis",
+                        "Technical Control Implementation",
+                        "Policy & Procedure Documentation",
+                        "Data Residency & Sovereignty Review",
+                        "Access Control & IAM Hardening",
+                        "Continuous Log Monitoring & Retention",
+                        "Internal Pre-Audit Readiness Review",
+                        "Vulnerability Management Alignment",
+                        "Third-Party Risk Assessment (TPRM)",
+                        "Compliance-as-Code Automation",
+                        "Executive Compliance Reporting"
+                    ]
+                },
+                approach: {
+                    title: "The enfycon Approach",
+                    desc: "We transform compliance from a documentation burden into a technical advantage:",
+                    items: [
+                        {
+                            title: "Assess",
+                            desc: "We map your data flows and identify the specific regulatory requirements (SOC2, HIPAA, GDPR, etc.) that apply to your global business footprint.",
+                            icon: "fa-light fa-file-magnifying-glass"
+                        },
+                        {
+                            title: "Design",
+                            desc: "We design and implement the technical controls—such as encryption, logging, and access tiers—needed to satisfy auditors while maintaining performance.",
+                            icon: "fa-light fa-pencil-ruler"
+                        },
+                        {
+                            title: "Manage",
+                            desc: "We act as your compliance partner, assisting with audit preparation, evidence collection, and ongoing monitoring to ensure continuous certification.",
+                            icon: "fa-light fa-sliders"
+                        }
+                    ]
+                },
+                whyUsItems: [
+                    {
+                        title: "Audit Readiness Experts",
+                        desc: "Deep expertise in guiding organizations through official SOC2, HIPAA, and PCI-DSS certification cycles with success.",
+                        icon: "fa-light fa-clipboard-check"
+                    },
+                    {
+                        title: "Global Privacy Specialists",
+                        desc: "Comprehensive understanding of international laws like GDPR and CCPA to secure your global data footprint.",
+                        icon: "fa-light fa-earth-americas"
+                    },
+                    {
+                        title: "Encryption Best Practices",
+                        desc: "We implement industry-standard encryption (AES-256, PGP) to ensure your sensitive data is protected at rest and in transit.",
+                        icon: "fa-light fa-key"
+                    },
+                    {
+                        title: "Data Residency Mastery",
+                        desc: "Navigating complex sovereignty requirements to ensure your data stays where it's legally required to be.",
+                        icon: "fa-light fa-server"
+                    },
+                    {
+                        title: "Document Blueprinting",
+                        desc: "We provide the policy and procedural documentation needed to satisfy the most demanding third-party auditors.",
+                        icon: "fa-light fa-file-invoice"
+                    },
+                    {
+                        title: "Continuous Compliance",
+                        desc: "Moving beyond 'point-in-time' audits to an automated model that keeps you compliant 365 days a year.",
+                        icon: "fa-light fa-rotate"
+                    }
                 ],
                 img4: "/images/service/regulatory-compliance.jpg",
                 iconName: "tji-compliance",
@@ -526,6 +727,7 @@ export const serviceCategories = [
                 id: "grc-consulting",
                 title: "GRC Consulting",
                 desc: "Expert Governance, Risk, and Compliance consulting to align security practices with business objectives and regulatory requirements.",
+                catchyTitle: "Strategic Risk Mastery",
                 overview: "Effective security is not just about tools; it’s about strategic alignment. enfycon’s Governance, Risk, and Compliance (GRC) Consulting service provides the high-level framework that connects your security activities to your business goals. We help you build a comprehensive strategy that prioritizes risk management, ensures executive oversight, and maintains a sustainable compliance posture. By integrating GRC into your corporate governance, we transform security from a cost center into a resilient foundation for growth.\n\nOur consultants work with your leadership to define your risk appetite, establish clear security policies, and implement governance structures that define roles and responsibilities. We provide quantitative and qualitative risk assessments that help you decide where to invest your security budget for the maximum impact. We help you implement GRC software tools to automate workflows and provide a real-time dashboard for your risk posture. Whether you are dealing with vendor risk management, business continuity planning, or disaster recovery, we provide the high-level guidance needed to navigate a complex risk landscape with confidence.",
                 challenges: [
                     { title: "Siloed Security Functions", desc: "In many organizations, security, legal, and operations teams work in silos with no unified view of risk. This leads to redundant work and critical gaps in organizational defense." },
@@ -533,21 +735,113 @@ export const serviceCategories = [
                     { title: "Inflexible Governance Models", desc: "Rigid governance can stifle innovation. Building a framework that is robust enough to protect the business but flexible enough to support speed-to-market is the ultimate GRC challenge." }
                 ],
                 keyBenefits: [
-                    { title: "Strategic Risk Alignment", desc: "Ensure that your security spend is directly linked to your biggest business risks. We help you focus your resources on what truly matters to your bottom line and your customers." },
-                    { title: "Enhanced Executive Oversight", desc: "Provide your Board and C-suite with clear, actionable metrics on risk and compliance. Improve decision-making and build organizational confidence in your security maturity." },
-                    { title: "Sustainable Compliance Architecture", desc: "Move away from 'panic-driven' compliance during audit season. We help you build a sustainable, automated framework that keeps you compliant every day of the year." }
+                    {
+                        title: "Strategic Risk Alignment",
+                        icon: "fa-light fa-chess",
+                        items: [
+                            "Link security spend to risk.",
+                            "Align with business goals.",
+                            "Focus on high-impact assets."
+                        ]
+                    },
+                    {
+                        title: "Executive Oversight Metrics",
+                        icon: "fa-light fa-chart-user",
+                        items: [
+                            "Provide actionable C-suite reports.",
+                            "Build board-level confidence.",
+                            "Quantify security maturity levels."
+                        ]
+                    },
+                    {
+                        title: "Sustainable Governance Architecture",
+                        icon: "fa-light fa-building-columns",
+                        items: [
+                            "Automate compliance workflows.",
+                            "Define clear roles & duties.",
+                            "Maintain long-term resilience."
+                        ]
+                    },
+                    {
+                        title: "Third-Party Risk Management",
+                        icon: "fa-light fa-handshake-angle",
+                        items: [
+                            "Assess vendor security posture.",
+                            "Minimize supply chain risks.",
+                            "Standardize partner evaluations."
+                        ]
+                    }
                 ],
-                whyenfycon: [
-                    "Strategic consultants with decades of experience in enterprise risk management.",
-                    "Industry-specific GRC frameworks tailored to FinTech, HealthTech, and SaaS.",
-                    "Expertise in implementing and optimizing GRC automation platforms."
-                ],
-                faqs: [
-                    { question: "What is the role of 'Governance' in cybersecurity?", answer: "Governance provides the oversight and strategic direction, ensuring that security activities are aligned with organizational goals and are being executed effectively." },
-                    { question: "How do you help with Vendor Risk Management?", answer: "We implement standardized assessment processes and monitoring tools to ensure that your third-party partners meet your security and compliance requirements." },
-                    { question: "What is GRC software and do we need it?", answer: "GRC software automates risk assessments and compliance tracking. For mid-to-large organizations, it is critical for maintaining a unified view of organizational risk and reducing manual overhead." },
-                    { question: "How do you quantify cybersecurity risk into business terms?", answer: "We use actuarial frameworks and historical data to translate technical vulnerabilities into potential financial impact (Loss Event Frequency vs. Loss Magnitude)." },
-                    { question: "Can you assist with Business Continuity and Disaster Recovery?", answer: "Yes, GRC consulting includes developing and testing robust BC/DR plans to ensure your organization can remain operational during a major security incident or natural disaster." }
+                methodology: {
+                    title: "Methodology of GRC Consulting",
+                    desc: "enfycon's GRC methodology establishes a strategic bridge between your technical security controls and your corporate leadership goals. We utilize data-driven risk management to build a sustainable security organization:",
+                    items: [
+                        "Corporate Objectives & Mission Mapping",
+                        "Qualitative & Quantitative Risk Assessment",
+                        "Security Governance Structure Design",
+                        "Policy Lifecycle Management Setup",
+                        "Control Framework Selection (NIST, ISO)",
+                        "Vendor Risk & Supply Chain Strategy",
+                        "Regulatory Mapping & Compliance Alignment",
+                        "GRC Tooling & Automation Implementation",
+                        "Business Continuity (BCP) Development",
+                        "Disaster Recovery (DRP) Planning",
+                        "Risk Register & Dashboard Creation",
+                        "Board & Executive Reporting Framework"
+                    ]
+                },
+                approach: {
+                    title: "The enfycon Approach",
+                    desc: "We help you build a culture of accountability and informed decision-making through proactive risk management:",
+                    items: [
+                        {
+                            title: "Assess",
+                            desc: "We define your organizational risk appetite and identify the critical assets that drive your business value, performing a deep-dive risk analysis.",
+                            icon: "fa-light fa-file-magnifying-glass"
+                        },
+                        {
+                            title: "Design",
+                            desc: "We architect the governance structures and policy frameworks needed to manage risk consistently across all departments and external vendors.",
+                            icon: "fa-light fa-pencil-ruler"
+                        },
+                        {
+                            title: "Manage",
+                            desc: "We provide ongoing GRC advisory and utilize automation tools to provide your leadership with real-time visibility into your organizational risk posture.",
+                            icon: "fa-light fa-sliders"
+                        }
+                    ]
+                },
+                whyUsItems: [
+                    {
+                        title: "Strategic ROI Focus",
+                        desc: "We ensure every dollar of your security budget is directly linked to mitigating your most significant business risks.",
+                        icon: "fa-light fa-chart-pie"
+                    },
+                    {
+                        title: "Executive Clarity",
+                        desc: "Translating complex technical vulnerabilities into clear, financial risk metrics for the Board and C-suite.",
+                        icon: "fa-light fa-presentation-screen"
+                    },
+                    {
+                        title: "Governance Architecture",
+                        desc: "Building clear accountability structures that ensure security is everyone's responsibility, from HR to Engineering.",
+                        icon: "fa-light fa-sitemap"
+                    },
+                    {
+                        title: "Supply Chain Oversight",
+                        desc: "Comprehensive vendor risk assessments to ensure your partners don't become your biggest security vulnerability.",
+                        icon: "fa-light fa-link-slash"
+                    },
+                    {
+                        title: "GRC Automation Experts",
+                        desc: "Specialized in implementing and optimizing GRC platforms to reduce manual compliance overhead and errors.",
+                        icon: "fa-light fa-robot"
+                    },
+                    {
+                        title: "Resilience Strategy",
+                        desc: "Expertise in Business Continuity and Disaster Recovery to ensure your business stays operational through any crisis.",
+                        icon: "fa-light fa-shield-virus"
+                    }
                 ],
                 img4: "/images/service/grc-consulting.jpg",
                 iconName: "tji-consulting",
