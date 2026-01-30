@@ -105,7 +105,7 @@ const Services6 = () => {
 
 					<div className="row ">
 						<div className="col-12 ">
-							<ServicesSlider3 services={tabs[activeTab].services} hideNavigation={true} prevRef={prevRef} nextRef={nextRef} />
+							<ServicesSlider3 services={tabs[activeTab].services} categoryId={tabs[activeTab].id} hideNavigation={true} prevRef={prevRef} nextRef={nextRef} />
 						</div>
 					</div>
 				</div>
@@ -117,7 +117,7 @@ const Services6 = () => {
 							<div key={index} className="col-12 mb-5">
 								<div className="mobile-service-category">
 									<h3 className="section-title text-white mb-3">
-										<Link href={`/services`}>{tab.title}</Link>
+										<Link href={`/services/${tab.id}`}>{tab.title}</Link>
 									</h3>
 									<p className="text-light opacity-75 mb-4">
 										{tab.desc}
@@ -125,7 +125,7 @@ const Services6 = () => {
 									<div className="mobile-service-card">
 										{/* Show the first service card as representative */}
 										{tab.services && tab.services.length > 0 && (
-											<ServiceCard service={tab.services[0]} idx={0} />
+											<ServiceCard service={tab.services[0]} categoryId={tab.id} idx={0} />
 										)}
 									</div>
 								</div>

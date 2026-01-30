@@ -3,7 +3,7 @@ import getALlServices from "@/libs/getALlServices";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "../cards/ServiceCard7";
-const ServicesSlider3 = ({ services: propServices, hideNavigation, prevRef, nextRef }) => {
+const ServicesSlider3 = ({ services: propServices, categoryId, hideNavigation, prevRef, nextRef }) => {
 	const showableSevices = propServices ? propServices : getALlServices()?.slice(0, 3);
 	const services = [...showableSevices, ...showableSevices];
 	return (
@@ -66,7 +66,7 @@ const ServicesSlider3 = ({ services: propServices, hideNavigation, prevRef, next
 				{services?.length
 					? services?.map((service, idx) => (
 						<SwiperSlide key={idx}>
-							<ServiceCard service={service} idx={idx} />
+							<ServiceCard service={service} categoryId={categoryId} idx={idx} />
 						</SwiperSlide>
 					))
 					: ""}
