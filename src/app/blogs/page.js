@@ -10,7 +10,7 @@ import { mapPostToCard } from "@/libs/mappers";
 import { getBlogPageData } from "@/libs/wpBlogs";
 
 export const metadata = {
-	title: "Blogs - Enfycon",
+	title: "Blogs - enfycon",
 	description: "Explore our latest insights and news",
 };
 
@@ -33,7 +33,7 @@ export default async function BlogPage(props) {
 	const { edges, pageInfo } = postsData;
 
 	// Map initial posts to the format expected by BlogCard1
-	const initialPosts = edges.map(({ node }) => mapPostToCard(node));
+	const initialPosts = edges.map(({ node }) => mapPostToCard(node, category));
 
 	return (
 		<div>

@@ -44,7 +44,7 @@ const BlogFeed = ({ initialPosts, initialPageInfo, category }) => {
 
             if (json.posts) {
                 return {
-                    posts: json.posts.edges.map(edge => mapPostToCard(edge.node)),
+                    posts: json.posts.edges.map(edge => mapPostToCard(edge.node, category)),
                     pageInfo: json.posts.pageInfo
                 };
             }

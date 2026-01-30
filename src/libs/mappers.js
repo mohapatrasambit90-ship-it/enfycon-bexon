@@ -1,5 +1,13 @@
-export const mapPostToCard = (node) => {
+export const mapPostToCard = (node, selectedCategorySlug = null) => {
     const date = new Date(node.date);
+
+    // Find the category that matches the selected filter, or default to the first one
+    let displayCategory = node.categories?.nodes[0];
+    if (selectedCategorySlug && node.categories?.nodes) {
+        const match = node.categories.nodes.find(c => c.slug === selectedCategorySlug);
+        if (match) displayCategory = match;
+    }
+
     return {
         id: node.slug,
         featuredImage: node.featuredImage?.node?.sourceUrl || null,
@@ -9,6 +17,6 @@ export const mapPostToCard = (node) => {
         day: date.getDate(),
         month: date.toLocaleString("en-US", { month: "short" }),
         year: date.getFullYear(),
-        category: node.categories?.nodes[0]?.name || "Technology",
+        category: displayCategory?.name || "Technology",
     };
 };
