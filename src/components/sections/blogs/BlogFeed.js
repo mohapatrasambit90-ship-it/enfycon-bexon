@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import BlogCard1 from "@/components/shared/cards/BlogCard1";
+import { mapPostToCard } from "@/libs/mappers";
 
 /**
  * BlogFeed Component
@@ -26,21 +27,7 @@ const BlogFeed = ({ initialPosts, initialPageInfo, category }) => {
     const [isPrefetching, setIsPrefetching] = useState(false); // Validating if background fetch is running
     const [isLoadingMore, setIsLoadingMore] = useState(false); // Validating if user clicked Button and we are waiting
 
-    // Helper: Map raw GraphQL nodes to Card format
-    const mapPostToCard = (node) => {
-        const date = new Date(node.date);
-        return {
-            id: node.slug,
-            featuredImage: node.featuredImage?.node?.sourceUrl || null,
-            title: node.title || "",
-            desc: node.excerpt || "",
-            author: node.author?.node?.name || "enfycon",
-            day: date.getDate(),
-            month: date.toLocaleString("en-US", { month: "short" }),
-            year: date.getFullYear(),
-            category: node.categories?.nodes[0]?.name || "Technology",
-        };
-    };
+    // Helper removed, using imported mapPostToCard utility
 
     // FETCH LOGIC
     const fetchNextBatch = async (cursor) => {

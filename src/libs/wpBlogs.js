@@ -1,4 +1,5 @@
 import siteConfig from "@/config/siteConfig";
+import GET_POSTS_QUERY, { GET_LATEST_POST_QUERY } from "@/libs/blogQueries";
 
 const API_URL = `${siteConfig.blogApiUrl}/graphql`;
 
@@ -153,4 +154,47 @@ export async function getBlogBySlug(slug) {
   };
 
 
+}
+
+export async function getBlogPageData(category = null) {
+  try {
+    const variables = {
+      first: 15,
+      after: null,
+      categoryName: category || null,
+    };
+
+    const [latestRes, initialRes] = await Promise.all([
+      fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: GET_LATEST_POST_QUERY }),
+        next: { revalidate: 60 },
+      }),
+      fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          query: GET_POSTS_QUERY,
+          variables: variables,
+        }),
+        next: { revalidate: 60 },
+      }),
+    ]);
+
+    if (!latestRes.ok || !initialRes.ok) {
+      throw new Error("Failed to fetch posts");
+    }
+
+    const latestJson = await latestRes.json();
+    const initialJson = await initialRes.json();
+
+    return {
+      latestPost: latestJson.data?.posts?.nodes?.[0] || null,
+      posts: initialJson.data?.posts,
+    };
+  } catch (error) {
+    console.error("Error fetching blog data:", error);
+    return null;
+  }
 }
