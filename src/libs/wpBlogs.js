@@ -36,11 +36,36 @@ async function fetchAPI(query, { variables } = {}) {
   return json.data;
 }
 
-export async function getAllBlogs() {
+export async function getAllBlogs(categoryName = null) {
   const data = await fetchAPI(
     `
-    query AllPosts {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+    query AllPosts($categoryName: String, $hasCategory: Boolean!) {
+      posts(first: 20, where: { orderby: { field: DATE, order: DESC }, categoryName: $categoryName }) @include(if: $hasCategory) {
+        nodes {
+          id
+          title
+          slug
+          date
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          author {
+            node {
+              name
+            }
+          }
+          categories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+      }
+      latestPosts: posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) @skip(if: $hasCategory) {
         nodes {
           id
           title
@@ -66,11 +91,19 @@ export async function getAllBlogs() {
         }
       }
     }
-  `
+  `,
+    {
+      variables: {
+        categoryName,
+        hasCategory: !!categoryName
+      },
+    }
   );
 
+  const posts = categoryName ? data?.posts?.nodes : data?.latestPosts?.nodes;
+
   return (
-    data?.posts?.nodes.map((post) => {
+    posts?.map((post) => {
       const date = new Date(post.date);
       return {
         id: post.slug,
@@ -83,8 +116,6 @@ export async function getAllBlogs() {
         year: date.getFullYear(),
         category: post.categories?.nodes[0]?.name || "Technology",
       };
-
-
     }) || []
   );
 }

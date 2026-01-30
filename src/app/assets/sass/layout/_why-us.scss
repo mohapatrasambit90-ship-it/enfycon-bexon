@@ -24,8 +24,9 @@
         padding: 40px 30px;
         text-align: center;
         position: relative;
-        border-right: 1px solid rgba(59, 130, 246, 0.15); // Thin blue border
-        border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+        border-right: 1px solid var(--tj-color-theme-primary); // Thin blue border
+        border-bottom: 1px solid var(--tj-color-theme-primary);
+
 
         // Icon
         .icon {

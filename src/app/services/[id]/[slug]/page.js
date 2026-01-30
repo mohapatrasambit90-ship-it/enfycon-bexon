@@ -36,7 +36,8 @@ export async function generateMetadata({ params }) {
             const faqs = item.faqs?.map(f => `${f.question} ${f.answer}`).join(" ") || "";
             const whyenfycon = item.whyenfycon?.join(" ") || "";
             return `${item.title} ${item.desc} ${item.overview || ""} ${challenges} ${keyBenefits} ${faqs} ${whyenfycon}`;
-        }
+        },
+        idParamName: "slug"
     });
 }
 
@@ -44,18 +45,23 @@ export default async function ServiceDetails({ params }) {
     // 'id' here corresponds to the Category ID (first segment)
     // 'slug' corresponds to the Service ID (second segment)
     const { id, slug } = await params;
+    console.log(`[DEBUG] ServiceDetails - ID: ${id}, Slug: ${slug}`);
 
     // Validate Category (id)
     const categoryData = serviceCategories.find(c => c.id === id);
+    console.log(`[DEBUG] categoryData found: ${!!categoryData}`);
 
     if (!categoryData) {
+        console.log(`[DEBUG] Category not found: ${id}`);
         notFound();
     }
 
     // Validate Service within Category
     const serviceData = categoryData.services.find(s => s.id === slug);
+    console.log(`[DEBUG] serviceData found: ${!!serviceData}`);
 
     if (!serviceData) {
+        console.log(`[DEBUG] Service not found: ${slug} in category ${id}`);
         notFound();
     }
 

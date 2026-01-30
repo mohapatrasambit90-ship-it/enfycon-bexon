@@ -12,7 +12,7 @@ const CtaSidebar = () => {
 				</Link>
 			</div>
 			<div className="feature-images">
-				<img src="/images/service/service-ad.webp" alt="" />
+				<img src="/images/service/service-ad.png" alt="" />
 			</div>
 		</div>
 	);

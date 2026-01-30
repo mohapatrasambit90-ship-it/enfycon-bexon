@@ -1,55 +1,71 @@
 "use client";
 import BlogCard2 from "@/components/shared/cards/BlogCard2";
 import { getAllBlogs } from "@/libs/wpBlogs";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Blogs2 = () => {
+const Blogs2 = ({
+	categoryName = null,
+	title = "Strategies and Insights.",
+	subtitle = "Read Blogs",
+	description = "Developing personalized customer journeys to increase satisfaction and loyalty."
+}) => {
 	const [blogs, setBlogs] = useState([]);
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
+	const [hasLoaded, setHasLoaded] = useState(false);
+	const sectionRef = useRef(null);
+
+	const fetchBlogs = async () => {
+		if (loading || hasLoaded) return;
+		setLoading(true);
+		try {
+			const data = await getAllBlogs(categoryName);
+			setBlogs(data.slice(0, 4));
+			setHasLoaded(true);
+		} catch (error) {
+			console.error("Error fetching Blogs2 data:", error);
+		} finally {
+			setLoading(false);
+		}
+	};
 
 	useEffect(() => {
-		const fetchBlogs = async () => {
-			try {
-				const data = await getAllBlogs();
-				setBlogs(data.slice(0, 4));
-			} catch (error) {
-				console.error("Error fetching home blogs:", error);
-			} finally {
-				setLoading(false);
-			}
-		};
-		fetchBlogs();
-	}, []);
-
-	if (loading) {
-		return (
-			<div className="container section-gap text-center">
-				<h3>Loading Latest Blogs...</h3>
-			</div>
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (entries[0].isIntersecting) {
+					fetchBlogs();
+					observer.disconnect();
+				}
+			},
+			{ rootMargin: "200px" }
 		);
-	}
+
+		if (sectionRef.current) {
+			observer.observe(sectionRef.current);
+		}
+
+		return () => observer.disconnect();
+	}, [categoryName]);
 
 	return (
-		<section className="tj-blog-section-2 section-gap">
+		<section className="tj-blog-section-2 section-gap" ref={sectionRef}>
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
 						<div className="sec-heading-wrap">
 							<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-								Read Blogs
+								{subtitle}
 							</span>
 							<div className="heading-wrap-content">
 								<div className="sec-heading style-2">
 									<h2 className="sec-title text-anim">
-										Strategies and <span>Insights.</span>
+										{title}
 									</h2>
 								</div>
 								<div className="wow fadeInUp" data-wow-delay=".5s">
 									<p className="desc">
-										Developing personalized customer journeys to increase
-										satisfaction and loyalty.
+										{description}
 									</p>
 								</div>
 								<div
@@ -76,46 +92,52 @@ const Blogs2 = () => {
 				<div className="row">
 					<div className="col-12">
 						<div className="blog-wrapper wow fadeIn" data-wow-delay=".5s">
-							<Swiper
-								slidesPerView={1}
-								spaceBetween={15}
-								loop={true}
-								speed={1500}
-								loopAdditionalSlides={1}
-								autoplay={{
-									delay: 5000,
-								}}
-								pagination={{
-									el: ".swiper-pagination-area",
-									clickable: true,
-								}}
-								navigation={{ nextEl: ".slider-next", prevEl: ".slider-prev" }}
-								breakpoints={{
-									768: {
-										spaceBetween: 20,
-										slidesPerView: 1,
-									},
-									992: {
-										slidesPerView: 2,
-										spaceBetween: 20,
-									},
-									1200: {
-										slidesPerView: 2,
-										spaceBetween: 30,
-									},
-								}}
-								modules={[Pagination, Autoplay, Navigation]}
-								className="blog-slider"
-							>
-								{blogs?.length
-									? blogs?.map((blog, idx) => (
-										<SwiperSlide key={idx}>
-											<BlogCard2 blog={blog} idx={idx} />
-										</SwiperSlide>
-									))
-									: ""}
-								<div className="swiper-pagination-area"></div>
-							</Swiper>
+							{loading && !blogs.length ? (
+								<div className="text-center py-5">
+									<h3>Loading Insights...</h3>
+								</div>
+							) : (
+								<Swiper
+									slidesPerView={1}
+									spaceBetween={15}
+									loop={true}
+									speed={1500}
+									loopAdditionalSlides={1}
+									autoplay={{
+										delay: 5000,
+									}}
+									pagination={{
+										el: ".swiper-pagination-area",
+										clickable: true,
+									}}
+									navigation={{ nextEl: ".slider-next", prevEl: ".slider-prev" }}
+									breakpoints={{
+										768: {
+											spaceBetween: 20,
+											slidesPerView: 1,
+										},
+										992: {
+											slidesPerView: 2,
+											spaceBetween: 20,
+										},
+										1200: {
+											slidesPerView: 2,
+											spaceBetween: 30,
+										},
+									}}
+									modules={[Pagination, Autoplay, Navigation]}
+									className="blog-slider"
+								>
+									{blogs?.length
+										? blogs?.map((blog, idx) => (
+											<SwiperSlide key={idx}>
+												<BlogCard2 blog={blog} idx={idx} />
+											</SwiperSlide>
+										))
+										: ""}
+									<div className="swiper-pagination-area"></div>
+								</Swiper>
+							)}
 						</div>
 					</div>
 				</div>

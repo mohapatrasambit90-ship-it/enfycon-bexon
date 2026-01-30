@@ -21,10 +21,10 @@ const Blogs1 = () => {
 				<div className="row row-gap-4">
 					{blogs?.length
 						? blogs?.map((blog, idx) => (
-								<div key={idx} className="col-xl-4 col-md-6">
-									<BlogCard1 blog={blog} idx={idx} />
-								</div>
-						  ))
+							<div key={idx} className="col-xl-4 col-md-6">
+								<BlogCard1 blog={blog} idx={idx} />
+							</div>
+						))
 						: ""}
 				</div>
 			</div>

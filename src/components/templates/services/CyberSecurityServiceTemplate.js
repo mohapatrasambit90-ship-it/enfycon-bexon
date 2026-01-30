@@ -4,6 +4,8 @@ import MethodologySection from "@/components/sections/services/cyber/Methodology
 import ApproachSection from "@/components/sections/services/cyber/ApproachSection";
 import ProductUseCaseSection from "@/components/sections/products/ProductUseCaseSection";
 import WhyUsSection from "@/components/sections/services/WhyUsSection";
+import Faq2 from "@/components/sections/faq/Faq2";
+import Blogs2 from "@/components/sections/blogs/Blogs2";
 
 const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
     const services = getALlServices();
@@ -18,6 +20,11 @@ const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
     if (category && categoryId) {
         breadcrums.push({ name: category, path: `/services/${categoryId}` });
     }
+
+    const mappedFaqs = currentItem?.faqs?.map(faq => ({
+        title: faq.question,
+        desc: faq.answer
+    }));
 
     return (
         <div className="cyber-security-wrapper">
@@ -61,6 +68,23 @@ const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
 
             {/* Why Us Section */}
             <WhyUsSection />
+
+            {/* Related Blogs Section */}
+            <Blogs2
+                categoryName="cyber-security"
+                title="Related Insights & Cyber Security News"
+                description="Explore our latest analysis on emerging threats, compliance standards, and defensive strategies for modern enterprises."
+            />
+
+            {/* FAQ Section */}
+            {mappedFaqs && (
+                <Faq2
+                    data={mappedFaqs}
+                    type={2}
+                    title="Frequently Asked Questions"
+                    rightTitle="Common Questions"
+                />
+            )}
 
         </div>
     );

@@ -77,9 +77,11 @@ export async function generateDynamicMetadata({
     titleField = "title",
     descField = "desc",
     imageField = "image",
-    keywordContext = ""
+    keywordContext = "",
+    idParamName = "id"
 }) {
-    const { id } = await params;
+    const resolvedParams = await params;
+    const id = resolvedParams[idParamName];
     const parsedId = idParser(id);
     const item = items?.find(({ id: itemId }) => itemId === parsedId);
 
