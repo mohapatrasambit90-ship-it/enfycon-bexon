@@ -488,6 +488,13 @@ export const serviceCategories = [
                     { title: "Balancing Security and Productivity", desc: "Security controls that are too restrictive will be bypassed by employees looking to get work done. Finding the balance between robust defense and operational efficiency is critical for long-term success." },
                     { title: "Shadow IT & Proliferation", desc: "The unauthorized use of SaaS tools and personal devices (Shadow IT) creates unmanaged entry points. Bringing these activities under security governance without stifling innovation is a major hurdle." }
                 ],
+                faqs: [
+                    { question: "What is Operational Security (OpSec) exactly?", answer: "OpSec is the process which identifies critical information to determine if friendly actions can be observed by adversary intelligence systems. In a business context, it means creating protocols that protect sensitive information during daily activities." },
+                    { question: "How do you help manage Shadow IT?", answer: "We use discovery tools to identify unauthorized software use and then work with your teams to implement governance that allows for productivity while ensuring security oversight." },
+                    { question: "Why is multi-factor authentication (MFA) so important?", answer: "MFA is the single most effective way to prevent account takeovers. We help you select and deploy MFA solutions (like hardware keys or biometrics) that are both secure and user-friendly." },
+                    { question: "Can you help us secure our remote workforce?", answer: "Yes, we implement Zero-Trust principles where every user and device must be verified regardless of their location, eliminating the vulnerabilities associated with traditional network perimeters." },
+                    { question: "What role does employee training play in OpSec?", answer: "A massive one. We provide dynamic awareness training and simulated phishing attacks to turn your employees from your greatest vulnerability into your first line of defense." }
+                ],
                 keyBenefits: [
                     {
                         title: "Cultural Security Maturity",
@@ -611,6 +618,13 @@ export const serviceCategories = [
                     { title: "Dynamic, Shifting Standards", desc: "Regulations are not static. Standards like SOC2 and PCI-DSS are updated frequently, requiring constant monitoring and adjustment of technical controls to maintain compliance." },
                     { title: "Evidence Collection at Scale", desc: "Providing proof of compliance during an audit is often a manual, chaotic process. Gathering logs, policies, and configuration evidence from across a modern infrastructure is incredibly time-consuming." }
                 ],
+                faqs: [
+                    { question: "Which compliance standards does enfycon support?", answer: "We have deep expertise in GDPR (Privacy), SOC2 (Service Orgs), HIPAA (Healthcare), PCI-DSS (Payments), and several local data sovereignty laws." },
+                    { question: "How long does it take to get SOC2 ready?", answer: "Typically, the readiness phase takes 3 to 6 months depending on your current security maturity. We accelerate this by providing proven control templates and architectural blueprints." },
+                    { question: "Does being compliant mean we are 100% secure?", answer: "Compliance is a baseline. It proves you meet certain standards, but true security is an active, ongoing effort. We use compliance as a foundation to build a more robust, threat-focused defense." },
+                    { question: "How do you handle global data privacy laws like GDPR?", answer: "We perform data flow mapping to identify where sensitive data lives and resides, then implement the technical and procedural controls required to meet GDPR, CCPA, and other regional laws." },
+                    { question: "Can you help automate our compliance evidence collection?", answer: "Yes, we assist in selecting and implementing GRC automation tools that integrate with your cloud environment to collect audit evidence continuously, reducing 'audit season' stress." }
+                ],
                 keyBenefits: [
                     {
                         title: "Mitigation of Legal & Financial Risk",
@@ -733,6 +747,13 @@ export const serviceCategories = [
                     { title: "Siloed Security Functions", desc: "In many organizations, security, legal, and operations teams work in silos with no unified view of risk. This leads to redundant work and critical gaps in organizational defense." },
                     { title: "Lack of Risk Quantification", desc: "Making informed decisions is impossible without understanding the actual dollar-value risk to the business. Moving from 'feeling' to 'measuring' risk is a major hurdle for many executives." },
                     { title: "Inflexible Governance Models", desc: "Rigid governance can stifle innovation. Building a framework that is robust enough to protect the business but flexible enough to support speed-to-market is the ultimate GRC challenge." }
+                ],
+                faqs: [
+                    { question: "What exactly does GRC stand for?", answer: "GRC stands for Governance, Risk, and Compliance. It’s a strategy for managing an organization's overall governance, enterprise risk management, and compliance with regulations." },
+                    { question: "How do you quantify cyber risk in financial terms?", answer: "We use frameworks like the FAIR model to map technical vulnerabilities to potential financial loss, helping you prioritize security investments based on actual business impact." },
+                    { question: "Do you help with third-party/vendor risk management?", answer: "Yes, we establish programs to assess the security posture of your partners and vendors, ensuring your supply chain doesn't introduce critical vulnerabilities into your environment." },
+                    { question: "Can you assist with Business Continuity (BCP) and Disaster Recovery (DRP)?", answer: "Absolutely. We design and test resilient strategies to ensure your critical business functions can continue or resume quickly after a security incident or disaster." },
+                    { question: "Why is security governance important for the Board and C-suite?", answer: "Governance ensures that security is a strategic priority, not just an IT problem. It provides leadership with the transparency and metrics needed for informed decision-making and legal accountability." }
                 ],
                 keyBenefits: [
                     {
