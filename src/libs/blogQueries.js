@@ -28,6 +28,7 @@ const GET_POSTS_QUERY = `
           author {
             node {
               name
+              slug
             }
           }
           categories {
@@ -59,6 +60,7 @@ export const GET_LATEST_POST_QUERY = `
         author {
           node {
             name
+            slug
           }
         }
         categories {
