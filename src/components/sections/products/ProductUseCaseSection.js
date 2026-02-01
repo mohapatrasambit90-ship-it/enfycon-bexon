@@ -114,7 +114,7 @@ const ProductUseCaseSection = ({ title = "Use Cases Across Industries", items })
                                                 key={itemIdx}
                                                 className="d-flex align-items-start mb-3"
                                                 style={{
-                                                    fontSize: '15px',
+                                                    fontSize: '16px',
                                                     lineHeight: '1.7',
                                                     color: 'var(--tj-grey-1)',
                                                 }}
