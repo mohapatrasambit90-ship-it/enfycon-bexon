@@ -69,12 +69,7 @@ const CyberSecurityServiceTemplate = ({ serviceSlug }) => {
             {/* Why Us Section */}
             <WhyUsSection items={currentItem?.whyUsItems} />
 
-            {/* Related Blogs Section */}
-            <Blogs2
-                categoryName="cyber-security"
-                title="Related Insights & Cyber Security News"
-                description="Explore our latest analysis on emerging threats, compliance standards, and defensive strategies for modern enterprises."
-            />
+      
 
             {/* FAQ Section */}
             {mappedFaqs && (

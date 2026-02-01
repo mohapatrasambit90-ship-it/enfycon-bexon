@@ -111,12 +111,7 @@ const StaffingServiceTemplate = ({ serviceSlug }) => {
             {/* Why Us Section */}
             {whyUsItems && <WhyUsSection items={whyUsItems} />}
 
-            {/* Related Blogs Section */}
-            <Blogs2
-                categoryName="it-professional-staffing" // Ensure this matches a valid blog category
-                title="Related Insights"
-                description="Stay updated with the latest trends in technology staffing and recruitment."
-            />
+          
 
             {/* FAQ Section */}
             {mappedFaqs && (

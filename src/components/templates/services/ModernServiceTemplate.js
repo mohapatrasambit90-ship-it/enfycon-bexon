@@ -107,13 +107,7 @@ const ModernServiceTemplate = async ({ serviceSlug }) => {
             {/* Why Us Section */}
             {whyUsItems && <WhyUsSection items={whyUsItems} />}
 
-            {/* Related Blogs Section */}
-            <Blogs2
-                categoryName={categoryId} // Uses the category ID to fetch relevant blogs
-                title="Related Insights"
-                description={`Stay updated with the latest trends in ${category || 'our services'}.`}
-                blogs={blogs}
-            />
+          
 
             {/* FAQ Section */}
             {mappedFaqs && (

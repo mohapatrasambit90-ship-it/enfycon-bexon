@@ -1,10 +1,4 @@
-"use client";
-
-import BootstrapWrapper from "@/components/shared/wrappers/BootstrapWrapper";
-
 import Link from "next/link";
-import { useState } from "react";
-import CtaSidebar from "../cta/CtaSidebar";
 import IconFeatureGrid from "@/components/shared/sections/IconFeatureGrid";
 import CheckListSection from "@/components/shared/sections/CheckListSection";
 import IndustrySplitSection from "@/components/shared/sections/IndustrySplitSection";
