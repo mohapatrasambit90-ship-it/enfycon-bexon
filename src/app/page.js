@@ -22,6 +22,9 @@ export const metadata = {
 };
 
 export default async function Home() {
+	// Temporary delay to verify skeleton
+	await new Promise((resolve) => setTimeout(resolve, 3000));
+
 	const data = await getAllBlogs(null);
 	const blogs = data?.slice(0, 4) || [];
 

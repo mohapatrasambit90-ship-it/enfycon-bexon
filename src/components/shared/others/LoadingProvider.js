@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from "react";
-import Preloader from "./Preloader";
+
 
 const LoadingContext = createContext();
 
@@ -14,7 +14,6 @@ export const LoadingProvider = ({ children }) => {
 
     return (
         <LoadingContext.Provider value={{ isLoading, setLoading }}>
-            {isLoading && <Preloader />}
             {children}
         </LoadingContext.Provider>
     );

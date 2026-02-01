@@ -6,6 +6,8 @@ import { getAllBlogs } from "@/libs/wpBlogs";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useLoading } from "@/components/shared/others/LoadingProvider";
+import BlogCardSkeleton from "@/components/shared/blogs/BlogCardSkeleton";
+import BlogSidebar from "@/components/shared/sidebar/BlogSidebar";
 
 const BlogMain = () => {
 	const [allItems, setAllItems] = useState([]);
@@ -79,7 +81,24 @@ const BlogMain = () => {
 						: []
 				}
 			/>
-			{isLoading ? null : (
+			{isLoading ? (
+				<section className="tj-blog-section section-gap">
+					<div className="container">
+						<div className="row row-gap-5">
+							<div className="col-lg-8">
+								<div className="blog-post-wrapper">
+									{[1, 2, 3].map((item) => (
+										<BlogCardSkeleton key={item} />
+									))}
+								</div>
+							</div>
+							<div className="col-lg-4">
+								<BlogSidebar />
+							</div>
+						</div>
+					</div>
+				</section>
+			) : (
 				<BlogsPrimary filteredItems={filteredItems} />
 			)}
 		</div>
@@ -87,4 +106,3 @@ const BlogMain = () => {
 };
 
 export default BlogMain;
-
