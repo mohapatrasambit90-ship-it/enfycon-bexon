@@ -3,8 +3,8 @@ import { getAllBlogs, getBlogBySlug, getRelatedPosts } from "@/libs/wpBlogs";
 import { notFound } from "next/navigation";
 
 export default async function BlogDetails({ params }) {
-	// Temporary delay to verify skeleton
-	await new Promise((resolve) => setTimeout(resolve, 3000));
+
+
 	const { id } = await params;
 	const post = await getBlogBySlug(id);
 
