@@ -23,7 +23,7 @@ import { csrData } from "@/data/csrData";
 import { constructMetadata } from "@/libs/seo";
 
 export const metadata = constructMetadata({
-	title: "About Us - enfycon",
+	title: "Leading AI & Technology Consulting Firm | enfycon About",
 	description: "Learn about enfycon, our mission, vision, and the team driving technological excellence.",
 	image: "/images/bg/service-banner.jpg",
 });

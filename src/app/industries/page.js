@@ -12,8 +12,8 @@ import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import { constructMetadata } from "@/libs/seo";
 
 export const metadata = constructMetadata({
-    title: "Industries - enfycon",
-    description: "Explore the diverse industries Enfycon serves, from banking and finance to healthcare and human resources, delivering tailored technological solutions.",
+    title: "Banking, Healthcare, Finance & Legal Tech Solutions | enfycon Industries",
+    description: "Explore the diverse industries enfycon serves, from banking and finance to healthcare and human resources, delivering tailored technological solutions.",
     image: "/images/bg/service-banner.jpg",
 });
 
@@ -25,12 +25,12 @@ export default function Industries() {
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
-                       <HeaderSpace/>
+                        <HeaderSpace />
                         <HeroInner title={"Industries"} text={"Industries"} />
                         <IndustriesPage />
                         <Contact2 />
-                      
-                     
+
+
                     </main>
                     <Footer2 />
                 </div>

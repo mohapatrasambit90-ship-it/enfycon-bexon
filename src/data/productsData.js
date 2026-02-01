@@ -6,6 +6,8 @@ export const productsData = [
         desc: "WhatsApp-powered AI chatbot platform delivering instant, intelligent customer engagement at scale with enterprise-grade security and customization.",
         image: "/images/product/icognito.jpg",
         category: "AI Intelligence",
+        metaTitle: "iCognito.ai - AI Chatbot & Customer Engagement Platform | enfycon",
+        metaDescription: "Enhance customer support with iCognito.ai by enfycon. An intelligent AI chatbot platform for instant, 24/7 personalized customer engagement.",
         overviewTitle: "Transform Customer Engagement with AI",
         longDesc: [
             "At enfycon, we don't just build AI tools — we craft intelligent ecosystems that redefine how enterprises operate, scale, and innovate. We're on a mission to digitally transform over a million businesses worldwide, helping them navigate the complexity of modern data, customer expectations, and operational challenges through advanced AI, Web 3.0, and software engineering.",
@@ -160,6 +162,8 @@ export const productsData = [
         desc: "Redefining Dentistry with AI-Powered Practice Management. Purpose-built for dentists, clinics, and dental hospitals, integrating administration, patient engagement, clinical workflows, and financial operations into a single AI-enabled cloud platform.",
         image: "/images/product/idental.jpg",
         category: "Healthcare AI",
+        metaTitle: "iDental.ai - Smart Dental Practice Management Software | enfycon",
+        metaDescription: "Manage your dental clinic efficiently with iDental.ai by enfycon. An all-in-one cloud platform for appointments, billing, and patient records.",
         overviewTitle: "Redefining Dentistry with AI-Powered Practice Management",
         longDesc: [
             "Managing a dental practice today is no easy task. From juggling patient records, scheduling appointments, handling billing, and maintaining treatment histories to ensuring seamless patient communication—the workload can overwhelm even the most efficient clinics.",
@@ -348,6 +352,8 @@ export const productsData = [
         desc: "AI-powered legal research and document automation platform delivering precision, speed, and intelligent insights for law firms, corporate legal teams, and judiciary professionals.",
         image: "/images/product/lexgen.jpg",
         category: "Legal AI",
+        metaTitle: "lexGenie.ai - AI Legal Assistant & Research Tool | enfycon",
+        metaDescription: "Accelerate legal research with lexGenie.ai by enfycon. An AI-powered assistant for case summaries, contract review, and legal intelligence.",
         overviewTitle: "Empower Your Legal Practice with AI-Powered Precision",
         longDesc: [
             "The legal industry is at a digital crossroads—rising caseloads, manual research, and documentation bottlenecks collide with increasing client expectations. LexGenie revolutionizes how legal professionals research, draft, review, and reason.",
@@ -520,6 +526,8 @@ export const productsData = [
         desc: "Turn your financial data into actionable intelligence instantly. GenAI-powered platform delivering validated, audit-ready business insights for modern finance teams.",
         image: "/images/product/ifin.jpg",
         category: "Financial AI",
+        metaTitle: "QuantaFin.ai - GenAI Financial Analytics Platform | enfycon",
+        metaDescription: "Gain real-time financial insights with QuantaFin.ai by enfycon. A Generative AI platform for automated reporting, budgeting, and forecasting.",
         overviewTitle: "Turn Your Financial Data Into Actionable Intelligence",
         longDesc: [
             "In the fast-paced world of modern finance, QuantaFin uses Large Language Models (LLMs) and Generative AI to transform raw data into powerful, validated, and audit-ready business insights—instantly.",
@@ -698,6 +706,8 @@ export const productsData = [
         desc: "AI-driven facial recognition attendance system that eliminates proxy punching, tracks absenteeism in real-time, and empowers management with actionable workforce insights.",
         image: "/images/product/performance.jpg",
         category: "Workforce AI",
+        metaTitle: "PerformEdge.ai - Facial Recognition Attendance System | enfycon",
+        metaDescription: "Ensure accurate attendance with PerformEdge.ai by enfycon. An AI-driven facial recognition system for tamper-proof workforce management.",
         overviewTitle: "Redefining Workforce Management with AI-Driven Accuracy",
         longDesc: [
             "In today's fast-moving business landscape, managing workforce attendance is no longer just about recording entry and exit times—it's about ensuring efficiency, transparency, and productivity. Manual systems and traditional biometric devices often fail to provide real-time visibility, allow manipulation, or create bottlenecks in workforce management.",

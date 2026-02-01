@@ -10,7 +10,7 @@ import { constructMetadata } from "@/libs/seo";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 
 export const metadata = constructMetadata({
-    title: "Our Products - AI-Powered Solutions | enfycon",
+    title: "AI Intelligence & Business Platforms | enfycon Products",
     description: "Explore enfycon's suite of AI-powered products including iCognito.ai, iDental.ai, lexGenie.ai, quantfin.ai, PerformanceEdge.ai, and iWac.ai.",
     image: "/images/product/icognito.jpg",
 });
@@ -24,11 +24,11 @@ export default function Products() {
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
-                        <HeaderSpace/>
+                        <HeaderSpace />
                         <HeroInner title={"Products"} text={"Products"} />
                         <ProductsPage />
                         <Contact2 />
-                       
+
                     </main>
                     <Footer2 />
                 </div>

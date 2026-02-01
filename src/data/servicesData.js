@@ -4,6 +4,8 @@ export const serviceCategories = [
         id: "ai-allied-services",
         name: "Custom Professional AI Services",
         title: "Custom Professional AI Services",
+        metaTitle: "Enterprise AI Solutions & Agentic AI Services | enfycon",
+        metaDescription: "Transform your business with enfycon's Custom AI Services. We specialize in AI Agents (Agentic AI), Machine Learning capability, and AI-First Platform Engineering.",
         desc: "Transform your business with cutting-edge AI solutions. We harness machine learning and emerging technologies to build intelligent systems that automate processes, enhance decision-making, and drive innovation.",
         services: [
             {
@@ -294,6 +296,8 @@ export const serviceCategories = [
         id: "it-professional-staffing",
         name: "IT Professional Staffing",
         title: "IT Professional Staffing",
+        metaTitle: "IT Professional Staffing & Tech Recruitment | enfycon",
+        metaDescription: "Hire top-tier IT talent with enfycon's staffing solutions. We provide US Technology Hiring, Domestic Staffing, and Offshore Dedicated Teams for your digital needs.",
         desc: "Connect with top-tier IT talent to power your digital transformation. Our staffing solutions provide skilled professionals across all technology domains, ensuring you have the expertise to drive innovation.",
         services: [
             {
@@ -584,6 +588,8 @@ export const serviceCategories = [
         id: "data-analytics",
         name: "Data & Analytics",
         title: "Data & Analytics",
+        metaTitle: "Data Analytics, BI & Cloud Modernization Services | enfycon",
+        metaDescription: "Unlock actionable insights with enfycon's Data & Analytics services. Experts in Enterprise Modernization, Advanced Analytics (BI), and Data Engineering pipelines.",
         desc: "Unlock the power of your data with advanced analytics solutions. We transform raw data into actionable insights through data engineering, predictive modeling, and visualizations that drive better business decisions.",
         services: [
             {

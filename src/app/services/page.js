@@ -11,8 +11,8 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import { constructMetadata } from "@/libs/seo";
 
 export const metadata = constructMetadata({
-	title: "Services - enfycon",
-	description: "Discover the range of services Enfycon offers to empower your business with cutting-edge technology.",
+	title: "AI, Staffing, Data & Cybersecurity Solutions | enfycon Services",
+	description: "Discover the range of services enfycon offers to empower your business with cutting-edge technology.",
 	image: "/images/bg/service-banner.jpg",
 });
 
@@ -24,11 +24,11 @@ export default function Services() {
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-				<HeaderSpace/>
+						<HeaderSpace />
 						<HeroInner title={"Services"} text={"Services"} />
 						<ServicesCategorized />
 						<Contact2 />
-						
+
 
 					</main>
 					<Footer2 />

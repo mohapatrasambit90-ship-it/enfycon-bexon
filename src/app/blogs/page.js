@@ -1,17 +1,12 @@
-import BlogFeed from "@/components/sections/blogs/BlogFeed";
-import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-import Header from "@/components/layout/header/Header";
-import Footer2 from "@/components/layout/footer/Footer2";
-import BackToTop from "@/components/shared/others/BackToTop";
-import HeaderSpace from "@/components/shared/others/HeaderSpace";
+import BlogHeroEnterprise from "@/components/sections/blogs/BlogHeroEnterprise";
 import LatestBlogHero from "@/components/sections/blogs/LatestBlogHero";
 import { mapPostToCard } from "@/libs/mappers";
 import { getBlogPageData, getCategoryCounts, getAllAuthors } from "@/libs/wpBlogs";
-import BlogHeroEnterprise from "@/components/sections/blogs/BlogHeroEnterprise";
 import BlogFilter from "@/components/sections/blogs/BlogFilter";
+import BlogFeed from "@/components/sections/blogs/BlogFeed";
 
 export const metadata = {
-	title: "Blogs - enfycon",
+	title: "Latest Technology & Industry Insights | enfycon Blogs",
 	description: "Explore our latest insights and news",
 };
 
@@ -33,23 +28,10 @@ export default async function BlogPage(props) {
 
 	if (!postsData) {
 		return (
-			<div>
-				<BackToTop />
-				<Header />
-				<div id="smooth-wrapper">
-					<div id="smooth-content">
-						<main>
-							<HeaderSpace />
-							<div className="container mt-5 pt-5 text-center">
-								<h3>Unable to load blogs</h3>
-								<p>We are experiencing some technical difficulties. Please check back later.</p>
-								<a href="/blogs" className="btn btn-primary mt-3">Refresh Page</a>
-							</div>
-						</main>
-						<Footer2 />
-					</div>
-				</div>
-				<ClientWrapper />
+			<div className="container mt-5 pt-5 text-center">
+				<h3>Unable to load blogs</h3>
+				<p>We are experiencing some technical difficulties. Please check back later.</p>
+				<a href="/blogs" className="btn btn-primary mt-3">Refresh Page</a>
 			</div>
 		);
 	}
@@ -86,39 +68,28 @@ export default async function BlogPage(props) {
 	);
 
 	return (
-		<div>
-			<BackToTop />
-			<Header />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<main>
-						<HeaderSpace />
-						<BlogHeroEnterprise
-							customTitle={heroTitle}
-							breadcrumbOverride={breadcrumbs}
-						/>
-						<LatestBlogHero post={latestPost} />
+		<>
+			<BlogHeroEnterprise
+				customTitle={heroTitle}
+				breadcrumbOverride={breadcrumbs}
+			/>
+			<LatestBlogHero post={latestPost} />
 
-						<section className="tj-blog-section section-gap pt-4">
-							<div className="container">
-								<BlogFilter
-									categories={categories}
-									authors={authors}
-									initialCategory={category}
-									initialAuthor={author}
-								/>
-								<BlogFeed
-									initialPosts={initialPosts}
-									initialPageInfo={pageInfo}
-									category={category}
-								/>
-							</div>
-						</section>
-					</main>
-					<Footer2 />
+			<section className="tj-blog-section section-gap pt-4">
+				<div className="container">
+					<BlogFilter
+						categories={categories}
+						authors={authors}
+						initialCategory={category}
+						initialAuthor={author}
+					/>
+					<BlogFeed
+						initialPosts={initialPosts}
+						initialPageInfo={pageInfo}
+						category={category}
+					/>
 				</div>
-			</div>
-			<ClientWrapper />
-		</div>
+			</section>
+		</>
 	);
 }

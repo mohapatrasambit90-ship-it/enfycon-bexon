@@ -1,6 +1,5 @@
 import BlogDetailsPrimary from "@/components/sections/blogs/BlogDetailsPrimary";
 import BlogHeroEnterprise from "@/components/sections/blogs/BlogHeroEnterprise";
-import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import getPreviousNextItem from "@/libs/getPreviousNextItem";
 import { getAllBlogs } from "@/libs/wpBlogs";
 
@@ -10,7 +9,6 @@ const BlogDetailsMain = async ({ post }) => {
 
 	return (
 		<div>
-			<HeaderSpace />
 			<BlogHeroEnterprise post={post} />
 			<BlogDetailsPrimary post={post} option={option} />
 		</div>
@@ -18,4 +16,3 @@ const BlogDetailsMain = async ({ post }) => {
 };
 
 export default BlogDetailsMain;
-

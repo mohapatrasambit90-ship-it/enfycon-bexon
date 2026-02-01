@@ -27,8 +27,8 @@ export async function generateMetadata({ params }) {
     }
 
     return constructMetadata({
-        title: `${category.name} - Services - enfycon`,
-        description: category.desc || "Discover our specialized services.",
+        title: category.metaTitle || `${category.name} - Services - enfycon`,
+        description: category.metaDescription || category.desc || "Discover our specialized services.",
         // You might want to map specific images if available in category data
         // image: category.img4 
     });

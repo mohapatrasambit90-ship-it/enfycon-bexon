@@ -16,6 +16,11 @@ import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import { getAllBlogs } from "@/libs/wpBlogs";
 
+export const metadata = {
+	title: "Enterprise AI, Cybersecurity & IT Staffing Solutions | enfycon",
+	description: "Empowering businesses with cutting-edge AI, robust cybersecurity, and expert IT staffing solutions. Partner with enfycon for digital transformation.",
+};
+
 export default async function Home() {
 	const data = await getAllBlogs(null);
 	const blogs = data?.slice(0, 4) || [];

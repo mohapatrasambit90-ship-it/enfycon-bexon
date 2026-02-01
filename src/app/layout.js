@@ -37,8 +37,8 @@ const headingFont = Mona_Sans({
 import { constructMetadata } from "@/libs/seo";
 
 export const metadata = constructMetadata({
-	title: "enfycon - empowering business with technology",
-	description: "enfycon - empowering business with technology",
+	title: "Empowering Business with Technology | enfycon",
+	description: "Empowering businesses with cutting-edge AI, robust cybersecurity, and expert IT staffing solutions. Partner with enfycon for digital transformation.",
 });
 
 import { LoadingProvider } from "@/components/shared/others/LoadingProvider";
@@ -51,8 +51,8 @@ export default function RootLayout({ children }) {
 				<LoadingProvider>
 					{children}
 					<CookieConsent />
-					<SpeedInsights/>
-					<Analytics/>
+					<SpeedInsights />
+					<Analytics />
 				</LoadingProvider>
 			</body>
 		</html>

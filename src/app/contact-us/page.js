@@ -11,7 +11,7 @@ import { constructMetadata } from "@/libs/seo";
 import Contact2 from "@/components/sections/contacts/Contact2";
 
 export const metadata = constructMetadata({
-    title: "Contact Us - enfycon",
+    title: "Get Expert IT & AI Consultation | enfycon Contact",
     description: "Get in touch with enfycon. Our global presence ensures local excellence in delivering top-notch solutions.",
     image: "/images/bg/service-banner.jpg",
 });
@@ -25,11 +25,11 @@ export default function ContactUs() {
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
-                      <HeaderSpace/>
+                        <HeaderSpace />
                         <HeroInner title={"Contact Us"} text={"Contact Us"} />
-                     
+
                         <LocationSection />
-                           <Contact2/>
+                        <Contact2 />
                         {/* <ContactFormCustom /> */}
                     </main>
                     <Footer2 />

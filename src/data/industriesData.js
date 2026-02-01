@@ -4,6 +4,8 @@ export const industriesData = [
         title: "Banking",
         desc: "Empowering banking institutions with secure digital solutions, modern core banking systems, and innovative fintech platforms for enhanced customer experiences.",
         image: "/images/industries/banking/digital-banking-transformation.jpg",
+        metaTitle: "Banking Software Solutions & Digital Transformation | enfycon",
+        metaDescription: "Transform banking with enfycon's digital solutions. We specialize in AI-driven fraud detection, core banking modernization, and seamless digital payments.",
         overviewTitle: "Strategic Banking Transformation",
         longDesc: [
             "The banking sector is undergoing a profound transformation, driven by the dual forces of technological innovation and evolving customer expectations. Traditional institutions are no longer competing just with each other but with agile fintech startups and tech giants that have redefined the standard for digital experiences. To stay ahead, banks must modernize legacy systems, ensuring they are not only secure and compliant but also flexible enough to integrate with an ecosystem of modern financial applications.",
@@ -198,6 +200,8 @@ export const industriesData = [
         title: "Finance",
         desc: "Transforming financial services with intelligent automation, risk management solutions, and next-generation payment systems for the digital economy.",
         image: "/images/industries/finance.jpg",
+        metaTitle: "Financial Services Technology & Fintech Solutions | enfycon",
+        metaDescription: "Accelerate financial performance with enfycon. Our solutions include algorithmic trading, risk management analysis, and next-gen payment systems.",
         overviewTitle: "Accelerating Financial Performance",
         longDesc: [
             "In the fast-paced world of financial services, data is the new currency. Investment firms, insurance companies, and capital markets are inundated with information that, if properly harnessed, can unlock unprecedented value. However, the challenge lies in processing this volume of data with speed and accuracy while maintaining strict adherence to regulatory standards. The future of finance belongs to those who can turn raw numbers into actionable intelligence instantly.",
@@ -376,6 +380,8 @@ export const industriesData = [
         title: "Healthcare",
         desc: "Revolutionizing healthcare delivery with digital health platforms, telemedicine solutions, and advanced patient management systems.",
         image: "/images/industries/health-care.jpg",
+        metaTitle: "Healthcare IT Solutions & Digital Health Platforms | enfycon",
+        metaDescription: "Revolutionize patient care with enfycon's healthcare IT solutions. We offer telemedicine platforms, AI diagnostics, and interoperable EHR systems.",
         overviewTitle: "Connected Health Ecosystems",
         longDesc: [
             "Healthcare is experiencing a digital renaissance, moving away from reactive sick care to proactive, preventative wellness management. The integration of electronic health records, telemedicine, and wearable devices has created a connected health ecosystem, but it has also introduced significant interoperability and data privacy challenges. Providers need systems that communicate seamlessly to provide a holistic view of patient health without compromising the security of sensitive medical information.",
@@ -566,6 +572,8 @@ export const industriesData = [
         title: "Human Resource",
         desc: "Streamlining HR operations with intelligent workforce management, talent acquisition platforms, and employee engagement solutions.",
         image: "/images/industries/human-resource.jpg",
+        metaTitle: "HR Tech Solutions & Workforce Management | enfycon",
+        metaDescription: " streamline HR operations with enfycon. Our HR tech solutions include AI recruitment, employee engagement platforms, and predictive workforce analytics.",
         overviewTitle: "Elevating the Employee Experience",
         longDesc: [
             "The modern workplace has evolved beyond the physical office, and with it, the role of Human Resources has shifted from administrative support to strategic leadership. Managing a distributed, hybrid workforce requires tools that go beyond payroll and benefits; it demands platforms that foster engagement, measure productivity, and nurture talent across digital channels. In the war for talent, the employee experience is the decisive battlefield.",
@@ -744,6 +752,8 @@ export const industriesData = [
         title: "Legal",
         desc: "Modernizing legal services with case management systems, document automation, and AI-powered legal research platforms.",
         image: "/images/industries/legal.jpg",
+        metaTitle: "Legal Tech Solutions & AI Case Management | enfycon",
+        metaDescription: "Modernize legal practice with enfycon's Legal Tech. We provide AI contract review, automated case management, and legal research platforms.",
         overviewTitle: "Intelligent Legal Operations",
         longDesc: [
             "The legal profession, traditionally reliant on manual processes and billable hours, is at a pivotal inflection point. Clients are demanding more value and transparency, forcing firms to adopt efficiency-driving technologies. The sheer volume of data in modern litigation, from emails to digital contracts, has made manual review obsolete. Law firms must embrace automation to handle discovery, due diligence, and case management or risk being outpaced by tech-savvy competitors.",

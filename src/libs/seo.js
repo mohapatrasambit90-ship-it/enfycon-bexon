@@ -1,6 +1,6 @@
 export function constructMetadata({
-    title = "enfycon - empowering business with technology",
-    description = "enfycon - empowering business with technology",
+    title = "Empowering Business with Technology | enfycon",
+    description = "Empowering businesses with cutting-edge AI, robust cybersecurity, and expert IT staffing solutions. Partner with enfycon for digital transformation.",
     image = "/images/og-image.jpg", // Make sure to add a default OG image to your public folder
     icons = "/favicon.ico",
     noIndex = false,
@@ -104,7 +104,7 @@ export async function generateDynamicMetadata({
     }
 
     return constructMetadata({
-        title: item.metaTitle || `${item[titleField]} - enfycon`,
+        title: item.metaTitle || `${item[titleField]} | enfycon`,
         description: item.metaDescription || item[descField] || `${resourceName} details for ${item[titleField]}`,
         image: item[imageField] || item.img, // Fallback for inconsistent naming
         keywords: item.keywords && item.keywords.length > 0 ? item.keywords : extractKeywords(keywordsText),
