@@ -14,8 +14,12 @@ import Testimonials2 from "@/components/sections/testimonials/Testimonials2";
 import Industries1 from "@/components/sections/industries/Industries1";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { getAllBlogs } from "@/libs/wpBlogs";
 
-export default function Home() {
+export default async function Home() {
+	const data = await getAllBlogs(null);
+	const blogs = data?.slice(0, 4) || [];
+
 	return (
 		<div>
 			<BackToTop />
@@ -34,7 +38,7 @@ export default function Home() {
 
 						{/* <Team1 /> */}
 						{/* <PricingPlan /> */}
-						<Blogs2 />
+						<Blogs2 blogs={blogs} />
 						<Testimonials2 />
 						<Faq2 type={2} />
 					</main>

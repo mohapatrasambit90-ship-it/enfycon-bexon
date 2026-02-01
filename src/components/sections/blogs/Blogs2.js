@@ -9,15 +9,16 @@ const Blogs2 = ({
 	categoryName = null,
 	title = "Strategies and Insights.",
 	subtitle = "Read Blogs",
-	description = "Developing personalized customer journeys to increase satisfaction and loyalty."
+	description = "Developing personalized customer journeys to increase satisfaction and loyalty.",
+	blogs: initialBlogs = null, // Accept initial blogs prop
 }) => {
-	const [blogs, setBlogs] = useState([]);
-	const [loading, setLoading] = useState(false);
-	const [hasLoaded, setHasLoaded] = useState(false);
+	const [blogs, setBlogs] = useState(initialBlogs || []);
+	const [loading, setLoading] = useState(!initialBlogs);
+	const [hasLoaded, setHasLoaded] = useState(!!initialBlogs);
 	const sectionRef = useRef(null);
 
 	const fetchBlogs = async () => {
-		if (loading || hasLoaded) return;
+		if (loading || hasLoaded || initialBlogs) return; // Skip if already loaded or initial blogs provided
 		setLoading(true);
 		try {
 			let data = [];

@@ -1,5 +1,6 @@
 import React from "react";
 import getALlServices from "@/libs/getALlServices";
+import { getAllBlogs } from "@/libs/wpBlogs";
 import FullScreenHero from "@/components/sections/hero/FullScreenHero";
 import ApproachSection from "@/components/sections/services/cyber/ApproachSection";
 import ProductUseCaseSection from "@/components/sections/products/ProductUseCaseSection";
@@ -7,7 +8,7 @@ import WhyUsSection from "@/components/sections/services/WhyUsSection";
 import Faq2 from "@/components/sections/faq/Faq2";
 import Blogs2 from "@/components/sections/blogs/Blogs2";
 
-const ModernServiceTemplate = ({ serviceSlug }) => {
+const ModernServiceTemplate = async ({ serviceSlug }) => {
     const services = getALlServices();
     const currentItem = services.find((service) => service.id === serviceSlug);
 
@@ -54,6 +55,8 @@ const ModernServiceTemplate = ({ serviceSlug }) => {
         title: faq.question,
         desc: faq.answer
     }));
+
+    const blogs = await getAllBlogs(categoryId);
 
     return (
         <div className="cyber-security-wrapper">
@@ -109,6 +112,7 @@ const ModernServiceTemplate = ({ serviceSlug }) => {
                 categoryName={categoryId} // Uses the category ID to fetch relevant blogs
                 title="Related Insights"
                 description={`Stay updated with the latest trends in ${category || 'our services'}.`}
+                blogs={blogs}
             />
 
             {/* FAQ Section */}

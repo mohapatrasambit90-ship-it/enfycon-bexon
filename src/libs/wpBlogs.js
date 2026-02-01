@@ -14,8 +14,8 @@ async function fetchAPI(query, { variables } = {}) {
         query,
         variables,
       }),
-      next: { revalidate: 0 },
-      cache: "no-store",
+      next: { revalidate: 60 },
+      // cache: "no-store", // Disabled to allow ISR
     });
 
     if (!res.ok) {

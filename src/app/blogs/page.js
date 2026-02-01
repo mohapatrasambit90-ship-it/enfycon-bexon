@@ -33,10 +33,23 @@ export default async function BlogPage(props) {
 
 	if (!postsData) {
 		return (
-			<div className="container mt-5 pt-5 text-center">
-				<h3>Unable to load blogs</h3>
-				<p>We are experiencing some technical difficulties. Please check back later.</p>
-				<a href="/blogs" className="btn btn-primary mt-3">Refresh Page</a>
+			<div>
+				<BackToTop />
+				<Header />
+				<div id="smooth-wrapper">
+					<div id="smooth-content">
+						<main>
+							<HeaderSpace />
+							<div className="container mt-5 pt-5 text-center">
+								<h3>Unable to load blogs</h3>
+								<p>We are experiencing some technical difficulties. Please check back later.</p>
+								<a href="/blogs" className="btn btn-primary mt-3">Refresh Page</a>
+							</div>
+						</main>
+						<Footer2 />
+					</div>
+				</div>
+				<ClientWrapper />
 			</div>
 		);
 	}
