@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
     });
 }
 
+import Blogs2 from "@/components/sections/blogs/Blogs2";
+import { getBlogCategoryForEntity } from "@/utils/blogCategoryMapping";
+
 export default async function IndustryDetails({ params }) {
     const { id } = await params;
 
@@ -37,6 +40,8 @@ export default async function IndustryDetails({ params }) {
         notFound();
     }
 
+    const blogCategory = getBlogCategoryForEntity('industry', id);
+
     return (
         <div>
             <BackToTop />
@@ -44,10 +49,15 @@ export default async function IndustryDetails({ params }) {
 
             <div id="smooth-wrapper">
                 <div id="smooth-content">
-                    <HeaderSpace/>
+                    <HeaderSpace />
                     <main>
                         <IndustryDetailsMain currentItemId={id} />
-                     
+                        <Blogs2
+                            categoryName={blogCategory}
+                            title="Industry Insights"
+                            subtitle="Latest Trends"
+                            description="Stay ahead with our latest research and case studies."
+                        />
                     </main>
                     <Footer2 />
                 </div>

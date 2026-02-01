@@ -1,70 +1,42 @@
-"use client";
-import BlogCard2 from "@/components/shared/cards/BlogCard2";
+import BlogSlider from "./BlogSlider";
 import { getAllBlogs } from "@/libs/wpBlogs";
-import { useEffect, useState, useRef } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-const Blogs2 = ({
+const Blogs2 = async ({
 	categoryName = null,
 	title = "Strategies and Insights.",
 	subtitle = "Read Blogs",
 	description = "Developing personalized customer journeys to increase satisfaction and loyalty.",
-	blogs: initialBlogs = null, // Accept initial blogs prop
 }) => {
-	const [blogs, setBlogs] = useState(initialBlogs || []);
-	const [loading, setLoading] = useState(!initialBlogs);
-	const [hasLoaded, setHasLoaded] = useState(!!initialBlogs);
-	const sectionRef = useRef(null);
+	let blogs = [];
 
-	const fetchBlogs = async () => {
-		if (loading || hasLoaded || initialBlogs) return; // Skip if already loaded or initial blogs provided
-		setLoading(true);
+	// 1. Try fetching with category if provided
+	if (categoryName) {
 		try {
-			let data = [];
-
-			// 1. Try fetching with category if provided
-			if (categoryName) {
-				try {
-					data = await getAllBlogs(categoryName);
-				} catch (e) {
-					console.warn("Blogs2: Failed to fetch by category, trying fallback.", e);
-				}
-			}
-
-			// 2. Fallback to generic blogs if no data found (or fetch failed)
-			// checking for !data or empty array
-			if (!data || data.length === 0) {
-				try {
-					data = await getAllBlogs(null);
-				} catch (e) {
-					console.error("Blogs2: Failed to fetch generic blogs.", e);
-					data = [];
-				}
-			}
-
-			setBlogs(data ? data.slice(0, 4) : []);
-			setHasLoaded(true);
-		} catch (error) {
-			console.error("Error fetching Blogs2 data:", error);
-			setBlogs([]);
-			setHasLoaded(true);
-		} finally {
-			setLoading(false);
+			blogs = await getAllBlogs(categoryName);
+		} catch (e) {
+			console.warn("Blogs2: Failed to fetch by category, trying fallback.", e);
 		}
-	};
+	}
 
-	useEffect(() => {
-		fetchBlogs();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [categoryName]);
+	// 2. Fallback to generic blogs if no data found (or fetch failed/no category)
+	if (!blogs || blogs.length === 0) {
+		try {
+			blogs = await getAllBlogs(null);
+		} catch (e) {
+			console.error("Blogs2: Failed to fetch generic blogs.", e);
+			blogs = [];
+		}
+	}
 
-	if (hasLoaded && (!blogs || blogs.length === 0)) {
+	// Slice to 4 items
+	blogs = blogs ? blogs.slice(0, 4) : [];
+
+	if (!blogs || blogs.length === 0) {
 		return null;
 	}
 
 	return (
-		<section className="tj-blog-section-2 section-gap" ref={sectionRef}>
+		<section className="tj-blog-section-2 section-gap">
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
@@ -107,52 +79,7 @@ const Blogs2 = ({
 				<div className="row">
 					<div className="col-12">
 						<div className="blog-wrapper wow fadeIn" data-wow-delay=".5s">
-							{loading && !blogs.length ? (
-								<div className="text-center py-5">
-									<h3>Loading Insights...</h3>
-								</div>
-							) : (
-								<Swiper
-									slidesPerView={1}
-									spaceBetween={15}
-									loop={true}
-									speed={1500}
-									loopAdditionalSlides={1}
-									autoplay={{
-										delay: 5000,
-									}}
-									pagination={{
-										el: ".swiper-pagination-area",
-										clickable: true,
-									}}
-									navigation={{ nextEl: ".slider-next", prevEl: ".slider-prev" }}
-									breakpoints={{
-										768: {
-											spaceBetween: 20,
-											slidesPerView: 1,
-										},
-										992: {
-											slidesPerView: 2,
-											spaceBetween: 20,
-										},
-										1200: {
-											slidesPerView: 2,
-											spaceBetween: 30,
-										},
-									}}
-									modules={[Pagination, Autoplay, Navigation]}
-									className="blog-slider"
-								>
-									{blogs?.length
-										? blogs?.map((blog, idx) => (
-											<SwiperSlide key={idx}>
-												<BlogCard2 blog={blog} idx={idx} />
-											</SwiperSlide>
-										))
-										: ""}
-									<div className="swiper-pagination-area"></div>
-								</Swiper>
-							)}
+							<BlogSlider blogs={blogs} />
 						</div>
 					</div>
 				</div>

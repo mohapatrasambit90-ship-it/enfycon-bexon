@@ -43,33 +43,33 @@ export async function generateMetadata({ params }) {
     });
 }
 
+import Blogs2 from "@/components/sections/blogs/Blogs2";
+import { getBlogCategoryForEntity } from "@/utils/blogCategoryMapping";
+
 export default async function ServiceDetails({ params }) {
     // 'id' here corresponds to the Category ID (first segment)
     // 'slug' corresponds to the Service ID (second segment)
     const { id, slug } = await params;
-    console.log(`[DEBUG] ServiceDetails - ID: ${id}, Slug: ${slug}`);
 
     // Validate Category (id)
     const categoryData = serviceCategories.find(c => c.id === id);
-    console.log(`[DEBUG] categoryData found: ${!!categoryData}`);
 
     if (!categoryData) {
-        console.log(`[DEBUG] Category not found: ${id}`);
         notFound();
     }
 
     // Validate Service within Category
     const serviceData = categoryData.services.find(s => s.id === slug);
-    console.log(`[DEBUG] serviceData found: ${!!serviceData}`);
 
     if (!serviceData) {
-        console.log(`[DEBUG] Service not found: ${slug} in category ${id}`);
         notFound();
     }
 
     // Select the appropriate template based on the category ID
     // If no specific template is found, fallback to DefaultServiceTemplate
     const TemplateComponent = TEMPLATE_MAP[id] || DefaultServiceTemplate;
+
+    const blogCategory = getBlogCategoryForEntity('service', id);
 
     return (
         <div>
@@ -82,6 +82,12 @@ export default async function ServiceDetails({ params }) {
                         <HeaderSpace />
                         {/* Render the selected template, passing the service slug */}
                         <TemplateComponent serviceSlug={slug} />
+                        <Blogs2
+                            categoryName={blogCategory}
+                            title="Related Articles"
+                            subtitle="Expert Insights"
+                            description="Deep dive into technologies and strategies."
+                        />
                     </main>
                     <Footer2 />
                 </div>

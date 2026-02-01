@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
@@ -19,7 +19,7 @@ export default function NotFound() {
 						<ErrorPrimary />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 			<ClientWrapper />

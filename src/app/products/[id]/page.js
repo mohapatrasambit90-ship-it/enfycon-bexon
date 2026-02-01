@@ -25,6 +25,9 @@ export async function generateMetadata({ params }) {
     });
 }
 
+import Blogs2 from "@/components/sections/blogs/Blogs2";
+import { getBlogCategoryForEntity } from "@/utils/blogCategoryMapping";
+
 export default async function ProductDetails({ params }) {
     const { id } = await params;
 
@@ -34,6 +37,8 @@ export default async function ProductDetails({ params }) {
     if (!isExistItem) {
         notFound();
     }
+
+    const blogCategory = getBlogCategoryForEntity('product', id);
 
     return (
         <div>
@@ -45,6 +50,12 @@ export default async function ProductDetails({ params }) {
                     <HeaderSpace />
                     <main>
                         <ProductDetailsMain currentItemId={id} />
+                        <Blogs2
+                            categoryName={blogCategory}
+                            title="Related Insights"
+                            subtitle="Learn More"
+                            description="Explore how our solutions are applied in real-world scenarios."
+                        />
                     </main>
                     <Footer2 />
                 </div>

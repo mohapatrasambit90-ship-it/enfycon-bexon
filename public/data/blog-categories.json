@@ -1,9 +1,22 @@
 [
-	"education",
-	"finance",
-	"health-care",
-	"technology",
-	"Managements",
-	"uncategorized",
-	"cyber-security"
+  {
+    "name": "AI Agentic Solutions",
+    "slug": "ai-agentic-solutions"
+  },
+  {
+    "name": "Industry Use Cases & Case Studies",
+    "slug": "industry-use-cases-case-studies"
+  },
+  {
+    "name": "Personalized Customer Engagement",
+    "slug": "personalized-customer-engagement"
+  },
+  {
+    "name": "Trends, Insights & Research",
+    "slug": "trends-insights-research"
+  },
+  {
+    "name": "Uncategorized",
+    "slug": "uncategorized"
+  }
 ]
