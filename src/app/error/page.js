@@ -1,5 +1,4 @@
 import Footer2 from "@/components/layout/footer/Footer2";
-import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import ErrorPrimary from "@/components/sections/error/ErrorPrimary";

@@ -1,5 +1,4 @@
 import Footer2 from "@/components/layout/footer/Footer2";
-import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import About12 from "@/components/sections/about/About12";
 import Cta from "@/components/sections/cta/Cta";
