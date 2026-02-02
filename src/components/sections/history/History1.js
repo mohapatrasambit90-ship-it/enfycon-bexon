@@ -72,11 +72,11 @@ const History1 = () => {
 												<h4 className="title">{title}</h4>
 												<p>{desc}</p>
 											</div>
-											{/* <div className="bottom">
+											<div className="bottom">
 												{images?.length
-													? images?.map((img, idx) => (
+													? images?.map((img, imgIdx) => (
 														<Image
-															key={idx + 100}
+															key={imgIdx + 100}
 															src={
 																img ? img : "/images/history/history-1.webp"
 															}
@@ -87,7 +87,7 @@ const History1 = () => {
 														/>
 													))
 													: ""}
-											</div> */}
+											</div>
 										</div>
 									</div>
 								))

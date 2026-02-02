@@ -21,6 +21,7 @@ import CsrProjects from "@/components/sections/csr/CsrProjects";
 import { csrData } from "@/data/csrData";
 
 import { constructMetadata } from "@/libs/seo";
+import Services9 from "@/components/sections/services/Services9";
 
 export const metadata = constructMetadata({
 	title: "Leading AI & Technology Consulting Firm | enfycon About",
@@ -51,8 +52,10 @@ export default function About() {
 						<FounderStory id="founders-story" />
 
 						{/* <About12/> */}
-						<History1 />
+						{/* <History1 /> */}
+						<Services9/>
 						<Features3 id="feature3" />
+					
 					
 						{/* <Testimonials2 type={2} /> */}
 						{/* CSR Section - Gray BG */}
