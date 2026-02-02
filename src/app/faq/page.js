@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import Faq2 from "@/components/sections/faq/Faq2";
@@ -22,7 +22,7 @@ export default function Faq() {
 						<Faq3 />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 			<ClientWrapper />

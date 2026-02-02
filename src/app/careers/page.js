@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Careers1 from "@/components/sections/careers/Careers1";
 import Cta from "@/components/sections/cta/Cta";
@@ -21,7 +21,7 @@ export default function Careers() {
 						<Careers1 />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 

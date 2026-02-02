@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import HeroInner from "@/components/sections/hero/HeroInner";
@@ -30,7 +30,7 @@ export default async function TeamDetails({ params }) {
 						<TeamDetails1 currentItemId={parseInt(id)} />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 

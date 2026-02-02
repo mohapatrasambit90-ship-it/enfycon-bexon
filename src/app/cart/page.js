@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer2 from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import CartPrimary from "@/components/sections/cart/CartPrimary";
 import Cta from "@/components/sections/cta/Cta";
@@ -24,7 +24,7 @@ const Cart = () => {
 						</CartContextProvider>
 						<Cta />
 					</main>
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 			<ClientWrapper />
