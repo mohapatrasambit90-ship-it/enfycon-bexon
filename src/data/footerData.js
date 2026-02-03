@@ -18,7 +18,7 @@ export const footerData = {
         { label: "Overview", link: "/about" },
         { label: "Leaders & Advisors", link: "/team" },
         { label: "Newsroom", link: "/blogs" },
-        { label: "Testimonials", link: "/testimonials" },
+
         // { label: "History", link: "/history" },
         // { label: "Awards & Recognitions", link: "#" },
         // { label: "Philosophy", link: "#" },
