@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/siteConfig';
 import useDebounce from '@/hooks/useDebounce';
@@ -16,11 +16,15 @@ const Search = ({ active }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    
+    // Pagination state
+    const [pageInfo, setPageInfo] = useState({ hasNextPage: false, endCursor: null });
+    const [isFetchingMore, setIsFetchingMore] = useState(false);
 
     // Debounce the input term
-    const debouncedTerm = useDebounce(searchTerm, 300);
+    const debouncedTerm = useDebounce(searchTerm, 500);
 
-    // Cache for storing results: { "term": [results] }
+    // Cache for storing results: { "term": { posts: [], pageInfo: {} } }
     const cache = useRef(new Map());
 
     // AbortController to cancel outdated requests
@@ -107,91 +111,118 @@ const Search = ({ active }) => {
         if (val.length < 3) {
             setResults([]);
             setIsOpen(false);
+            setPageInfo({ hasNextPage: false, endCursor: null });
         }
     };
 
-    // Perform search
-    useEffect(() => {
-        // Only search if term is long enough
-        if (debouncedTerm.length < 3) return;
+    // Main fetch function
+    const performSearch = useCallback(async (term, cursor = null) => {
+        if (!term || term.length < 3) return;
 
-        // 1. Local Search (Instant)
-        const localResults = localPages.filter(page =>
-            page.title.toLowerCase().includes(debouncedTerm.toLowerCase())
-        );
+        // If loading more, set specific loading state
+        if (cursor) {
+            setIsFetchingMore(true);
+        } else {
+            setLoading(true);
+            setError(false);
+            setIsOpen(true);
+            
+            // Show local results immediately for new searches
+            const localResults = localPages.filter(page =>
+                page.title.toLowerCase().includes(term.toLowerCase())
+            );
+            setResults(localResults);
+        }
+
+        // Abort previous request only if it's a NEW search, not pagination
+        if (!cursor && abortController.current) {
+            abortController.current.abort();
+        }
+
+        if (!cursor) {
+            abortController.current = new AbortController();
+        }
+
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    query: SEARCH_POSTS_QUERY,
+                    variables: { term: term, after: cursor }
+                }),
+                signal: !cursor ? abortController.current?.signal : null // Don't cancel pagination requests with the main controller easily
+            });
+
+            if (!response.ok) throw new Error('Network response was not ok');
+
+            const json = await response.json();
+            const newPosts = json.data?.posts?.nodes || [];
+            const newPageInfo = json.data?.posts?.pageInfo || { hasNextPage: false, endCursor: null };
+
+            if (cursor) {
+                // Determine new results by appending
+                setResults(prev => {
+                    const existingIds = new Set(prev.map(p => p.id));
+                    const uniquePosts = newPosts.filter(p => !existingIds.has(p.id));
+                    return [...prev, ...uniquePosts];
+                });
+                setPageInfo(newPageInfo);
+            } else {
+                // Initial search result
+                const currentLocal = localPages.filter(page =>
+                    page.title.toLowerCase().includes(term.toLowerCase())
+                );
+                
+                const finalResults = [...currentLocal, ...newPosts];
+                setResults(finalResults);
+                setPageInfo(newPageInfo);
+                
+                // Update cache
+                cache.current.set(term, { posts: newPosts, pageInfo: newPageInfo });
+            }
+
+        } catch (err) {
+            if (err.name === 'AbortError') return;
+            console.error("Search error:", err);
+            if (!cursor) setError(true);
+        } finally {
+            setLoading(false);
+            setIsFetchingMore(false);
+        }
+    }, [API_URL, localPages]);
+
+    // Effect to trigger search on debounce
+    useEffect(() => {
+        if (debouncedTerm.length < 3) return;
 
         // Check cache first
         if (cache.current.has(debouncedTerm)) {
-            const cachedPosts = cache.current.get(debouncedTerm);
-            setResults([...localResults, ...cachedPosts]);
+            const cached = cache.current.get(debouncedTerm);
+            const localResults = localPages.filter(page =>
+                page.title.toLowerCase().includes(debouncedTerm.toLowerCase())
+            );
+            setResults([...localResults, ...cached.posts]);
+            setPageInfo(cached.pageInfo);
             setIsOpen(true);
             setLoading(false);
             return;
         }
 
-        setLoading(true);
-        setError(false);
-        setIsOpen(true);
-        // Show local results immediately
-        setResults(localResults);
+        // Perform fresh search
+        performSearch(debouncedTerm, null);
 
-        // Abort previous request if active
-        if (abortController.current) {
-            abortController.current.abort();
-        }
+    }, [debouncedTerm, localPages, performSearch]);
 
-        // Create new controller
-        abortController.current = new AbortController();
-
-        const fetchResults = async () => {
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        query: SEARCH_POSTS_QUERY,
-                        variables: { term: debouncedTerm }
-                    }),
-                    signal: abortController.current.signal
-                });
-
-                if (!response.ok) throw new Error('Network response was not ok');
-
-                const json = await response.json();
-                const posts = json.data?.posts?.nodes || [];
-
-                // Update cache
-                cache.current.set(debouncedTerm, posts);
-
-                // Merge local and API results
-                setResults(prev => {
-                    // Start with fresh local results to avoid duplication/stale state
-                    const currentLocal = localPages.filter(page =>
-                        page.title.toLowerCase().includes(debouncedTerm.toLowerCase())
-                    );
-                    return [...currentLocal, ...posts];
-                });
-            } catch (err) {
-                if (err.name === 'AbortError') {
-                    // Ignore abort errors
-                    return;
-                }
-                console.error("Search error:", err);
-                setError(true);
-                // Keep local results if API fails
-            } finally {
-                setLoading(false);
+    // Handle Scroll for Pagination
+    const handleScroll = (e) => {
+        const { scrollTop, clientHeight, scrollHeight } = e.target;
+        if (scrollHeight - scrollTop <= clientHeight + 50) { // 50px threshold
+            if (pageInfo.hasNextPage && !isFetchingMore && !loading) {
+                performSearch(debouncedTerm, pageInfo.endCursor);
             }
-        };
-
-        fetchResults();
-
-        // Cleanup function
-        return () => {
-            // We don't abort here on unmount necessarily, but could.
-        };
-
-    }, [debouncedTerm, API_URL, localPages]);
+        }
+    };
 
     // Close dropdown on outside click
     useEffect(() => {
@@ -227,7 +258,7 @@ const Search = ({ active }) => {
                     aria-label="Search"
                 />
 
-                {loading && (
+                {loading && !isFetchingMore && (
                     <div className="search-spinner spinner-border spinner-border-sm" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
@@ -235,7 +266,7 @@ const Search = ({ active }) => {
             </div>
 
             {isOpen && searchTerm.length >= 3 && (
-                <div className="search-results-dropdown">
+                <div className="search-results-dropdown" onScroll={handleScroll}>
                     {results.length > 0 ? (
                         <div className="list-group list-group-flush">
                             {results.map((post) => (
@@ -294,6 +325,12 @@ const Search = ({ active }) => {
                                     </div>
                                 </Link>
                             ))}
+                            {isFetchingMore && (
+                                <div className="p-3 text-center text-muted small">
+                                    <div className="spinner-border spinner-border-sm me-2" role="status"></div>
+                                    Loading more...
+                                </div>
+                            )}
                         </div>
                     ) : (
                         !loading && !error && (
