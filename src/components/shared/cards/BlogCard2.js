@@ -18,7 +18,7 @@ const BlogCard2 = ({ blog, idx }) => {
 						width={870}
 						height={450}
 						unoptimized={true}
-						style={{ height: "auto", objectFit: "cover" }}
+						style={{ height: "100%", objectFit: "cover" }}
 					/>
 				</Link>
 				<div className="blog-date">
