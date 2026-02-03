@@ -8,7 +8,7 @@ const RelatedBlogWidget = ({ posts }) => {
 
     return (
         <div className="tj-sidebar-widget tj-recent-posts">
-            <h4 className="widget-title">Related Blogs</h4>
+            <h4 className="widget-title">Related Posts</h4>
             <ul>
                 {posts.map((post, idx) => (
                     <li key={post.id || idx}>

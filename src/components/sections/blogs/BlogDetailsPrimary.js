@@ -88,38 +88,46 @@ const BlogDetailsPrimary = ({ post, option, relatedPosts }) => {
 								<div className="share-section">
 									<span>Share:</span>
 									<div className="social-icons">
-										<a
-											href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== 'undefined' ? window.location.href : ''}`}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="facebook"
-										>
-											<i className="fa-brands fa-facebook-f"></i>
-										</a>
-										<a
-											href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=${title}`}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="twitter"
-										>
-											<i className="fa-brands fa-x-twitter"></i>
-										</a>
-										<a
-											href={`https://www.instagram.com/`}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="instagram"
-										>
-											<i className="fa-brands fa-instagram"></i>
-										</a>
-										<a
-											href={`https://www.linkedin.com/sharing/share-offsite/?url=${typeof window !== 'undefined' ? window.location.href : ''}`}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="linkedin"
-										>
-											<i className="fa-brands fa-linkedin-in"></i>
-										</a>
+										{(() => {
+											const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dev.enfyjobs.com";
+											const shareUrl = `${baseUrl}/blogs/${post.id || ""}`;
+											return (
+												<>
+													<a
+														href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="facebook"
+													>
+														<i className="fa-brands fa-facebook-f"></i>
+													</a>
+													<a
+														href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(title || "")}`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="twitter"
+													>
+														<i className="fa-brands fa-x-twitter"></i>
+													</a>
+													<a
+														href={`https://www.instagram.com/`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="instagram"
+													>
+														<i className="fa-brands fa-instagram"></i>
+													</a>
+													<a
+														href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="linkedin"
+													>
+														<i className="fa-brands fa-linkedin-in"></i>
+													</a>
+												</>
+											);
+										})()}
 									</div>
 								</div>
 							</div>
