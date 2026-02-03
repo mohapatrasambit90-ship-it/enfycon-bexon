@@ -8,6 +8,7 @@ import ContactMenu from "./ContactMenu";
 import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
+import Search from "@/components/Search/Search";
 
 const Header = ({ isStickyHeader = false }) => {
 	const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -139,21 +140,7 @@ const Header = ({ isStickyHeader = false }) => {
 							<div className="col-8">
 								<div className="tj_search_wrapper">
 									<div className="search_form">
-										<form action="#">
-											<div className="search_input">
-												<div className="search-box">
-													<input
-														className="search-form-input"
-														type="text"
-														placeholder="Type Words and Hit Enter"
-														required
-													/>
-													<button type="submit">
-														<i className="tji-search"></i>
-													</button>
-												</div>
-											</div>
-										</form>
+										<Search />
 									</div>
 								</div>
 							</div>
