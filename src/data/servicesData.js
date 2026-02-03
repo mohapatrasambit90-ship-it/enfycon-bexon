@@ -14,7 +14,7 @@ export const serviceCategories = [
                 metaTitle: "AI Agentic Solutions & Autonomous Workflows | enfycon",
                 metaDescription: "Deploy autonomous AI agents that reason, act, and automate complex workflows. enfycon specializes in LangChain, AutoGPT, and CrewAI for enterprise-grade agentic systems.",
                 keywords: ["AI Agents", "Agentic AI", "Autonomous Workflows", "LangChain Developers", "AutoGPT Enterprise", "CrewAI Solutions", "Intelligent Automation", "AI Orchestration"],
-                desc: "Leverage autonomous AI agents and intelligent systems to automate complex workflows and enhance operational efficiency.",
+                desc: "Leverage enfycon's autonomous AI agents and intelligent systems to automate complex workflows and enhance operational efficiency.",
                 catchyTitle: "Autonomous Intelligence, Infinite Potential",
                 overview: "enfycon’s AI & Agentic Solutions are at the forefront of the next architectural shift in technology: the move from passive tools to autonomous agents. We specialize in building 'Agentic' systems—AI that doesn't just answer questions but takes actions, reason through multi-step processes, and interacts with other software systems to achieve high-level goals. Whether it's an autonomous customer service agent that can issue refunds and update CRM records, or a DevOps agent that can diagnose and patch cluster failures, our solutions are designed for real-world impact.\n\nOur approach moves beyond simple LLM wrappers. We leverage advanced frameworks like LangChain, AutoGPT, and CrewAI, combined with proprietary orchestration layers, to ensure reliability, safety, and observability. We focus on 'Human-in-the-loop' systems where AI augments human expertise, handling the repetitive, high-volume tasks while escalating complex edge cases. We help organizations transition from experimentation to production-grade agentic workflows that deliver measurable ROI and transformative efficiency.",
                 challenges: [
@@ -63,7 +63,7 @@ export const serviceCategories = [
                 whyUsItems: [
                     {
                         title: "Agentic Framework Mastery",
-                        desc: "Deep expertise in LangChain, CrewAI, and AutoGPT for building robust autonomous systems.",
+                        desc: "Deep expertise in LangChain, CrewAI, and AutoGPT allows enfycon to build robust autonomous systems.",
                         icon: "fa-regular fa-microchip-ai"
                     },
                     {
@@ -73,7 +73,7 @@ export const serviceCategories = [
                     },
                     {
                         title: "Seamless Integration",
-                        desc: "We connect agents to your existing APIs, databases, and SaaS tools for true end-to-end automation.",
+                        desc: "enfycon connects agents to your existing APIs, databases, and SaaS tools for true end-to-end automation.",
                         icon: "fa-regular fa-puzzle-piece"
                     },
                     {
@@ -108,7 +108,7 @@ export const serviceCategories = [
                 metaTitle: "AI-First Platform Engineering & MLOps | enfycon",
                 metaDescription: "Build scalable, AI-native platforms with enfycon. We engineer systems with machine learning at the core, featuring automated MLOps, robust data pipelines, and real-time inference.",
                 keywords: ["AI Platform Engineering", "MLOps Services", "AI-Native Architecture", "Scalable Inference", "Machine Learning Platforms", "Cloud AI Solutions", "Data Pipelines"],
-                desc: "Design and build AI-native platforms that integrate machine learning capabilities at their core for scalable intelligent solutions.",
+                desc: "Design and build AI-native platforms with enfycon that integrate machine learning capabilities at their core for scalable intelligent solutions.",
                 catchyTitle: "Native Intelligence, Scaled Performance",
                 overview: "In the modern era, AI cannot be an afterthought; it must be the foundation. Our AI-First Platforms Engineering service is dedicated to building robust, scalable software architectures where machine learning is woven into the very fabric of the application. We move away from 'adding a chatbot' to building systems that learn, adapt, and optimize themselves based on real-time data flow. From predictive maintenance systems in manufacturing to high-frequency algorithmic trading platforms, we build the infrastructure that powers intelligence at scale.\n\nWe specialize in MLOps (Machine Learning Operations), ensuring that your models aren't just accurate in a notebook, but are reliable in production. Our platforms include automated data pipelines, model versioning, A/B testing frameworks, and comprehensive monitoring for model drift. We leverage cloud-native technologies (AWS SageMaker, Google Vertex AI, Azure ML) alongside custom-built components to create platforms that are resilient, performant, and future-proof. Our engineering philosophy prioritizes data privacy, ethical AI principles, and high-availability architecture.",
                 challenges: [
@@ -157,7 +157,7 @@ export const serviceCategories = [
                 whyUsItems: [
                     {
                         title: "MLOps Engineering Elite",
-                        desc: "We don't just build models; we build the factories that run them. Expert integration of CI/CD with ML workflows.",
+                        desc: "enfycon doesn't just build models; we build the factories that run them. Expert integration of CI/CD with ML workflows.",
                         icon: "fa-regular fa-cogs"
                     },
                     {
@@ -167,7 +167,7 @@ export const serviceCategories = [
                     },
                     {
                         title: "High-Performance Compute",
-                        desc: "Specialists in optimizing GPU/TPU workloads to get maximum performance per dollar.",
+                        desc: "enfycon specialists optimize GPU/TPU workloads to get maximum performance per dollar.",
                         icon: "fa-regular fa-microchip"
                     },
                     {
@@ -202,7 +202,7 @@ export const serviceCategories = [
                 metaTitle: "AI Personalization Service & Customer Engagement | enfycon",
                 metaDescription: "Drive loyalty and conversion with AI-driven personalization. enfycon builds intelligent engagement systems that adapt to customer intent in real-time.",
                 keywords: ["AI Personalization", "Customer Engagement AI", "Real-Time Personalization", "Customer Journey Orchestration", "Predictive Customer Analytics", "AI Chatbots", "Personalized Marketing"],
-                desc: "Create personalized customer experiences using AI-driven insights and intelligent engagement strategies.",
+                desc: "Create personalized customer experiences using enfycon's AI-driven insights and intelligent engagement strategies.",
                 catchyTitle: "The Segment of One, At Scale",
                 overview: "Generic marketing and customer service are things of the past. enfycon’s Personalized Customer Engagement service leverages advanced AI to understand the 'Segment of One'. We help brands analyze vast amounts of behavioral, transactional, and demographic data to deliver hyper-personalized experiences across every touchpoint—from web and mobile to email and voice agents. By predicting customer intent in real-time, we enable your business to reach the right customer, with the right message, at the exact moment it matters most.\n\nOur solutions go beyond simple recommendation engines. We build dynamic journey orchestration systems that adapt based on every click, purchase, or support interaction. We utilize Large Language Models to power empathetic, context-aware chatbots and virtual assistants that handle complex queries with human-like nuance. By integrating AI-driven sentiment analysis, we help you identify at-risk customers before they churn, allowing for proactive intervention and loyalty building. Our goal is to transform every customer interaction into a value-driven relationship, increasing conversion rates and lifetime value.",
                 challenges: [
@@ -251,12 +251,12 @@ export const serviceCategories = [
                 whyUsItems: [
                     {
                         title: "Full-Stack CRM Integration",
-                        desc: "Seamless connectivity with Salesforce, HubSpot, Adobe, and custom CDPs for unified data flow.",
+                        desc: "Seamless connectivity with Salesforce, HubSpot, Adobe, and custom CDPs for unified data flow across enfycon systems.",
                         icon: "fa-regular fa-link"
                     },
                     {
                         title: "Advanced NLP Engines",
-                        desc: "We use state-of-the-art Natural Language Processing to understand sentiment, intent, and nuance.",
+                        desc: "enfycon uses state-of-the-art Natural Language Processing to understand sentiment, intent, and nuance.",
                         icon: "fa-regular fa-comments"
                     },
                     {
@@ -306,9 +306,9 @@ export const serviceCategories = [
                 metaTitle: "US Technology Hiring Solutions & IT Staffing | enfycon",
                 metaDescription: "Connect with top US tech talent in 24-48 hours. Our Technology Hiring Solutions bridge the skills gap with 50,000+ pre-screened professionals in AI, Cloud, and Engineering.",
                 keywords: ["US IT Staffing", "Technology Hiring", "Tech Recruiters", "IT Staffing Agency", "Software Engineers", "Cloud Architects", "AI Talent", "Contract to Hire", "Technical Staffing", "Silicon Valley Recruiter"],
-                desc: "In the fast-paced US technology landscape, finding the right talent is critical to staying ahead. Our Technology Hiring Solutions are designed to bridge the gap between your ambitious projects and the specialized skills required to execute them.",
+                desc: "In the fast-paced US technology landscape, enfycon helps you find the right talent critical to staying ahead. Our Technology Hiring Solutions are designed to bridge the gap between your ambitious projects and the specialized skills required to execute them.",
                 catchyTitle: "Strategic Talent for Digital Excellence",
-                overview: "In today's hyper-competitive US technology landscape, the difference between market leadership and obsolescence often boils down to one critical factor: talent. Our Technology Hiring Solutions service is not just about filling vacancies; it's about strategically augmenting your workforce with high-caliber professionals who can drive innovation. We understand that every project has unique nuances—whether it's legacy modernization, cloud-native development, or AI integration. That’s why we offer a bespoke staffing approach.\n\nFrom Silicon Valley startups to Fortune 500 enterprises on Wall Street, we tap into a hidden market of passive candidates who aren't just looking for a job, but for the right challenge. Our rigorous screening process, which includes technical coding challenges, architectural design interviews, and cultural fit assessments, ensures that every candidate we present is ready to contribute from day one. We handle the complexities of recruitment so you can focus on building world-class products. We specialize in rapid scaling for critical milestones, offering flexible models that adapt to your budget and timeline. Our deep industry knowledge allows us to anticipate market shifts, ensuring your team is equipped with future-proof skills.",
+                overview: "In today's hyper-competitive US technology landscape, the difference between market leadership and obsolescence often boils down to one critical factor: talent. enfycon's Technology Hiring Solutions service is not just about filling vacancies; it's about strategically augmenting your workforce with high-caliber professionals who can drive innovation. We understand that every project has unique nuances—whether it's legacy modernization, cloud-native development, or AI integration. That’s why we offer a bespoke staffing approach.\n\nFrom Silicon Valley startups to Fortune 500 enterprises on Wall Street, we tap into a hidden market of passive candidates who aren't just looking for a job, but for the right challenge. Our rigorous screening process, which includes technical coding challenges, architectural design interviews, and cultural fit assessments, ensures that every candidate we present is ready to contribute from day one. We handle the complexities of recruitment so you can focus on building world-class products. We specialize in rapid scaling for critical milestones, offering flexible models that adapt to your budget and timeline. Our deep industry knowledge allows us to anticipate market shifts, ensuring your team is equipped with future-proof skills.",
                 challenges: [
                     { title: "Talent Shortage & Skills Gap", desc: "The demand for specialized skills in AI, Machine Learning, and Cybersecurity far outstrips supply. Organizations often struggle to find candidates who possess both the theoretical knowledge and the practical, production-grade experience required for complex enterprise environments.", icon: "fa-regular fa-users-slash" },
                     { title: "High Turnover & Retention", desc: "In a candidate-driven market, retaining top talent is a constant battle. High attrition rates disrupt project continuity, lead to significant knowledge loss, and inflate overall recruitment costs, stalling critical roadmap deliverables.", icon: "fa-regular fa-rotate-right" },
@@ -400,9 +400,9 @@ export const serviceCategories = [
                 metaTitle: "Domestic IT Staffing Services | Local Tech Talent | enfycon",
                 metaDescription: "Build high-performing local teams with enfycon's Domestic IT Staffing. We specialize in finding cultural-fit candidates with niche skills within your region.",
                 keywords: ["Domestic IT Staffing", "Local Tech Talent", "Regional IT Recruitment", "On-site Developers", "Hybrid Workforce", "Staffing Agency Near Me", "Local IT Consultants"],
-                desc: "Empower your local operations with our robust Domestic IT Staffing services. We understand the nuances of the local market and provide tailored recruitment strategies to find the best talent within your region.",
+                desc: "Empower your local operations with enfycon's robust Domestic IT Staffing services. We understand the nuances of the local market and provide tailored recruitment strategies to find the best talent within your region.",
                 catchyTitle: "Homegrown Talent, World-Class Impact",
-                overview: "Our Domestic IT Staffing solutions are laser-focused on connecting you with the absolute best local talent available in your region. We distinctively believe in the power of proximity and cultural alignment to drive team cohesion. By leveraging our deep, ingrained understanding of the domestic market dynamics, we help you build teams that are not just technically sound, but are communicative, collaborative, and committed to your long-term vision.\n\nLocal hiring brings its own set of advantages—from easier collaboration in hybrid work models to better alignment with local business hours and cultural nuances. We maintain active relationships with local tech communities, universities, and professional groups, giving us access to a rich pipeline of candidates who are often not visible on public job boards. Whether you need to build a core in-house team or staff a temporary project with local consultants, our domestic staffing services ensure you get the right people who fit your ecosystem perfectly.",
+                overview: "enfycon's Domestic IT Staffing solutions are laser-focused on connecting you with the absolute best local talent available in your region. We distinctively believe in the power of proximity and cultural alignment to drive team cohesion. By leveraging our deep, ingrained understanding of the domestic market dynamics, we help you build teams that are not just technically sound, but are communicative, collaborative, and committed to your long-term vision.\n\nLocal hiring brings its own set of advantages—from easier collaboration in hybrid work models to better alignment with local business hours and cultural nuances. We maintain active relationships with local tech communities, universities, and professional groups, giving us access to a rich pipeline of candidates who are often not visible on public job boards. Whether you need to build a core in-house team or staff a temporary project with local consultants, our domestic staffing services ensure you get the right people who fit your ecosystem perfectly.",
                 challenges: [
                     { title: "Fierce Local Competition", desc: "You are often competing for the same limited talent pool as major local players and tech giants. Standing out as an employer of choice and attracting the best local minds requires a strategic approach.", icon: "fa-regular fa-trophy" },
                     { title: "Specific Regional Skill Gaps", desc: "Finding specific, high-demand skills within a limited geographical area can be incredibly challenging. Some regions may have a surplus of certain skills while facing a severe drought of others.", icon: "fa-regular fa-map-location-dot" },
@@ -576,7 +576,7 @@ export const serviceCategories = [
                     { question: "How do you handle time zone differences?", answer: "We structure mandatory overlap hours for meetings and provide clear, asynchronous communication protocols to ensure smooth collaboration." },
                     { question: "Who manages the team day-to-day?", answer: "You have direct control over the team's tasks and priorities. However, we provide a dedicated project coordinator to handle all administrative and HR management." },
                     { question: "What security measures do you have in place for offshore teams?", answer: "We implement enterprise-grade security including secure VPS access, multi-factor authentication, and strict physical security in our offshore delivery centers." },
-                    { question: "How do you handle Intellectual Property (IP) protection?", answer: "All offshore contracts are governed by ironclad IP protection clauses and NDAs, ensuring that all work produced remains your exclusive property." },
+                    { question: "How do you handle Intellectual Property (IP) protection?", answer: "All offshore contracts are governed by enfycon's ironclad IP protection clauses and NDAs, ensuring that all work produced remains your exclusive property." },
                     { question: "Can we visit our offshore team in person?", answer: "Absolutely. We encourage and help facilitate on-site visits to unseren delivery centers to foster stronger relationships and deep collaboration." }
                 ],
                 img4: "/images/service/offshore-dedicated-teams.png",
@@ -598,7 +598,7 @@ export const serviceCategories = [
                 metaTitle: "Enterprise Modernization & Cloud Migration | enfycon",
                 metaDescription: "Modernize legacy systems and migrate to the cloud with enfycon. We specialize in re-platforming, data estate modernization, and building scalable cloud-native architectures.",
                 keywords: ["Enterprise Modernization", "Cloud Migration", "Legacy System Migration", "Data Estate Modernization", "Cloud-Native Architecture", "Mainframe Modernization", "Digital Transformation"],
-                desc: "Modernize your enterprise infrastructure with cloud-native solutions and advanced data management strategies.",
+                desc: "Modernize your enterprise infrastructure with enfycon's cloud-native solutions and advanced data management strategies.",
                 catchyTitle: "Future-Proof Your Foundation",
                 overview: "In the era of digital disruption, legacy systems are often the greatest bottleneck to innovation. enfycon’s Data, Cloud & Enterprise Modernization service helps organizations break free from technological silos and migrate to agile, cloud-native architectures. We don't just 'lift and shift'; we re-platform and re-architect your data estate to leverage the full power of the cloud. From migrating monolithic databases to distributed Snowflake or BigQuery environments, to containerizing legacy applications with Kubernetes, we ensure your infrastructure is scalable, secure, and cost-optimized.\n\nOur modernization roadmap starts with a comprehensive assessment of your existing technical debt and data quality. We implement robust Data Governance frameworks and master data management strategies to ensure that your modernized environment is built on a foundation of trust. By integrating DevOps and DataOps practices, we enable continuous delivery and automated infrastructure management. Whether you are moving to AWS, Azure, or GCP, we provide the expertise to ensure a seamless transition that minimizes downtime and maximizes business agility.",
                 challenges: [
@@ -692,7 +692,7 @@ export const serviceCategories = [
                 metaTitle: "Advanced Analytics & Business Intelligence Services | enfycon",
                 metaDescription: "Turn data into decisions with enfycon's advanced analytics and BI services. We build predictive models, real-time dashboards, and data storytelling solutions (PowerBI, Tableau, Looker).",
                 keywords: ["Business Intelligence", "Advanced Analytics", "Data Visualization", "Predictive Analytics", "Power BI Consultants", "Tableau Experts", "Data Storytelling", "Decision Intelligence"],
-                desc: "Transform data into actionable insights with powerful business intelligence dashboards, predictive analytics, and advanced visualization solutions.",
+                desc: "Transform data into actionable insights with enfycon's powerful business intelligence dashboards, predictive analytics, and advanced visualization solutions.",
                 catchyTitle: "From Data Points to Decision Power",
                 overview: "Data is the new oil, but analytics is the refinery. enfycon’s Advanced Analytics & Business Intelligence (BI) service empowers decision-makers with the clarity they need to navigate complex markets. We go beyond descriptive 'what happened' reporting to provide diagnostic 'why it happened' and predictive 'what will happen' insights. By building sophisticated BI ecosystems, we transform fragmented data points into cohesive narratives that drive strategic action, optimize operations, and uncover hidden revenue opportunities.\n\nWe specialize in high-impact visualization, using tools like Power BI, Tableau, and custom D3.js dashboards to make data intuitive and accessible to everyone in your organization—not just data scientists. Our approach includes building automated data warehouses, implementing natural language query capabilities, and integrating machine learning models for real-time forecasting. We help you establish a single source of truth, eliminating the 'war of spreadsheets' and fostering a truly data-driven culture. Whether it's supply chain optimization, churn prediction, or financial modeling, we deliver insights that matter.",
                 challenges: [
@@ -746,7 +746,7 @@ export const serviceCategories = [
                     },
                     {
                         title: "Full-Stack Analytics",
-                        desc: "We bridge the gap between back-end data warehousing (Snowflake/Redshift) and front-end insights.",
+                        desc: "enfycon bridges the gap between back-end data warehousing (Snowflake/Redshift) and front-end insights.",
                         icon: "fa-regular fa-layer-group"
                     },
                     {
@@ -786,7 +786,7 @@ export const serviceCategories = [
                 metaTitle: "Data Engineering & ETL Automation Services | enfycon",
                 metaDescription: "Build robust, scalable data pipelines with enfycon. We specialize in DataOps, ETL automation, and real-time streaming architectures (Spark, Kafka, Flink).",
                 keywords: ["Data Engineering", "ETL Pipelines", "Data Automation", "Apache Spark", "Kafka Streaming", "Data Warehousing", "DataOps", "Big Data Engineering"],
-                desc: "Build robust data pipelines and automated workflows to streamline data processing and ensure data quality.",
+                desc: "Build robust data pipelines with enfycon for automated workflows to streamline data processing and ensure data quality.",
                 catchyTitle: "The Backbone of Intelligent Business",
                 overview: "The most advanced AI and analytics are only as good as the pipelines that feed them. enfycon’s Data Engineering & Pipeline Automation service focuses on building the 'plumbing' of the modern enterprise—the robust, automated, and scalable systems that move, clean, and transform data from source to consumption. We specialize in building low-latency ETL/ELT pipelines that handle massive volumes of structured and unstructured data, ensuring that your data scientists and analysts always have high-quality data at their fingertips.\n\nWe leverage state-of-the-art technologies like Apache Spark, Flink, Kafka, and Airflow to build pipelines that are resilient to failure and easy to maintain. Our engineering approach prioritizes 'Data-as-Code', applying software engineering best practices like unit testing, version control, and CI/CD to the data domain. We implement automated data quality checks, anomaly detection, and comprehensive logging to ensure the integrity of your data estate. Whether you're building a real-time streaming platform or a petabyte-scale data lake, we provide the architectural foundation for a high-performance data organization.",
                 challenges: [
@@ -840,7 +840,7 @@ export const serviceCategories = [
                     },
                     {
                         title: "DataOps Methodology",
-                        desc: "We bring CI/CD, version control, and automated testing to your data pipelines for software-grade reliability.",
+                        desc: "enfycon brings CI/CD, version control, and automated testing to your data pipelines for software-grade reliability.",
                         icon: "fa-regular fa-code-commit"
                     },
                     {
@@ -880,12 +880,12 @@ export const serviceCategories = [
         id: "cybersecurity-services",
         name: "Cybersecurity Services",
         title: "Cybersecurity Services",
-        desc: "Protect your digital assets with enterprise-grade security solutions. Our cybersecurity experts implement robust defense strategies, threat detection systems, and compliance frameworks to safeguard your business from threats.",
+        desc: "Protect your digital assets with enfycon's enterprise-grade security solutions. Our cybersecurity experts implement robust defense strategies, threat detection systems, and compliance frameworks to safeguard your business from threats.",
         services: [
             {
                 id: "security-assessment",
                 title: "Comprehensive Security Assessment",
-                desc: "Conduct thorough security audits and vulnerability assessments to identify and mitigate potential threats across your infrastructure.",
+                desc: "Conduct thorough security audits and vulnerability assessments with enfycon to identify and mitigate potential threats across your infrastructure.",
                 catchyTitle: "Mastering Your Digital Defense",
                 overview: "In a world of evolving cyber threats, 'good enough' security is equivalent to no security. enfycon’s Comprehensive Security Assessment is a proactive, deep-dive examination of your entire digital ecosystem. We don't just run automated scripts; our elite security researchers perform manual penetration testing, configuration audits, and architectural reviews to find the vulnerabilities that automated tools miss. From web applications and APIs to network edge and cloud configurations, we identify the specific path an attacker would take to compromise your assets.\n\nOur assessment methodology is aligned with global standards like OWASP, NIST, and PTES. We provide you with a prioritized roadmap of remediation actions, categorized by risk level and business impact. We help you understand the 'why' behind every vulnerability, empowering your engineering teams to build more secure systems from the ground up. Whether it's a one-time audit for a new product launch or a recurring quarterly assessment, we provide the critical external perspective needed to maintain a robust security posture. Our goal is to transform your security from a reactive burden into a strategic advantage.",
                 challenges: [
@@ -972,7 +972,7 @@ export const serviceCategories = [
                 whyenfycon: [
                     "Elite team of certified ethical hackers (OSCP, CISSP, CEH).",
                     "Deep expertise in complex, cloud-native and microservices security architectures.",
-                    "Holistic approach that combines automated scanning with rigorous manual penetration testing."
+                    "Holistic approach where enfycon combines automated scanning with rigorous manual penetration testing."
                 ],
                 faqs: [
                     { question: "How often should we conduct a security assessment?", answer: "At a minimum, we recommend a comprehensive audit annually and after any major changes to your infrastructure or software." },
@@ -1059,7 +1059,7 @@ export const serviceCategories = [
             {
                 id: "operational-security",
                 title: "Operational Security Guidelines",
-                desc: "Implement robust operational security protocols and best practices to protect daily business operations from cyber threats.",
+                desc: "Implement enfycon's robust operational security protocols and best practices to protect daily business operations from cyber threats.",
                 catchyTitle: "Fortifying Daily Resilience",
                 overview: "Security is not a product; it’s a process. enfycon’s Operational Security (OpSec) Guidelines service focuses on the most vulnerable part of any organization: day-to-day operations and human behavior. We help you build a 'Security-First' culture by developing and implementing comprehensive protocols that govern how data is handled, how systems are accessed, and how incidents are reported. From password policies and multi-factor authentication (MFA) to remote work security and social engineering awareness, we provide the tactical blueprints needed to defend against both external attacks and internal negligence.\n\nOur guidelines are not just documents on a shelf; we help you integrate security into your existing workflows. We provide training for your staff, implement automated policy enforcement tools, and establish clear incident response procedures. By focusing on 'leaky' processes—such as how customer data is shared via email or how developers handle API keys—we close the small gaps that lead to large breaches. Our goal is to make security a seamless, invisible part of your operational excellence, reducing the likelihood of successful attacks by making them too difficult and expensive for adversaries to execute.",
                 challenges: [
@@ -1154,7 +1154,7 @@ export const serviceCategories = [
                 whyUsItems: [
                     {
                         title: "Behavioral Risk Experts",
-                        desc: "We specialize in the human element, turning your employees from your weakest link into your strongest defense.",
+                        desc: "enfycon specializes in the human element, turning your employees from your weakest link into your strongest defense.",
                         icon: "fa-light fa-users-viewfinder"
                     },
                     {
@@ -1189,7 +1189,7 @@ export const serviceCategories = [
             {
                 id: "regulatory-compliance",
                 title: "Regulatory Compliance",
-                desc: "Ensure adherence to industry regulations and compliance standards to protect sensitive data and maintain trust.",
+                desc: "Ensure adherence to industry regulations with enfycon's compliance standards to protect sensitive data and maintain trust.",
                 catchyTitle: "Navigating the Trust Landscape",
                 overview: "In today’s regulated world, compliance is not optional—it’s a prerequisite for doing business. enfycon’s Regulatory Compliance service helps you navigate the complex and ever-changing landscape of global data protection laws and industry-specific standards. Whether you need to meet the stringent requirements of HIPAA for healthcare, SOC2 for service organizations, PCI-DSS for payments, or GDPR/CCPA for general data privacy, we provide the technical and legal expertise to ensure you are fully compliant and audit-ready.\n\nWe don't just provide checklists; we build compliance into your architecture. We help you implement the necessary technical controls—like data encryption, access logging, and residency management—that satisfy regulatory requirements without hindering performance. We assist in the preparation of all required documentation, conduct pre-audit assessments, and act as your bridge to external auditors. By achieving and maintaining compliance, we help you build trust with your customers, partners, and investors, while avoiding the catastrophic fines and legal penalties associated with non-compliance. We provide a 'Continuous Compliance' model that keeps you protected as regulations evolve.",
                 challenges: [
@@ -1319,7 +1319,7 @@ export const serviceCategories = [
             {
                 id: "grc-consulting",
                 title: "GRC Consulting",
-                desc: "Expert Governance, Risk, and Compliance consulting to align security practices with business objectives and regulatory requirements.",
+                desc: "Expert Governance, Risk, and Compliance consulting from enfycon to align security practices with business objectives and regulatory requirements.",
                 catchyTitle: "Strategic Risk Mastery",
                 overview: "Effective security is not just about tools; it’s about strategic alignment. enfycon’s Governance, Risk, and Compliance (GRC) Consulting service provides the high-level framework that connects your security activities to your business goals. We help you build a comprehensive strategy that prioritizes risk management, ensures executive oversight, and maintains a sustainable compliance posture. By integrating GRC into your corporate governance, we transform security from a cost center into a resilient foundation for growth.\n\nOur consultants work with your leadership to define your risk appetite, establish clear security policies, and implement governance structures that define roles and responsibilities. We provide quantitative and qualitative risk assessments that help you decide where to invest your security budget for the maximum impact. We help you implement GRC software tools to automate workflows and provide a real-time dashboard for your risk posture. Whether you are dealing with vendor risk management, business continuity planning, or disaster recovery, we provide the high-level guidance needed to navigate a complex risk landscape with confidence.",
                 challenges: [

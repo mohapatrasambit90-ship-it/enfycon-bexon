@@ -53,10 +53,10 @@ export default function About() {
 
 						{/* <About12/> */}
 						{/* <History1 /> */}
-						<Services9/>
+						<Services9 id="history" />
 						<Features3 id="feature3" />
-					
-					
+
+
 						{/* <Testimonials2 type={2} /> */}
 						{/* CSR Section - Gray BG */}
 						<div className="bg-gray-1">

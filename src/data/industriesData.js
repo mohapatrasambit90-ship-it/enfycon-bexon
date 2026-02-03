@@ -9,7 +9,7 @@ export const industriesData = [
         overviewTitle: "Strategic Banking Transformation",
         longDesc: [
             "The banking sector is undergoing a profound transformation, driven by the dual forces of technological innovation and evolving customer expectations. Traditional institutions are no longer competing just with each other but with agile fintech startups and tech giants that have redefined the standard for digital experiences. To stay ahead, banks must modernize legacy systems, ensuring they are not only secure and compliant but also flexible enough to integrate with an ecosystem of modern financial applications.",
-            "Our comprehensive banking solutions bridge the gap between historical reliability and modern agility. By leveraging artificial intelligence for personalized insights and blockchain for secure, transparent transactions, we empower financial institutions to offer seamless, omnichannel experiences. From automated fraud detection that protects assets in real-time to intuitive mobile interfaces that put growing wealth in the palm of a customer's hand, we help you build the bank of the future, today."
+            "Our comprehensive banking solutions bridge the gap between historical reliability and modern agility. By leveraging enfycon's artificial intelligence for personalized insights and blockchain for secure, transparent transactions, we empower financial institutions to offer seamless, omnichannel experiences. From automated fraud detection that protects assets in real-time to intuitive mobile interfaces that put growing wealth in the palm of a customer's hand, we help you build the bank of the future, today."
         ],
         icon: "fa-regular fa-building-columns",
         challenges: [
@@ -57,7 +57,7 @@ export const industriesData = [
             },
             {
                 title: "Automated Customer Support",
-                desc: "Intelligent chatbots and virtual assistants handle inquiries 24/7, reducing wait times.",
+                desc: "Intelligent chatbots and virtual assistants from enfycon handle inquiries 24/7, reducing wait times.",
                 icon: "fa-regular fa-headset"
             },
             {
@@ -67,7 +67,7 @@ export const industriesData = [
             },
             {
                 title: "Optimized Loan Processing",
-                desc: "AI algorithms assess creditworthiness faster and more accurately, speeding up loan approvals.",
+                desc: "enfycon's AI algorithms assess creditworthiness faster and more accurately, speeding up loan approvals.",
                 icon: "fa-regular fa-file-invoice-dollar"
             },
             {
@@ -149,7 +149,7 @@ export const industriesData = [
         ],
         workingModule: {
             title: "Core Banking Modernization",
-            desc: "Legacy systems constrain agility and innovation. We help banks modernize their core infrastructure with microservices-based architectures and cloud-native solutions, enabling rapid product launches and seamless third-party integrations.",
+            desc: "Legacy systems constrain agility and innovation. We help banks modernize their core infrastructure with enfycon's microservices-based architectures and cloud-native solutions, enabling rapid product launches and seamless third-party integrations.",
             image: "/images/industries/banking/core-banking.jpg"
         },
         solutions: [
@@ -198,14 +198,14 @@ export const industriesData = [
     {
         id: "finance",
         title: "Finance",
-        desc: "Transforming financial services with intelligent automation, risk management solutions, and next-generation payment systems for the digital economy.",
+        desc: "Transforming financial services with enfycon's intelligent automation, risk management solutions, and next-generation payment systems for the digital economy.",
         image: "/images/industries/finance.jpg",
         metaTitle: "Financial Services Technology & Fintech Solutions | enfycon",
         metaDescription: "Accelerate financial performance with enfycon. Our solutions include algorithmic trading, risk management analysis, and next-gen payment systems.",
         overviewTitle: "Accelerating Financial Performance",
         longDesc: [
             "In the fast-paced world of financial services, data is the new currency. Investment firms, insurance companies, and capital markets are inundated with information that, if properly harnessed, can unlock unprecedented value. However, the challenge lies in processing this volume of data with speed and accuracy while maintaining strict adherence to regulatory standards. The future of finance belongs to those who can turn raw numbers into actionable intelligence instantly.",
-            "We specialize in creating high-performance financial ecosystems that optimize every asset class and interaction. Our solutions range from algorithmic trading platforms that execute millisecond-decisions to predictive risk models that shelter portfolios from market volatility. By integrating advanced analytics and machine learning into the core of your operations, we enable you to anticipate market shifts, customize financial products for every unique client, and drive sustainable growth in a complex global economy."
+            "We specialize in creating high-performance financial ecosystems that optimize every asset class and interaction. Our solutions range from algorithmic trading platforms that execute millisecond-decisions to predictive risk models that shelter portfolios from market volatility. By integrating enfycon's advanced analytics and machine learning into the core of your operations, we enable you to anticipate market shifts, customize financial products for every unique client, and drive sustainable growth in a complex global economy."
         ],
         icon: "fa-regular fa-chart-pie",
         challenges: [
@@ -263,7 +263,7 @@ export const industriesData = [
             },
             {
                 title: "Risk Mitigation",
-                desc: "Predict and mitigate financial risks with high-accuracy modeling tools that analyze vast datasets. This allows firms to anticipate potential downturns and adjust strategies accordingly.",
+                desc: "Predict and mitigate financial risks with enfycon's high-accuracy modeling tools that analyze vast datasets. This allows firms to anticipate potential downturns and adjust strategies accordingly.",
                 icon: "fa-regular fa-shield-halved"
             },
             {
@@ -345,7 +345,7 @@ export const industriesData = [
         ],
         workingModule: {
             title: "Financial Operations & Risk",
-            desc: "Streamlining financial workflows while mitigating risks through advanced predictive modeling and automated compliance checks, ensuring stability and growth. We help you build a resilient operational framework that can withstand market volatility.",
+            desc: "Streamlining financial workflows while mitigating risks through enfycon's advanced predictive modeling and automated compliance checks, ensuring stability and growth. We help you build a resilient operational framework that can withstand market volatility.",
             image: "/images/industries/finance.jpg"
         },
         solutions: [
@@ -378,14 +378,14 @@ export const industriesData = [
     {
         id: "healthcare",
         title: "Healthcare",
-        desc: "Revolutionizing healthcare delivery with digital health platforms, telemedicine solutions, and advanced patient management systems.",
+        desc: "Revolutionizing healthcare delivery with enfycon's digital health platforms, telemedicine solutions, and advanced patient management systems.",
         image: "/images/industries/health-care.jpg",
         metaTitle: "Healthcare IT Solutions & Digital Health Platforms | enfycon",
         metaDescription: "Revolutionize patient care with enfycon's healthcare IT solutions. We offer telemedicine platforms, AI diagnostics, and interoperable EHR systems.",
         overviewTitle: "Connected Health Ecosystems",
         longDesc: [
             "Healthcare is experiencing a digital renaissance, moving away from reactive sick care to proactive, preventative wellness management. The integration of electronic health records, telemedicine, and wearable devices has created a connected health ecosystem, but it has also introduced significant interoperability and data privacy challenges. Providers need systems that communicate seamlessly to provide a holistic view of patient health without compromising the security of sensitive medical information.",
-            "Our digital healthcare solutions are designed to place the patient at the center of the care continuum. We build interoperable platforms that allow data to flow securely between providers, payers, and patients, ensuring that critical information is available exactly when it's needed. From AI-powered diagnostic tools that assist clinicians in early detection to remote monitoring apps that extend care into the home, we deliver technology that improves outcomes, reduces costs, and ultimately saves lives."
+            "enfycon's digital healthcare solutions are designed to place the patient at the center of the care continuum. We build interoperable platforms that allow data to flow securely between providers, payers, and patients, ensuring that critical information is available exactly when it's needed. From AI-powered diagnostic tools that assist clinicians in early detection to remote monitoring apps that extend care into the home, we deliver technology that improves outcomes, reduces costs, and ultimately saves lives."
         ],
         icon: "fa-regular fa-heart-pulse",
         challenges: [
@@ -428,7 +428,7 @@ export const industriesData = [
             },
             {
                 title: "Personalized Treatment Plans",
-                desc: "Precision medicine tailored to each patient's genetic and clinical profile ensures higher efficacy and fewer side effects. By treating the individual rather than the average, providers can achieve better long-term health results.",
+                desc: "Precision medicine tailored to each patient's genetic and clinical profile ensures higher efficacy and fewer side effects. By treating the individual rather than the average, enfycon providers can achieve better long-term health results.",
                 icon: "fa-regular fa-dna"
             },
             {
@@ -525,7 +525,7 @@ export const industriesData = [
         ],
         workingModule: {
             title: "Patient Care & Operations",
-            desc: "Optimizing hospital operations and patient care pipelines with integrated data solutions and AI-driven insights to improve outcomes and resource utilization. We connect the dots between administrative efficiency and clinical excellence.",
+            desc: "Optimizing hospital operations and patient care pipelines with integrated data solutions and enfycon's AI-driven insights to improve outcomes and resource utilization. We connect the dots between administrative efficiency and clinical excellence.",
             image: "/images/industries/health-care.jpg"
         },
         solutions: [
@@ -570,14 +570,14 @@ export const industriesData = [
     {
         id: "human-resource",
         title: "Human Resource",
-        desc: "Streamlining HR operations with intelligent workforce management, talent acquisition platforms, and employee engagement solutions.",
+        desc: "Streamlining HR operations with enfycon's intelligent workforce management, talent acquisition platforms, and employee engagement solutions.",
         image: "/images/industries/human-resource.jpg",
         metaTitle: "HR Tech Solutions & Workforce Management | enfycon",
         metaDescription: " streamline HR operations with enfycon. Our HR tech solutions include AI recruitment, employee engagement platforms, and predictive workforce analytics.",
         overviewTitle: "Elevating the Employee Experience",
         longDesc: [
             "The modern workplace has evolved beyond the physical office, and with it, the role of Human Resources has shifted from administrative support to strategic leadership. Managing a distributed, hybrid workforce requires tools that go beyond payroll and benefits; it demands platforms that foster engagement, measure productivity, and nurture talent across digital channels. In the war for talent, the employee experience is the decisive battlefield.",
-            "We re-engineer HR operations with intelligent technology that humanizes the workplace experience. Our HCM platforms utilize data analytics to uncover workforce trends, predict retention risks, and identify skills gaps before they become critical. By automating routine administrative tasks and providing self-service tools, we free HR professionals to focus on culture and strategy. Whether it's AI-driven recruitment or personalized learning paths, our solutions help you build a resilient, high-performing workforce."
+            "enfycon re-engineers HR operations with intelligent technology that humanizes the workplace experience. Our HCM platforms utilize data analytics to uncover workforce trends, predict retention risks, and identify skills gaps before they become critical. By automating routine administrative tasks and providing self-service tools, we free HR professionals to focus on culture and strategy. Whether it's AI-driven recruitment or personalized learning paths, our solutions help you build a resilient, high-performing workforce."
         ],
         icon: "fa-regular fa-users-gear",
         challenges: [
@@ -625,7 +625,7 @@ export const industriesData = [
             },
             {
                 title: "Data-Driven Insights",
-                desc: "Make informed people decisions based on comprehensive workforce analytics. From compensation benchmarking to flight-risk analysis, data removes the guesswork from HR strategy.",
+                desc: "Make informed people decisions based on enfycon's comprehensive workforce analytics. From compensation benchmarking to flight-risk analysis, data removes the guesswork from HR strategy.",
                 icon: "fa-regular fa-chart-pie"
             },
             {
@@ -750,14 +750,14 @@ export const industriesData = [
     {
         id: "legal",
         title: "Legal",
-        desc: "Modernizing legal services with case management systems, document automation, and AI-powered legal research platforms.",
+        desc: "Modernizing legal services with enfycon's case management systems, document automation, and AI-powered legal research platforms.",
         image: "/images/industries/legal.jpg",
         metaTitle: "Legal Tech Solutions & AI Case Management | enfycon",
         metaDescription: "Modernize legal practice with enfycon's Legal Tech. We provide AI contract review, automated case management, and legal research platforms.",
         overviewTitle: "Intelligent Legal Operations",
         longDesc: [
             "The legal profession, traditionally reliant on manual processes and billable hours, is at a pivotal inflection point. Clients are demanding more value and transparency, forcing firms to adopt efficiency-driving technologies. The sheer volume of data in modern litigation, from emails to digital contracts, has made manual review obsolete. Law firms must embrace automation to handle discovery, due diligence, and case management or risk being outpaced by tech-savvy competitors.",
-            "Our legal technology solutions bring clarity and speed to the practice of law. We deploy natural language processing to sift through thousands of documents in minutes, identifying risks and relevant precedents with a precision that human review cannot match. By centralizing case data and automating document generation, we reduce administrative overhead and allow attorneys to focus on high-value legal strategy. This digital transformation enables firms to scale their operations and deliver superior client outcomes."
+            "enfycon's legal technology solutions bring clarity and speed to the practice of law. We deploy natural language processing to sift through thousands of documents in minutes, identifying risks and relevant precedents with a precision that human review cannot match. By centralizing case data and automating document generation, we reduce administrative overhead and allow attorneys to focus on high-value legal strategy. This digital transformation enables firms to scale their operations and deliver superior client outcomes."
         ],
         icon: "fa-regular fa-scale-balanced",
         challenges: [

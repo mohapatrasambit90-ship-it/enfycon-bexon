@@ -3,7 +3,7 @@ import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import modifyNumber from "@/libs/modifyNumber";
 import Image from "next/image";
 
-const Services9 = () => {
+const Services9 = ({ id }) => {
 	const history = [
 		{
 			title: "Inception & Vision",
@@ -25,7 +25,7 @@ const Services9 = () => {
 		},
 		{
 			title: "Global Expansion",
-			desc: "Enfycon expanded operations across the USA, India, and the UAE, supporting enterprises with Technology Hiring Solutions, AI-driven solutions, and digital transformation services, while emphasizing accountability and transparency.",
+			desc: "enfycon expanded operations across the USA, India, and the UAE, supporting enterprises with Technology Hiring Solutions, AI-driven solutions, and digital transformation services, while emphasizing accountability and transparency.",
 			images: [
 				"/images/history/history-expansion.png",
 			],
@@ -43,7 +43,7 @@ const Services9 = () => {
 		},
 		{
 			title: "Strategic Partnerships",
-			desc: "Forged strategic partnerships with the Government of India and IICL, a Hyderabad-based IT company, to drive large-scale digital initiatives and foster technology-driven growth.",
+			desc: "Forged strategic partnerships with the Government of India and key technology partners to drive large-scale digital initiatives and foster technology-driven growth.",
 			images: [
 				"/images/history/history-partnerships.png",
 			],
@@ -53,7 +53,7 @@ const Services9 = () => {
 	];
 
 	return (
-		<section className="h9-service section-gap bg-gray-1  tj-sticky-panel-container-2 tj-progress-wrapper">
+		<section id={id} className="h9-service section-gap bg-gray-1  tj-sticky-panel-container-2 tj-progress-wrapper">
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-lg-4 ">

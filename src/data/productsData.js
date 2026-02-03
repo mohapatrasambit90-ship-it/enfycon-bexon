@@ -3,7 +3,7 @@ export const productsData = [
         id: "icognito-ai",
         title: "iCognito.ai",
         tagline: "Smart Chats for Smart Business",
-        desc: "WhatsApp-powered AI chatbot platform delivering instant, intelligent customer engagement at scale with enterprise-grade security and customization.",
+        desc: "WhatsApp-powered AI chatbot platform by enfycon delivering instant, intelligent customer engagement at scale with enterprise-grade security and customization.",
         image: "/images/product/icognito.jpg",
         category: "AI Intelligence",
         metaTitle: "iCognito.ai - AI Chatbot & Customer Engagement Platform | enfycon",
@@ -32,7 +32,7 @@ export const productsData = [
             },
             {
                 title: "Continuous Learning",
-                desc: "Improves with each interaction using ML and RAG for better accuracy and context.",
+                desc: "Improves with each interaction using enfycon's ML and RAG for better accuracy and context.",
                 icon: "fa-regular fa-brain"
             },
             {
@@ -159,7 +159,7 @@ export const productsData = [
         id: "idental-ai",
         title: "iDental.ai",
         tagline: "Smart Dental Practice Management System",
-        desc: "Redefining Dentistry with AI-Powered Practice Management. Purpose-built for dentists, clinics, and dental hospitals, integrating administration, patient engagement, clinical workflows, and financial operations into a single AI-enabled cloud platform.",
+        desc: "Redefining Dentistry with AI-Powered Practice Management. Purpose-built for dentists, clinics, and dental hospitals, integrating administration, patient engagement, clinical workflows, and financial operations into a single AI-enabled cloud platform by enfycon.",
         image: "/images/product/idental.jpg",
         category: "Healthcare AI",
         metaTitle: "iDental.ai - Smart Dental Practice Management Software | enfycon",
@@ -167,13 +167,13 @@ export const productsData = [
         overviewTitle: "Redefining Dentistry with AI-Powered Practice Management",
         longDesc: [
             "Managing a dental practice today is no easy task. From juggling patient records, scheduling appointments, handling billing, and maintaining treatment histories to ensuring seamless patient communication—the workload can overwhelm even the most efficient clinics.",
-            "iDental.ai changes this narrative. Purpose-built for dentists, clinics, and dental hospitals, it integrates administration, patient engagement, clinical workflows, and financial operations—into a single AI-enabled cloud platform."
+            "iDental.ai, powered by enfycon, changes this narrative. Purpose-built for dentists, clinics, and dental hospitals, it integrates administration, patient engagement, clinical workflows, and financial operations—into a single AI-enabled cloud platform."
         ],
         icon: "fa-regular fa-tooth",
         benefits: [
             {
                 title: "All-in-One Platform",
-                desc: "Unifies patient registration, history, clinical notes, imaging, billing, and inventory management. Eliminates fragmented systems and streamlines workflows.",
+                desc: "Unifies patient registration, history, clinical notes, imaging, billing, and inventory management. Eliminates fragmented systems with enfycon's unified approach and streamlines workflows.",
                 icon: "fa-regular fa-layer-group"
             },
             {
@@ -349,21 +349,21 @@ export const productsData = [
         id: "lexgenie-ai",
         title: "lexGenie.ai",
         tagline: "Smart Legal Solutions for Modern Law Professionals",
-        desc: "AI-powered legal research and document automation platform delivering precision, speed, and intelligent insights for law firms, corporate legal teams, and judiciary professionals.",
+        desc: "enfycon's AI-powered legal research and document automation platform delivering precision, speed, and intelligent insights for law firms, corporate legal teams, and judiciary professionals.",
         image: "/images/product/lexgen.jpg",
         category: "Legal AI",
         metaTitle: "lexGenie.ai - AI Legal Assistant & Research Tool | enfycon",
         metaDescription: "Accelerate legal research with lexGenie.ai by enfycon. An AI-powered assistant for case summaries, contract review, and legal intelligence.",
         overviewTitle: "Empower Your Legal Practice with AI-Powered Precision",
         longDesc: [
-            "The legal industry is at a digital crossroads—rising caseloads, manual research, and documentation bottlenecks collide with increasing client expectations. LexGenie revolutionizes how legal professionals research, draft, review, and reason.",
+            "The legal industry is at a digital crossroads—rising caseloads, manual research, and documentation bottlenecks collide with increasing client expectations. LexGenie, developed by enfycon, revolutionizes how legal professionals research, draft, review, and reason.",
             "Built by legal professionals for legal professionals, lexGenie.ai understands the nuances of legal language and reasoning. From due diligence to litigation support, our AI assistant augments your capabilities, allowing you to focus on strategy and client advocacy while we handle the heavy lifting of data analysis."
         ],
         icon: "fa-regular fa-gavel",
         benefits: [
             {
                 title: "AI-Powered Legal Research",
-                desc: "Identifies relevant laws, precedents, and judgments within seconds using advanced natural language processing.",
+                desc: "Identifies relevant laws, precedents, and judgments within seconds using enfycon's advanced natural language processing.",
                 icon: "fa-regular fa-magnifying-glass"
             },
             {
@@ -523,21 +523,21 @@ export const productsData = [
         id: "quantfin-ai",
         title: "QuantaFin.ai",
         tagline: "Intelligent Financial Insights Powered by GenAI",
-        desc: "Turn your financial data into actionable intelligence instantly. GenAI-powered platform delivering validated, audit-ready business insights for modern finance teams.",
+        desc: "Turn your financial data into actionable intelligence instantly. enfycon's GenAI-powered platform delivering validated, audit-ready business insights for modern finance teams.",
         image: "/images/product/ifin.jpg",
         category: "Financial AI",
         metaTitle: "QuantaFin.ai - GenAI Financial Analytics Platform | enfycon",
         metaDescription: "Gain real-time financial insights with QuantaFin.ai by enfycon. A Generative AI platform for automated reporting, budgeting, and forecasting.",
         overviewTitle: "Turn Your Financial Data Into Actionable Intelligence",
         longDesc: [
-            "In the fast-paced world of modern finance, QuantaFin uses Large Language Models (LLMs) and Generative AI to transform raw data into powerful, validated, and audit-ready business insights—instantly.",
+            "In the fast-paced world of modern finance, enfycon's QuantaFin uses Large Language Models (LLMs) and Generative AI to transform raw data into powerful, validated, and audit-ready business insights—instantly.",
             "Designed for CFOs, finance teams, and business analysts, QuantaFin.ai combines traditional financial analysis with cutting-edge AI to deliver real-time insights that drive strategic decisions. From automated reporting to predictive forecasting, our platform provides the intelligence you need to stay ahead."
         ],
         icon: "fa-regular fa-chart-mixed",
         benefits: [
             {
                 title: "Instant Report Generation",
-                desc: "Generate accurate, on-demand financial reports in seconds with AI-powered automation.",
+                desc: "Generate accurate, on-demand financial reports in seconds with enfycon's AI-powered automation.",
                 icon: "fa-regular fa-file-chart-column"
             },
             {
@@ -703,7 +703,7 @@ export const productsData = [
         id: "performanceedge-ai",
         title: "PerformEdge.ai",
         tagline: "Intelligent Attendance and Workforce Management",
-        desc: "AI-driven facial recognition attendance system that eliminates proxy punching, tracks absenteeism in real-time, and empowers management with actionable workforce insights.",
+        desc: "enfycon's AI-driven facial recognition attendance system that eliminates proxy punching, tracks absenteeism in real-time, and empowers management with actionable workforce insights.",
         image: "/images/product/performance.jpg",
         category: "Workforce AI",
         metaTitle: "PerformEdge.ai - Facial Recognition Attendance System | enfycon",
@@ -711,13 +711,13 @@ export const productsData = [
         overviewTitle: "Redefining Workforce Management with AI-Driven Accuracy",
         longDesc: [
             "In today's fast-moving business landscape, managing workforce attendance is no longer just about recording entry and exit times—it's about ensuring efficiency, transparency, and productivity. Manual systems and traditional biometric devices often fail to provide real-time visibility, allow manipulation, or create bottlenecks in workforce management.",
-            "Our Facial Recognition-based Attendance Management System revolutionizes attendance tracking by combining AI-driven facial recognition technology with real-time analytics. This modern, intelligent solution not only records attendance with unmatched accuracy but also identifies absenteeism patterns, improves compliance, and empowers management with actionable workforce insights."
+            "enfycon's Facial Recognition-based Attendance Management System revolutionizes attendance tracking by combining AI-driven facial recognition technology with real-time analytics. This modern, intelligent solution not only records attendance with unmatched accuracy but also identifies absenteeism patterns, improves compliance, and empowers management with actionable workforce insights."
         ],
         icon: "fa-regular fa-face-viewfinder",
         benefits: [
             {
                 title: "Accurate Attendance Tracking",
-                desc: "Facial recognition ensures foolproof, real-time identification—eliminating proxy punching and ensuring fairness.",
+                desc: "Facial recognition by enfycon ensures foolproof, real-time identification—eliminating proxy punching and ensuring fairness.",
                 icon: "fa-regular fa-user-check"
             },
             {
@@ -893,19 +893,19 @@ export const productsData = [
         id: "iwac-ai",
         title: "iWac.ai",
         tagline: "AI Chatbots & WhatsApp Business Integration",
-        desc: "Transform customer engagement with seamless conversations on WhatsApp. Deliver instant, automated, and intelligent customer interactions through the world's most popular messaging app.",
+        desc: "Transform customer engagement with enfycon's seamless conversations on WhatsApp. Deliver instant, automated, and intelligent customer interactions through the world's most popular messaging app.",
         image: "/images/product/iwac.jpg",
         category: "Conversational AI",
         overviewTitle: "Transform Customer Engagement with Seamless Conversations",
         longDesc: [
-            "iWac.ai delivers instant, automated, and intelligent customer interactions through the world's most popular messaging app—WhatsApp. From QR code scans to real-time bookings and AI-powered support, we make customer engagement effortless.",
+            "iWac.ai by enfycon delivers instant, automated, and intelligent customer interactions through the world's most popular messaging app—WhatsApp. From QR code scans to real-time bookings and AI-powered support, we make customer engagement effortless.",
             "Built for businesses that want to meet customers where they are, iWac.ai combines WhatsApp Business API with intelligent chatbots to provide personalized, 24/7 customer support, seamless transactions, and instant confirmations—all within a single conversation."
         ],
         icon: "fa-brands fa-whatsapp",
         benefits: [
             {
                 title: "Personalized, Instant Engagement",
-                desc: "Real-time, personalized WhatsApp chats build trust and drive customer engagement.",
+                desc: "enfycon's real-time, personalized WhatsApp chats build trust and drive customer engagement.",
                 icon: "fa-regular fa-comments"
             },
             {
