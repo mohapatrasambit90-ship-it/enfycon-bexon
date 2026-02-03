@@ -21,7 +21,7 @@ export default function TermsAndConditions() {
 							text={"Terms and Conditions"}
 						/>
 						<TermsAndConditionsPrimary />
-						<Cta />
+					
 					</main>
 					<Footer2 />
 				</div>
