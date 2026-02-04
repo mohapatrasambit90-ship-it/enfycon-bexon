@@ -10,12 +10,13 @@ import { serviceCategories } from '@/data/servicesData';
 import { industriesData } from '@/data/industriesData';
 import './search.scss';
 
-const Search = ({ active }) => {
+const Search = ({ active, resultsPlacement = "dropdown" }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [results, setResults] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [floatingStyle, setFloatingStyle] = useState(null);
     
     // Pagination state
     const [pageInfo, setPageInfo] = useState({ hasNextPage: false, endCursor: null });
@@ -103,6 +104,13 @@ const Search = ({ active }) => {
             }, 100);
         }
     }, [active]);
+
+    // For offcanvas usage, hide results when the panel closes
+    useEffect(() => {
+        if (resultsPlacement === "offcanvas-left" && !active) {
+            setIsOpen(false);
+        }
+    }, [active, resultsPlacement]);
 
     // Handle input change
     const handleChange = (e) => {
@@ -244,6 +252,67 @@ const Search = ({ active }) => {
         }
     };
 
+    const updateFloatingStyle = useCallback(() => {
+        if (resultsPlacement !== "offcanvas-left") return;
+        if (!inputRef.current) return;
+
+        const rect = inputRef.current.getBoundingClientRect();
+        const header = document.querySelector(".header-area");
+        const offcanvas = document.querySelector(".tj-offcanvas-area.opened");
+        const gap = 20;
+        const leftGutter = 30;
+        let rightGutter = 30;
+
+        if (offcanvas) {
+            const panelRect = offcanvas.getBoundingClientRect();
+            rightGutter = Math.max(
+                20,
+                window.innerWidth - panelRect.left + gap
+            );
+        }
+
+        let top = 20;
+        if (header) {
+            const headerRect = header.getBoundingClientRect();
+            if (headerRect.bottom > 0) {
+                top = headerRect.bottom + 10;
+            }
+        }
+        const maxHeight = Math.max(200, window.innerHeight - top - 30);
+
+        setFloatingStyle({
+            position: "fixed",
+            top: `${top}px`,
+            left: `${leftGutter}px`,
+            right: `${rightGutter}px`,
+            maxHeight: `${maxHeight}px`,
+            width: "auto",
+            marginTop: 0,
+            zIndex: 10000
+        });
+    }, [resultsPlacement]);
+
+    useEffect(() => {
+        if (resultsPlacement !== "offcanvas-left") return;
+        if (!isOpen) return;
+
+        updateFloatingStyle();
+        const handleResize = () => updateFloatingStyle();
+        const offcanvas = document.querySelector(".tj-offcanvas-area.opened");
+        const handleOffcanvasScroll = () => updateFloatingStyle();
+        window.addEventListener("resize", handleResize);
+        if (offcanvas) {
+            offcanvas.addEventListener("scroll", handleOffcanvasScroll);
+        }
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            if (offcanvas) {
+                offcanvas.removeEventListener("scroll", handleOffcanvasScroll);
+            }
+        };
+    }, [isOpen, resultsPlacement, updateFloatingStyle]);
+
     return (
         <div className="search-component" ref={wrapperRef}>
             <div className="search-input-wrapper">
@@ -266,7 +335,11 @@ const Search = ({ active }) => {
             </div>
 
             {isOpen && searchTerm.length >= 3 && (
-                <div className="search-results-dropdown" onScroll={handleScroll}>
+                <div
+                    className="search-results-dropdown"
+                    onScroll={handleScroll}
+                    style={resultsPlacement === "offcanvas-left" ? floatingStyle : undefined}
+                >
                     {results.length > 0 ? (
                         <div className="list-group list-group-flush">
                             {results.map((post) => (

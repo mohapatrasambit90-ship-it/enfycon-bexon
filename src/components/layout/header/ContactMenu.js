@@ -44,7 +44,7 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 						<div className="hamburger-search-area">
 							<h5 className="hamburger-title">Search Now!</h5>
 							<div className="hamburger_search">
-								<Search active={isContactOpen} />
+								<Search active={isContactOpen} resultsPlacement="offcanvas-left" />
 							</div>
 						</div>
 						<div className="hamburger-infos">
