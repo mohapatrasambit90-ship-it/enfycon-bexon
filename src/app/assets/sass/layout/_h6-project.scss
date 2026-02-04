@@ -219,3 +219,127 @@
 	}
 }
 /* !END: Case Study CSS */
+
+/* START: Industry Accordion Light */
+.h6-project--light {
+	background-color: var(--tj-color-common-white);
+	border: 1px solid var(--tj-color-border-1);
+
+	.sec-heading.style-2 {
+		.sub-title {
+			background-color: var(--tj-color-grey-1);
+			color: var(--tj-color-theme-primary);
+		}
+
+		.sec-title {
+			color: var(--tj-color-common-black);
+		}
+	}
+
+	.h6-project-item-inner {
+		&::after {
+			opacity: 0.45;
+			background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.05) 0%,
+				rgba(0, 0, 0, 0.55) 100%
+			);
+		}
+	}
+
+	.h6-project-item.active {
+		.h6-project-item-inner {
+			&::after {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+.industries-accordion {
+	.h6-project-item,
+	.h6-project-item-inner {
+		border-radius: 0;
+	}
+
+	.h6-project-inner {
+		gap: 2px;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.h6-project-item {
+		height: clamp(520px, 54vh, 520px);
+		flex: 1 1 0;
+		width: auto;
+		min-width: 60px;
+	}
+
+	.h6-project-item.active {
+		flex: 4 1 0;
+		width: auto;
+	}
+
+	.project-content {
+		padding: 28px 28px 30px;
+	}
+
+	.industry-vertical {
+		position: absolute;
+		top: 50%;
+		inset-inline-end: 18px;
+		transform: translateY(-50%) rotate(180deg);
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		color: var(--tj-color-common-white);
+		font-size: 18px;
+		font-weight: var(--tj-fw-sbold);
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		z-index: 2;
+		pointer-events: none;
+		transition: opacity 0.35s ease-in-out;
+	}
+
+	.h6-project-item.active {
+		.industry-vertical {
+			opacity: 0;
+		}
+	}
+
+	.project-text {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		.title {
+			transition: color 0.3s ease;
+		}
+	}
+
+	.h6-project-item.active {
+		.project-item-inner:hover {
+			.project-text {
+				.title {
+					color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+
+	.industry-desc {
+		color: var(--tj-color-common-white);
+		margin: 0;
+		max-width: 420px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	@media #{$sm, $xs} {
+		.industry-vertical {
+			display: none;
+		}
+	}
+}
+/* END: Industry Accordion Light */
