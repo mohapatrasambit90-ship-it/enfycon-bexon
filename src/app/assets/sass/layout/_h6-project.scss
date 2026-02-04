@@ -61,6 +61,19 @@
 			transform: translateY(0);
 			z-index: 0;
 			overflow: hidden;
+			&::before {
+				content: " ";
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(
+					180deg,
+					rgba(0, 0, 0, 0) 55%,
+					rgba(0, 0, 0, 0.65) 100%
+				);
+				opacity: 1;
+				z-index: 2;
+				pointer-events: none;
+			}
 			&::after {
 				content: " ";
 				width: 100%;
