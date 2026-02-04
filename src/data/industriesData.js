@@ -929,7 +929,7 @@ export const industriesData = [
     },
     {
         id: "logistics",
-        title: "Logistics",
+        title: "Logistics & Distribution",
         desc: "Optimizing logistics operations with real-time tracking, route optimization, and intelligent fleet management solutions.",
         image: "/images/industries/logistic.jpg",
         overviewTitle: "Optimizing Global Motion",
@@ -1107,7 +1107,7 @@ export const industriesData = [
     },
     {
         id: "manufacturing",
-        title: "Manufacturing",
+        title: "Manufacturing & Industry 4.0",
         desc: "Driving Industry 4.0 transformation with smart factory solutions, IoT integration, and advanced production management systems.",
         image: "/images/industries/manufacturing.jpg",
         overviewTitle: "The Smart Factory Revolution",
@@ -1285,7 +1285,7 @@ export const industriesData = [
     },
     {
         id: "supply-chain",
-        title: "Supply Chain",
+        title: "Supply Chain & Procurement",
         desc: "Enhancing supply chain efficiency with end-to-end visibility, predictive analytics, and automated procurement solutions.",
         image: "/images/industries/supply-chain.jpg",
         overviewTitle: "End-to-End Supply Chain Visibility",
@@ -1463,7 +1463,7 @@ export const industriesData = [
     },
     {
         id: "tourism",
-        title: "Tourism",
+        title: "Travel & Tourism",
         desc: "Reimagining the travel experience with smart booking platforms, immersive virtual tours, and AI-driven personalized itineraries.",
         image: "/images/industries/tourism/banner2.jpg",
         overviewTitle: "The Future of Smart Travel",
