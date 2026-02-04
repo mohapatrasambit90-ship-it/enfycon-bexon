@@ -46,7 +46,7 @@ const FounderStory = ({ id }) => {
                         </div>
 
                         <div className="founder-quote-box wow fadeInUp" data-wow-delay=".5s" style={{ marginTop: "40px", borderLeft: "4px solid var(--tj-theme-primary)", paddingLeft: "20px", clear: "both" }}>
-                            <h4 className="title" style={{ color: "var(--tj-theme-primary)", marginBottom: "15px" }}>A Message from the Co-Founder</h4>
+                            <h3 className="title" style={{ color: "var(--tj-theme-primary)", marginBottom: "15px" }}>A Message from the Co-Founder</h3>
                             <p style={{ fontStyle: "italic", fontSize: "18px", lineHeight: "1.6", color: "var(--tj-heading-primary)" }}>
                                 “For me, business has always been about people—clients who trust us with their challenges, and teams who trust us with their careers. Technology will continue to evolve, but values should not. At enfycon, we measure success not just by revenue, but by the relationships we build and the impact we create together.”
                             </p>

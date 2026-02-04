@@ -62,7 +62,7 @@ export default function About() {
 						<div className="bg-gray-1">
 							<CsrProjects data={csrData.projects} />
 						</div>
-						<Team1 type={3} id="leadership" />
+						{/* <Team1 type={3} id="leadership" /> */}
 						<LocationSection id="locations" />
 						{/* <Faq2 type={3} /> */}
 
