@@ -125,9 +125,9 @@ const Footer2 = () => {
 						{/* Col 5: About & Other (Combined to save space if needed, or kept separate) */}
 						<div className="col-xl-auto col-lg-auto col-md-6">
 							<div className="footer-widget widget-nav-menu mb-4">
-								<h5 className="title">About Us</h5>
+								<h5 className="title">Company</h5>
 								<ul>
-									{footerData.about.map((item, index) => (
+									{footerData.company.map((item, index) => (
 										<li key={index}>
 											<Link
 												href={item.link}

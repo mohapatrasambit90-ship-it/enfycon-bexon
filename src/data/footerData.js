@@ -14,12 +14,14 @@ export const footerData = {
         { label: "Data & Analytics", link: "/services/data-analytics" },
         { label: "Cybersecurity Services", link: "/services/cybersecurity-services" },
     ],
-    about: [
-        { label: "Overview", link: "/about" },
-        { label: "Leaders & Advisors", link: "/team" },
-        { label: "Newsroom", link: "/blogs" },
+    company: [
+        { label: "About Us", link: "/about" },
+        { label: "Our Culture", link: "/our-culture" },
+        { label: "Social Responsibility", link: "/csr" },
+        { label: "Contact Us", link: "/contact-us" },
+        { label: "Blogs", link: "/blogs" },
 
-        // { label: "History", link: "/history" },
+        // { label: "History", link: "/history" }
         // { label: "Awards & Recognitions", link: "#" },
         // { label: "Philosophy", link: "#" },
         // { label: "Quality", link: "#" },
