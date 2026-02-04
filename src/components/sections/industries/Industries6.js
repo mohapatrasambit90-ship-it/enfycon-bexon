@@ -13,7 +13,7 @@ const Industries6 = () => {
 	}, []);
 
 	return (
-		<section className="h6-project h6-project--light industries-accordion section-gap section-gap-x">
+		<section className="h6-project h6-project--light industries-accordion section-gap ">
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
