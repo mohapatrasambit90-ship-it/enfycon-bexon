@@ -2,6 +2,7 @@
 import Link from "next/link";
 import siteConfig from "@/config/siteConfig";
 import { footerData } from "@/data/footerData";
+import Search from "@/components/Search/Search";
 
 const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 	const handleClick = () => {
@@ -43,17 +44,7 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 						<div className="hamburger-search-area">
 							<h5 className="hamburger-title">Search Now!</h5>
 							<div className="hamburger_search">
-								<form method="get" action="/">
-									<button type="submit">
-										<i className="tji-search"></i>
-									</button>
-									<input
-										type="search"
-										autoComplete="off"
-										name="s"
-										placeholder="Search here..."
-									/>
-								</form>
+								<Search active={isContactOpen} />
 							</div>
 						</div>
 						<div className="hamburger-infos">
