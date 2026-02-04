@@ -128,6 +128,7 @@ export async function getAllBlogs(categoryName = null, limit = 20) {
         month: date.toLocaleString("en-US", { month: "short" }),
         year: date.getFullYear(),
         category: post.categories?.nodes[0]?.name || "Technology",
+        categorySlug: post.categories?.nodes[0]?.slug || "technology",
       };
     }) || []
   );

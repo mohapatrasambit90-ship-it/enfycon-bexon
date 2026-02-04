@@ -6,7 +6,7 @@ import Link from "next/link";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 
 const BlogCard2 = ({ blog, idx }) => {
-	const { title, featuredImage, id, category, author, day, month } = blog || {};
+	const { title, featuredImage, id, category, categorySlug, author, day, month } = blog || {};
 
 	return (
 		<div className="blog-item style-2">
@@ -30,7 +30,7 @@ const BlogCard2 = ({ blog, idx }) => {
 				<div className="title-area">
 					<div className="blog-meta">
 						<span className="categories">
-							<Link href={`/blogs?category=${makePath(category)}`}>
+							<Link href={`/blogs?category=${categorySlug || makePath(category)}`}>
 								{category}
 							</Link>
 						</span>

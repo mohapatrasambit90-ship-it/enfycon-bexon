@@ -1,4 +1,5 @@
 import BlogSlider from "./BlogSlider";
+import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import { getAllBlogs } from "@/libs/wpBlogs";
 
 const Blogs2 = async ({
@@ -62,21 +63,26 @@ const Blogs2 = async ({
 										{description}
 									</p>
 								</div>
-								<div
-									className="slider-navigation d-none d-md-inline-flex wow fadeInUp"
-									data-wow-delay=".7s"
-								>
-									<div className="slider-prev" role="button">
-										<span className="anim-icon">
-											<i className="tji-arrow-left"></i>
-											<i className="tji-arrow-left"></i>
-										</span>
+								<div className="d-flex flex-column align-items-end gap-3">
+									<div className="btn-wrap wow fadeInUp" data-wow-delay=".6s">
+										<ButtonPrimary text={"Show All Blogs"} url={"/blogs"} />
 									</div>
-									<div className="slider-next" role="button">
-										<span className="anim-icon">
-											<i className="tji-arrow-right"></i>
-											<i className="tji-arrow-right"></i>
-										</span>
+									<div
+										className="slider-navigation d-none d-md-inline-flex wow fadeInUp"
+										data-wow-delay=".7s"
+									>
+										<div className="slider-prev" role="button">
+											<span className="anim-icon">
+												<i className="tji-arrow-left"></i>
+												<i className="tji-arrow-left"></i>
+											</span>
+										</div>
+										<div className="slider-next" role="button">
+											<span className="anim-icon">
+												<i className="tji-arrow-right"></i>
+												<i className="tji-arrow-right"></i>
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>
