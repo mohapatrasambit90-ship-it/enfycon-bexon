@@ -23,8 +23,7 @@ export const metadata = {
 
 export default async function Home() {
 	// Temporary delay removed
-	const data = await getAllBlogs(null);
-	const blogs = data?.slice(0, 4) || [];
+	const blogs = await getAllBlogs(null, 4);
 
 	return (
 		<div>

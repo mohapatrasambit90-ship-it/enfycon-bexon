@@ -42,11 +42,14 @@ async function fetchAPI(query, { variables } = {}) {
   }
 }
 
-export async function getAllBlogs(categoryName = null) {
+export async function getAllBlogs(categoryName = null, limit = 20) {
+  const safeLimit = Number.isFinite(Number(limit))
+    ? Math.max(1, Math.min(50, Number(limit)))
+    : 20;
   const query = categoryName
     ? `
-    query AllPosts($categoryName: String) {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC }, categoryName: $categoryName }) {
+    query AllPosts($categoryName: String, $first: Int!) {
+      posts(first: $first, where: { orderby: { field: DATE, order: DESC }, categoryName: $categoryName }) {
         nodes {
           id
           title
@@ -75,8 +78,8 @@ export async function getAllBlogs(categoryName = null) {
     }
     `
     : `
-    query AllPosts {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+    query AllPosts($first: Int!) {
+      posts(first: $first, where: { orderby: { field: DATE, order: DESC } }) {
         nodes {
           id
           title
@@ -106,7 +109,7 @@ export async function getAllBlogs(categoryName = null) {
     `;
 
   const data = await fetchAPI(query, {
-    variables: categoryName ? { categoryName } : {},
+    variables: categoryName ? { categoryName, first: safeLimit } : { first: safeLimit },
   });
 
   const posts = data?.posts?.nodes;

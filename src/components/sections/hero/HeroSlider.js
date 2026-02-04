@@ -35,6 +35,7 @@ const HeroSlider = ({ slides }) => {
                                 alt={title}
                                 fill
                                 priority={idx === 0}
+                                sizes="100vw"
                                 quality={90}
                                 style={{ objectFit: "cover", zIndex: -1 }}
                             />
@@ -91,6 +92,7 @@ const HeroSlider = ({ slides }) => {
                                 width={80}
                                 height={80}
                                 quality={85}
+                                sizes="(max-width: 768px) 33vw, 80px"
                                 style={{ width: "100%", height: "auto" }}
 
                             />

@@ -2,34 +2,41 @@ import BlogSlider from "./BlogSlider";
 import { getAllBlogs } from "@/libs/wpBlogs";
 
 const Blogs2 = async ({
+	blogs: initialBlogs = null,
 	categoryName = null,
+	limit = 4,
 	title = "Strategies and Insights.",
 	subtitle = "Read Blogs",
 	description = "Developing personalized customer journeys to increase satisfaction and loyalty.",
 }) => {
-	let blogs = [];
+	let blogs = Array.isArray(initialBlogs) ? initialBlogs : [];
 
-	// 1. Try fetching with category if provided
-	if (categoryName) {
+	// 1. Prefer passed-in blogs (if available)
+	if (blogs.length > 0) {
+		blogs = blogs.slice(0, limit);
+	}
+
+	// 2. Try fetching with category if provided
+	if (blogs.length === 0 && categoryName) {
 		try {
-			blogs = await getAllBlogs(categoryName);
+			blogs = await getAllBlogs(categoryName, limit);
 		} catch (e) {
 			console.warn("Blogs2: Failed to fetch by category, trying fallback.", e);
 		}
 	}
 
-	// 2. Fallback to generic blogs if no data found (or fetch failed/no category)
+	// 3. Fallback to generic blogs if no data found (or fetch failed/no category)
 	if (!blogs || blogs.length === 0) {
 		try {
-			blogs = await getAllBlogs(null);
+			blogs = await getAllBlogs(null, limit);
 		} catch (e) {
 			console.error("Blogs2: Failed to fetch generic blogs.", e);
 			blogs = [];
 		}
 	}
 
-	// Slice to 4 items
-	blogs = blogs ? blogs.slice(0, 4) : [];
+	// Ensure limit is respected
+	blogs = blogs ? blogs.slice(0, limit) : [];
 
 	if (!blogs || blogs.length === 0) {
 		return null;
